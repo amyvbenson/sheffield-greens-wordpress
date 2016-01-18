@@ -1,0 +1,51 @@
+#main .widecolumn {
+	background: none repeat scroll 0 0 #FFFFFF;
+	width: 970px;
+	margin: 20px 0 0 0;
+}
+.mu_register {
+	clear: both;
+	padding: 20px;
+	width: 870px !important;
+}
+.mu_register input, .mu_register select, .mu_register textarea {
+	background: none;
+	border: 1px solid #999999;
+	padding: 2px;
+	margin: 10px 0;
+}
+.mu_register input[type="submit"] {
+	color: #ffffff;
+}
+.mu_register  input#user_email, .mu_register  input#user_name, .mu_register  input#blogname, .mu_register  input#blog_title {
+	background: none repeat scroll 0 0 #EEFFFF;
+	border: 1px solid #CCCCCC;
+	color: #545454;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+.mu_register .prefix_address, .mu_register .suffix_address {
+	color: #FF0000;
+	display: inline;
+	font-size: 18px;
+}
+.mu_register form {
+	font-size: 12px;
+	margin-top: 2em;
+}
+.mu_register label {
+	margin: 20px 0 !important;
+	font-size: 16px !important;
+}
+.mu_register input.submit {
+	background: url("../images/btn.gif") repeat-x scroll 0 0 buttonface;
+	border: 1px solid #999999;
+	color: #FFFFFF;
+	font-size: 25px !important;
+	height: 50px;
+	padding: 0;
+	width: 150px !important;
+}

@@ -1,0 +1,30 @@
+.accordion {
+	border-bottom: solid 1px #c4c4c4;
+}
+.accordion h3 {
+	background: #e9e7e7 url('../images/arrow-square.gif') no-repeat right -51px;
+	padding: 10px 15px;
+	margin: 0;
+	font: bold 90%/100% Arial, Helvetica, sans-serif;
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+}
+.accordion h3:hover {
+	background-color: #e3e2e2;
+}
+.accordion h3.active {
+	background-position: right 5px;
+}
+.accordion ul {
+	background: #f7f7f7;
+	display: none;
+	margin: 0 !important;
+	padding: 10px 15px 20px !important;
+	border-left: solid 1px #c4c4c4;
+	border-right: solid 1px #c4c4c4;
+}
+.accordion ul li {
+	margin: 10px 0 0px 25px;
+	list-style-type: decimal !important;
+}

@@ -1,0 +1,25 @@
+#feat-menu {
+	background: url("../images/nav-menu.gif") no-repeat scroll 0 0 transparent;
+
+}
+#green-logo {
+	background: url('../images/logo-white.gif') no-repeat 0px -5px;
+	width: 100%;
+	height: 130px;
+	position: relative;
+}
+div#header div#slide-holder div#slide-controls p#slide-nav a {
+	background-image : url("../images/slide/silde-nav.gif");
+}
+.tab a.open {
+	background: url("../images/bt_open.gif") no-repeat left 1px;
+}
+.tab a.close {
+	background: url("../images/bt_close.gif") no-repeat left 1px;
+}
+.tab a:hover.open {
+	background: url("../images/bt_open.gif") no-repeat left -18px;
+}
+.tab a:hover.close {
+	background: url("../images/bt_close.gif") no-repeat left -18px;
+}

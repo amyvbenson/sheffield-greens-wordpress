@@ -1,0 +1,1034 @@
+<?php function theme_admin_head() { ?>
+<style>
+
+h2 { margin-bottom: 20px; }
+.title { margin: 0px !important; background: #D4E9FA; padding: 10px; font-family: Georgia, serif; font-weight: normal !important; letter-spacing: 1px; font-size: 18px; }
+.container { background: #EAF3FA; padding: 10px; }
+.maintable { font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; background: #EAF3FA; margin-bottom: 20px; padding: 10px 0px; }
+.mainrow { padding-bottom: 10px !important; border-bottom: 1px solid #D4E9FA !important; float: left; margin: 0px 10px 10px 10px !important; }
+.titledesc { font-size: 14px; font-weight:bold; width: 220px !important; margin-right: 20px !important; }
+.forminp { width: 700px !important; valign: middle !important; }
+.forminp input, .forminp select, .forminp textarea { margin-bottom: 9px !important; background: #fff; border: 1px solid #D4E9FA; width: 500px; padding: 4px; font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; font-size: 12px; }
+.forminp span { font-size: 10px !important; font-weight: normal !important; ine-height: 14px !important; }
+.forminp .checkbox { width:20px }
+.info { background: #FFFFCC; border: 1px dotted #D8D2A9; padding: 10px; color: #333; }
+.info a { color: #333; text-decoration: none; border-bottom: 1px dotted #333 }
+.info a:hover { color: #666; border-bottom: 1px dotted #666; }
+.warning { background: #FFEBE8; border: 1px dotted #CC0000; padding: 10px; color: #333; font-weight: bold; }
+#green_promoted_by, #green_promoted_by_address, #green_copyright_year, #green_last_council_election, #green_next_council_election, #green_last_general_election, #green_next_general_election, #green_last_european_election, #green_next_european_election, #green_last_parish_election, #green_next_parish_election, #green_forthcoming_election { height: 28px;}
+
+</style>
+
+<?php }
+
+// VARIABLES
+
+$themename = "Sheffield Green Party";
+$shortname = "green";
+$manualurl = '';
+$options = array();
+
+$template_path = get_bloginfo('template_directory');
+define( 'SGP_CSS', $template_path . '/styles' );
+
+$pn_categories_obj = get_categories('hide_empty=0');
+$pn_categories = array();
+
+$green_pages_obj = get_pages('sort_column=post_parent,menu_order');
+$green_pages = array();
+
+foreach ($pn_categories_obj as $pn_cat) {
+	$pn_categories[$pn_cat->cat_ID] = $pn_cat->cat_name;
+}
+
+foreach ($green_pages_obj as $green_page) {
+	$green_pages[$green_page->ID] = $green_page->post_name;
+}
+
+$other_entries = array("Select a Number:","1","2","3","4","5","6","7","8","9","10");
+$categories_tmp = array_unshift($pn_categories, "Select a category:");
+$green_pages_tmp = array_unshift($green_pages, "Select a page:");
+
+// THIS IS THE DIFFERENT FIELDS
+
+$options = array (
+
+				array(	"name" => "General Settings",
+						"type" => "heading"),
+
+				array(	"name" => "Google Analytics",
+						"desc" => "Please paste your Google Analytics (or other) tracking code here.",
+			    		"id" => $shortname."_google_analytics",
+			    		"std" => "",
+			    		"type" => "textarea"),
+					
+				array(	"name" => "Archives Page",
+						"desc" => "Please select the archives page.",
+						"id" => $shortname."_archives",
+						"std" => "Select a page:",
+						"type" => "select",
+						"options" => $green_pages),
+				
+				array( 	"name" => "Featured Category",
+					   	"desc" => "Select the category that you would like to have displayed in the featured section on your homepage.",
+						"id" => $shortname."_featured_category",
+						"std" => "Select a category:",
+						"type" => "select",
+						"options" => $pn_categories),					
+								
+				array(	"name" => "Promoter Details",
+						"type" => "heading"),
+				
+				array(	"name" => "Promoted by",
+						"desc" => "Please put the name of the person who promotes the website e.g. Eamonn Ward.",
+			    		"id" => $shortname."_promoted_by",
+			    		"std" => "",
+			    		"type" => "textarea"),
+				
+				array(	"name" => "Address",
+						"desc" => "Please put the address of the person who promotes the website. N.B. The address goes on one line e.g. 73 Eskdale Rd, Sheffield, S6 1SL.",
+			    		"id" => $shortname."_promoted_by_address",
+			    		"std" => "",
+			    		"type" => "textarea"),
+				
+				array(	"name" => "Copyright year",
+						"desc" => "Please put the year of copyright.",
+			    		"id" => $shortname."_copyright_year",
+			    		"std" => "",
+			    		"type" => "textarea"),
+
+				array(	"name" => "Home Page Options",
+						"type" => "heading"),
+
+				array(	"name" => "Homepage Entries",
+						"desc" => "Select the number of entries that should appear below the Featured Entries.",
+			    		"id" => $shortname."_other_entries",
+			    		"std" => "Select a Number:",
+			    		"type" => "select",
+			    		"options" => $other_entries),												
+						
+				array( 	"name" => "Video Category",
+					   	"desc" => "Select the category that would be used for videos.",
+						"id" => $shortname."_video_category",
+						"std" => "Select a category:",
+						"type" => "select",
+						"options" => $pn_categories),
+				
+				array( 	"name" => "Featured Category",
+					   	"desc" => "Select the category that you would like to have displayed in the featured section on your homepage.",
+						"id" => $shortname."_featured_category",
+						"std" => "Select a category:",
+						"type" => "select",
+						"options" => $pn_categories),
+
+				array(	"name" => "Featured Entries",
+						"desc" => "Select the number of entries that should appear as featured entries on the homepage.",
+			    		"id" => $shortname."_featured_entries",
+			    		"std" => "Select a Number:",
+			    		"type" => "select",
+			    		"options" => $other_entries),
+								
+				array(	"name" => "Next Election Banner",
+						"type" => "heading"),
+				
+				array(	"name" => "Display next election banner",
+						"desc" => "Check this box if you would like to display the next election banner.",
+						"id" => $shortname."_show_election_banner",
+						"std" => "false",
+						"type" => "checkbox"),
+				
+				array(	"name" => "Next election:",
+						"desc" => "Please put the name of the next election, e.g. woodhouse by-election.",
+			    		"id" => $shortname."_forthcoming_election",
+			    		"std" => "Woodhouse by-election",
+			    		"type" => "textarea"),	
+				
+				array(	"name" => "Next election information:",
+						"desc" => "Please put the information of the next election.",
+			    		"id" => $shortname."_forthcoming_election_info",
+			    		"std" => "<p>John Grant has been selected for the Green Party to contest the Woodhouse by election on August 26th.</p>
+<p>If you live in Woodhouse please download and display this Vote Green Poster. If you would like to help with the campaign please contact Eamonn Ward.</p>",
+			    		"type" => "textarea"),
+
+				array(	"name" => "Council Elections",
+						"type" => "heading"),
+				
+				array(	"name" => "Council election information:",
+						"desc" => "Please put the description of a Council election here.",
+			    		"id" => $shortname."_info_council_election",
+			    		"std" => " <p>Sheffield local elections usually take place by thirds, three years out of every four.</p>
+              <p> Each of Sheffield's 28 wards is represented by three positions on the council, meaning there are usually 28 seats contested in each local election. 2004 saw new ward boundaries and therefore all seats were contested. </p>
+              <p>In this election you are voting to elect Councillors of Sheffield who will   represent your views for the ward (area) in which you live.</p>",
+			    		"type" => "textarea"),
+								
+				array(	"name" => "Last election Date:",
+						"desc" => "Please put the date of the last council election e.g. 6th May 2010.",
+			    		"id" => $shortname."_last_council_election",
+			    		"std" => "",
+			    		"type" => "textarea"),				
+				
+				array(	"name" => "Next election Date:",
+						"desc" => "Please put the date of the next council election e.g. 7th May 2015.",
+			    		"id" => $shortname."_next_council_election",
+			    		"std" => "",
+			    		"type" => "textarea"),
+				
+				array(	"name" => "General Elections",
+						"type" => "heading"),
+				
+				array(	"name" => "General election information:",
+						"desc" => "Please put the description of a General election here.",
+			    		"id" => $shortname."_info_general_election",
+			    		"std" => "<p>Parliamentary Elections are held when the current Prime Minister calls an   election.&nbsp; An election must be held within five years.&nbsp; It is commonly known as   a General Election.&nbsp; </p>
+              <p>In this election you are voting to elect who will represent   your views within parliament.&nbsp; They will become a Member of Parliament (MP) and   will be given a seat within the House of Commons. </p>
+              <p>The party with the most seats   in the House of Commons will form the government and rule the country.</p>",
+			    		"type" => "textarea"),
+								
+				array(	"name" => "Last election Date:",
+						"desc" => "Please put the date of the last general election e.g. 6th May 2010.",
+			    		"id" => $shortname."_last_general_election",
+			    		"std" => "",
+			    		"type" => "textarea"),				
+				
+				array(	"name" => "Next election Date:",
+						"desc" => "Please put the date of the next general election e.g. 7th May 2015.",
+			    		"id" => $shortname."_next_general_election",
+			    		"std" => "",
+			    		"type" => "textarea"),
+				
+				array(	"name" => "European Elections",
+						"type" => "heading"),
+				
+				array(	"name" => "European election information:",
+						"desc" => "Please put the description of a European election here.",
+			    		"id" => $shortname."_info_european_election",
+			    		"std" => " <p>Elections to the European Parliament are held every five years. The European Parliament was directly elected for the first time in 1979. Since 1999 voters in Britain have elected MEPs under a proportional representation system. The European Parliamentary Elections Act of that year introduced a regional list system with seats allocated to parties in proportion to their share of the vote. </p>
+              <p>The UK is divided into twelve electoral regions with between three and ten MEPs representing each region. The nine English regions elected 59 MEPs, Scotland elected six MEPs and Wales four MEPs. In Northern Ireland three MEPs were elected under its own system of proportional representation. </p>",
+			    		"type" => "textarea"),
+								
+				array(	"name" => "Last election Date:",
+						"desc" => "Please put the date of the last european election e.g. 4th May 2009.",
+			    		"id" => $shortname."_last_european_election",
+			    		"std" => "",
+			    		"type" => "textarea"),				
+				
+				array(	"name" => "Next election Date:",
+						"desc" => "Please put the date of the next european election e.g. 7th May 2015.",
+			    		"id" => $shortname."_next_european_election",
+			    		"std" => "",
+			    		"type" => "textarea"),
+				
+				array(	"name" => "Parish Elections",
+						"type" => "heading"),
+				
+				array(	"name" => "Parish election Date:",
+						"desc" => "Please put description of a Parish election here.",
+			    		"id" => $shortname."_info_parish_election",
+			    		"std" => "<p>Parish elections are held once every four years and usually at the same time as   a local election.&nbsp; There are three parish wards in Sheffield: the Parish of   Ecclesfield, the Parish of Bradfield and Stocksbridge Town Council.&nbsp; </p>
+              <p>You can   only vote in a parish election if you live in the parish.&nbsp; If you live in the   parish you can vote in parish elections and also in local elections. In this   election you are voting to elect parish leaders who will represent your views   for the parish in which you live.&nbsp;</p>",
+			    		"type" => "textarea"),	
+								
+				array(	"name" => "Last election Date:",
+						"desc" => "Please put the date of the last parish election e.g. 4th May 2009.",
+			    		"id" => $shortname."_last_parish_election",
+			    		"std" => "",
+			    		"type" => "textarea"),				
+				
+				array(	"name" => "Next election Date:",
+						"desc" => "Please put the date of the next parish election e.g. 7th May 2015.",
+			    		"id" => $shortname."_next_parish_election",
+			    		"std" => "",
+			    		"type" => "textarea")
+				
+		  );
+													    																																		
+// ADMIN PANEL
+
+function theme_add_admin() {
+
+	 global $themename, $options;
+	
+	if ( $_GET['page'] == basename(__FILE__) ) {	
+        if ( 'save' == $_REQUEST['action'] ) {
+	
+                foreach ($options as $value) {
+					if($value['type'] != 'multicheck'){
+                    	update_option( $value['id'], $_REQUEST[ $value['id'] ] ); 
+					}else{
+						foreach($value['options'] as $mc_key => $mc_value){
+							$up_opt = $value['id'].'_'.$mc_key;
+							update_option($up_opt, $_REQUEST[$up_opt] );
+						}
+					}
+				}
+
+                foreach ($options as $value) {
+					if($value['type'] != 'multicheck'){
+                    	if( isset( $_REQUEST[ $value['id'] ] ) ) { update_option( $value['id'], $_REQUEST[ $value['id'] ]  ); } else { delete_option( $value['id'] ); } 
+					}else{
+						foreach($value['options'] as $mc_key => $mc_value){
+							$up_opt = $value['id'].'_'.$mc_key;						
+							if( isset( $_REQUEST[ $up_opt ] ) ) { update_option( $up_opt, $_REQUEST[ $up_opt ]  ); } else { delete_option( $up_opt ); } 
+						}
+					}
+				}
+						
+				header("Location: admin.php?page=functions.php&saved=true");								
+			
+			die;
+
+		} else if ( 'reset' == $_REQUEST['action'] ) {
+			delete_option('sandbox_logo');
+			
+			header("Location: admin.php?page=functions.php&reset=true");
+			die;
+		}
+
+	}
+
+add_theme_page(" Site Options", "Site Options", 'edit_themes', basename(__FILE__), 'theme_page');
+
+}
+
+function theme_page (){
+
+		global $options, $themename, $manualurl;
+		
+		?>
+
+<div class="wrap">
+
+    			<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
+
+						<h2>Site Options</h2>
+
+						<?php if ( $_REQUEST['saved'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning"><?php echo $themename; ?>'s Options has been updated!</div><?php } ?>
+						<?php if ( $_REQUEST['reset'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning"><?php echo $themename; ?>'s Options has been reset!</div><?php } ?>						
+						
+						<div style="clear:both;height:20px;"></div>
+						
+						<div class="info">
+						
+							
+							<div style="width: 30%; float: right; display: inline;text-align: right;"><input name="save" type="submit" value="Save changes" /></div>
+							<div style="clear:both;"></div>
+						
+						</div>	    			
+						
+						<!--START: GENERAL SETTINGS-->
+     						
+     						<table class="maintable">
+     							
+							<?php foreach ($options as $value) { ?>
+	
+									<?php if ( $value['type'] <> "heading" ) { ?>
+	
+										<tr class="mainrow">
+										<td class="titledesc"><?php echo $value['name']; ?></td>
+										<td class="forminp">
+		
+									<?php } ?>		 
+	
+									<?php
+										
+										switch ( $value['type'] ) {
+										case 'text':
+		
+									?>
+									
+		        							<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" />
+		
+									<?php
+										
+										break;
+										case 'select':
+		
+									?>
+		
+	            						<select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>">
+	                					<?php foreach ($value['options'] as $option) { ?>
+	                						<option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?>><?php echo $option; ?></option>
+	                					<?php } ?>
+	            						</select>
+		
+									<?php
+		
+										break;
+										case 'textarea':
+										$ta_options = $value['options'];
+		
+									?>
+									
+										<textarea name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" cols="<?php echo $ta_options['cols']; ?>" rows="8"><?php  if( get_option($value['id']) != "") { echo stripslashes(get_option($value['id'])); } else { echo $value['std']; } ?></textarea>
+		
+									<?php
+										
+										break;
+										case "radio":
+		
+ 										foreach ($value['options'] as $key=>$option) { 
+				
+													$radio_setting = get_option($value['id']);
+													
+													if($radio_setting != '') {
+		    											
+		    											if ($key == get_option($value['id']) ) { $checked = "checked=\"checked\""; } else { $checked = ""; }
+													
+													} else {
+													
+														if($key == $value['std']) { $checked = "checked=\"checked\""; } else { $checked = ""; }
+									} ?>
+									
+	            					<input type="radio" name="<?php echo $value['id']; ?>" value="<?php echo $key; ?>" <?php echo $checked; ?> /><?php echo $option; ?><br />
+		
+									<?php }
+		 
+										break;
+										case "checkbox":
+										
+										if(get_option($value['id'])) { $checked = "checked=\"checked\""; } else { $checked = ""; }
+									
+									?>
+		            				
+		            				<input type="checkbox" class="checkbox" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" value="true" <?php echo $checked; ?> />
+		
+									<?php
+		
+										break;
+										case "multicheck":
+		
+ 										foreach ($value['options'] as $key=>$option) {
+ 										
+	 											$pn_key = $value['id'] . '_' . $key;
+												$checkbox_setting = get_option($pn_key);
+				
+ 												if($checkbox_setting != '') {
+		    		
+		    											if (get_option($pn_key) ) { $checked = "checked=\"checked\""; } else { $checked = ""; }
+				
+												} else { if($key == $value['std']) { $checked = "checked=\"checked\""; } else { $checked = ""; }
+				
+									} ?>
+									
+	            					<input type="checkbox" class="checkbox" name="<?php echo $pn_key; ?>" id="<?php echo $pn_key; ?>" value="true" <?php echo $checked; ?> /><label for="<?php echo $pn_key; ?>"><?php echo $option; ?></label><br />
+									
+									<?php }
+		 
+										break;
+										case "heading":
+
+									?>
+									
+										</table> 
+		    							
+		    									<h3 class="title"><?php echo $value['name']; ?></h3>
+										
+										<table class="maintable">
+		
+									<?php
+										
+										break;
+										default:
+										break;
+									
+									} ?>
+	
+									<?php if ( $value['type'] <> "heading" ) { ?>
+	
+										<?php if ( $value['type'] <> "checkbox" ) { ?><br/><?php } ?><span><?php echo $value['desc']; ?></span>
+										</td></tr>
+	
+									<?php } ?>		
+	
+							<?php } ?>	
+							
+							</table>	
+
+							<p class="submit">
+								<input name="save" type="submit" value="Save changes" />    
+								<input type="hidden" name="action" value="save" />
+							</p>							
+							
+							<div style="clear:both;"></div>		
+						
+						<!--END: GENERAL SETTINGS-->						
+             
+            </form>
+
+</div><!--wrap-->
+
+<div style="clear:both;height:20px;"></div>
+ 
+ <?php
+
+};
+
+add_action('admin_menu', 'theme_add_admin');
+add_action('admin_head', 'theme_admin_head');	
+
+remove_action('init', 'wp_admin_bar_init');
+add_filter( 'show_admin_bar', '__return_false' );
+
+/** Tell WordPress to run sgp_setup() when the 'after_setup_theme' hook is run. */
+add_action( 'after_setup_theme', 'sgp_setup' );
+
+if ( ! function_exists( 'sgp_setup' ) ):
+
+function sgp_setup() {
+
+	// This theme styles the visual editor with editor-style.css to match the theme style.
+	add_editor_style();
+
+	// This theme uses post thumbnails
+	add_theme_support( 'post-thumbnails' );
+
+	// Add default posts and comments RSS feed links to head
+	add_theme_support( 'automatic-feed-links' );
+
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'Main' => __( 'Main Navigation','sheffieldgreens' ),
+		'Sidebar' => __( 'Sidebar Navigation','sheffieldgreens' ),
+		'Footer' => __( 'Footer Navigation','sheffieldgreens' )
+	) );
+
+	// Your changeable header business starts here
+	define( 'HEADER_TEXTCOLOR', '' );
+	// No CSS, just IMG call. The %s is a placeholder for the theme template directory URI.
+	define( 'HEADER_IMAGE', '%s/images/banners/panorama1.jpg' );
+
+	// The height and width of your custom header. You can hook into the theme's own filters to change these values.
+	// Add a filter to sgp_header_image_width and sgp_header_image_height to change these values.
+	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'sgp_header_image_width', 970 ) );
+	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'sgp_header_image_height', 200 ) );
+
+	// We'll be using post thumbnails for custom header images on posts and pages.
+	// Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
+	set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
+
+	// Don't support text inside the header image.
+	define( 'NO_HEADER_TEXT', true );
+
+	// Add a way for the custom header to be styled in the admin panel that controls
+	// custom headers. See sgp_admin_header_style(), below.
+	add_custom_image_header( '', 'sgp_admin_header_style' );
+
+	// ... and thus ends the changeable header business.
+
+	add_theme_support( 'html5', array( 'search-form') );
+
+	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
+	register_default_headers( array(
+		'abourthorne' => array(
+			'url' => '%s/images/banners/one.jpg',
+			'thumbnail_url' => '%s/images/banners/one-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Abourthorne','sheffieldgreens' )
+		),
+		'cherryblossom' => array(
+			'url' => '%s/images/banners/two.jpg',
+			'thumbnail_url' => '%s/images/banners/two-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Cherry Blossoms','sheffieldgreens' )
+		),
+		'concave' => array(
+			'url' => '%s/images/banners/three.jpg',
+			'thumbnail_url' => '%s/images/banners/three-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Concave','sheffieldgreens' )
+		),
+		'fern' => array(
+			'url' => '%s/images/banners/four.jpg',
+			'thumbnail_url' => '%s/images/banners/four-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Fern','sheffieldgreens' )
+		),
+		'sunset' => array(
+			'url' => '%s/images/banners/panorama1.jpg',
+			'thumbnail_url' => '%s/images/banners/panorama1-thumbnail.jpg',
+			/* translators: header image description */
+			'description' => __( 'Panorama','sheffieldgreens' )
+		)
+	) );
+}
+endif;
+
+if ( ! function_exists( 'sgp_admin_header_style' ) ) :
+/**
+ * Styles the header image displayed on the Appearance > Header admin panel.
+ *
+ * Referenced via add_custom_image_header() in sgp_setup().
+ *
+
+ */
+function sgp_admin_header_style() {
+?>
+<style type="text/css">
+/* Shows the same border as on front end */
+#headimg {
+	border-bottom: 1px solid #000000;
+	border-top: 4px solid #000000;
+}
+
+/* If NO_HEADER_TEXT is false, you can style here the header text preview */
+#headimg #name {
+}
+
+#headimg #desc {
+}
+</style>
+<?php
+}
+endif;
+
+if ( ! function_exists( 'sgp_the_page_number' ) ) :
+/**
+ * Prints the page number currently being browsed, with a vertical bar before it.
+ *
+ * Used in Twenty Ten's header.php to add the page number to the <title> HTML tag.
+ *
+
+ */
+function sgp_the_page_number() {
+	global $paged; // Contains page number.
+	if ( $paged >= 2 )
+		echo ' | ' . sprintf( __( 'Page %s','sheffieldgreens' ), $paged );
+}
+endif;
+
+/**
+ * Get wp_nav_menu() fallback, wp_page_menu(), to show a home link.
+ *
+ */
+function sgp_page_menu_args( $args ) {
+	$args['show_home'] = true;
+	return $args;
+}
+add_filter( 'wp_page_menu_args', 'sgp_page_menu_args' );
+
+// remove wordpress meta
+
+remove_action('wp_head', 'wp_generator');
+
+// easytube/vimeo plugins
+
+include(TEMPLATEPATH . '/scripts/easytube.php');
+
+include(TEMPLATEPATH . '/scripts/vimeo.php');
+
+// Limit number of categories shown
+
+function sgp_list_cats($num){
+	$temp=get_the_category();
+	$count=count($temp);// Getting the total number of categories the post is filed in.
+	for($i=0;$i<$num&&$i<$count;$i++){
+		//Formatting our output.
+		$cat_string.='<a href="'.get_category_link( $temp[$i]->cat_ID  ).'">'.$temp[$i]->cat_name.'</a>';
+		if($i!=$num-1&&$i+1<$count)
+		//Adding a ',' if it's not the last category.
+		//You can add your own separator here.
+		$cat_string.=', ';
+	}
+	echo $cat_string;
+}
+
+// Admin customisation.
+
+function sgp_admin_css() { // Admin CSS
+    $admin_css = SGP_CSS . '/admin.css';
+    echo '<link rel="stylesheet" type="text/css" href="' . $admin_css . '" media="screen" />';
+}
+add_action('admin_head', 'sgp_admin_css'); //admin css
+add_action("login_head","sgp_admin_css"); //login css
+
+function sgp_loginpage_logo_link($url) { // Return a url; in this case the homepage url of wordpress
+     return get_bloginfo('wpurl');
+}
+add_filter("login_headerurl","sgp_loginpage_logo_link");
+
+//
+
+function sgp_admin_remove_dashboard_widgets() {
+   global $wp_meta_boxes;
+
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
+	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
+	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);
+}
+add_action('wp_dashboard_setup', 'sgp_admin_remove_dashboard_widgets');
+
+//
+
+function sgp_admin_dashboard_help() { ?>
+	<p>
+	<?php _e('For Help and Support with the site, please email our web team ','sheffieldgreens') ?>
+	<a href="mailto:website@sheffieldgreenparty.org.uk"><?php _e('Click Here','sheffieldgreens') ?></a>
+	</p>
+   
+<?php };
+
+//
+
+function sgp_admin_custom_dashboard_widgets() {
+	wp_add_dashboard_widget('sgp_help_widget', __('Help and Support','sheffieldgreens'), 'sgp_admin_dashboard_help');
+}
+add_action('wp_dashboard_setup', 'sgp_admin_custom_dashboard_widgets');
+
+// Automatically get the first image in a post, or display a default image
+
+function catch_that_image() {
+   
+   	global $post, $posts, $blog_id;
+    $first_img = '';
+    ob_start();
+    ob_end_clean();
+    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"][^>]*>/i', $post->post_content, $matches);
+    $first_img = $matches [1] [0];
+
+    // no image found in the post, display default image or one from a custom field (called 'thumbnail') instead
+    if(empty($first_img))
+    {
+       
+        $is_thumbnail_set = get_post_meta($post->ID,'thumbnail',true);
+
+        if(empty($is_thumbnail_set))
+        {
+            //If there is no image in the post or there is no thumbnail set in the custom fields, display default
+            $first_img = "/images/default.jpg";
+        }
+        else
+        {
+            //There's a thumbnail image set, so check if we're on WPMU or WP
+            if (isset($blog_id) && $blog_id > 0)
+            {
+                //We're on WPMU
+                $theImageSrc = get_post_meta($post->ID,'thumbnail',true);
+                $imageParts = explode('/files/', $theImageSrc);
+                   
+                if (isset($imageParts[1]))
+                {
+                    $first_img = '/blogs.dir/' . $blog_id . '/files/' . $imageParts[1];
+                }
+            }
+            else
+            {
+                //We're on WP
+                $first_img = get_post_meta($post->ID,'thumbnail',true);
+            }
+        }
+
+    }
+    else
+    {
+        if (isset($blog_id) && $blog_id > 0)
+        {
+            $imageParts = explode('/files/', $first_img);
+            if (isset($imageParts[1]))
+            {
+                $first_img = '/blogs.dir/' . $blog_id . '/files/' . $imageParts[1];
+            }
+        }
+    }
+
+    return $first_img;
+
+}
+
+// Green Party Avatar
+
+add_filter( 'avatar_defaults', 'customgravatar' );     
+
+	function customgravatar ($avatar_defaults) {  
+	
+		$myavatar = get_bloginfo('template_directory') . '/images/default_avatar_visitor.gif';  
+		
+		$avatar_defaults[$myavatar] = "Default Site Avatar";  
+	
+	return $avatar_defaults;  
+
+} 
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Tabs - Popular Posts */
+/*-----------------------------------------------------------------------------------*/
+
+function tabs_popular( $posts = 5, $size = 35 ) {
+	$popular = new WP_Query('orderby=comment_count&posts_per_page='.$posts);
+	while ($popular->have_posts()) : $popular->the_post();
+?>
+<li>
+	<?php $cti = catch_that_image(); if(isset($cti)){ ?>
+    <span class="popular-image"><img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&h=40&w=40&zc=1"/></span>
+    <?php } ?>	
+    <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+	<span class="meta"><?php the_time(__('jS F, Y', 'default')) ?></span>
+	<div class="fix"></div>
+</li>
+<?php endwhile; 
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* Tabs - Latest Posts */
+/*-----------------------------------------------------------------------------------*/
+
+function tabs_latest( $posts = 5, $size = 35 ) {
+	$the_query = new WP_Query('showposts='. $posts .'&orderby=post_date&order=desc');	
+	while ($the_query->have_posts()) : $the_query->the_post(); 
+?>
+<li>
+	<?php $cti = catch_that_image(); if(isset($cti)){ ?>
+    <span class="popular-image"><img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&h=40&w=40&zc=1"/></span>
+    <?php } ?>	
+    <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
+	<span class="meta"><?php the_time(__('jS F, Y', 'default')) ?></span>
+	<div class="fix"></div>
+</li>
+<?php endwhile; 
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/* MISC */
+/*-----------------------------------------------------------------------------------*/
+
+if (function_exists('unregister_widget')) {
+	function deregister_widgets(){
+		unregister_widget('WP_Widget_Search');         
+	}
+	add_action('widgets_init', 'deregister_widgets');  
+}
+
+//Welcome Message 
+
+add_action('admin_menu', 'add_welcome_interface');
+
+function add_welcome_interface() {
+
+	add_menu_page('welcome', 'Greeting', '8', 'functions', 'editoptions');
+	register_setting( 'welcome', 'greeting', 'wp_filter_nohtml_kses' );
+	register_setting( 'welcome', 'welcomemessage' );
+
+  }
+
+function editoptions() {
+?>
+<div class='wrap'>
+
+  <h2>Theme Options</h2>
+
+  <form method="post" action="options.php">
+  
+  <?php settings_fields('welcome'); ?>
+
+  <p><strong>Heading:</strong></p>
+
+  <p><input type="text" name="greeting" size="115" value="<?php echo get_option('greeting'); ?>" /></p>
+  
+
+  <p><strong>Message:</strong></p>
+
+  <p><textarea name="welcomemessage" cols="100" rows="20"><?php echo get_option('welcomemessage'); ?></textarea></p>
+
+ 
+
+  <p><input type="submit" name="Submit" value="Save" /></p>
+
+  <input type="hidden" name="action" value="update" />
+
+  <input type="hidden" name="page_options" value="feedname,greeting,welcomemessage" />
+
+  </form>
+
+  </div>
+ 
+  <?php
+
+  }
+  
+/**
+ * Sets the post excerpt length.
+ *
+ * To override this length in a child theme, remove the filter and add your own
+ * function tied to the excerpt_length filter hook.
+ *
+
+ * @return int
+ */
+function sgp_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'sgp_excerpt_length' );
+
+/**
+ * Returns a "Continue Reading" link for excerpts
+ *
+
+ * @return string "Continue Reading" link
+ */
+function sgp_continue_reading_link() {
+	return ' <a class="meta-nav" href="'. get_permalink() . '">' . __( 'Full Story &raquo;','sheffieldgreens' ) . '</a>';
+}
+
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and sgp_continue_reading_link().
+ *
+ * To override this in a child theme, remove the filter and add your own
+ * function tied to the excerpt_more filter hook.
+ *
+ * @return string An ellipsis
+ */
+function sgp_auto_excerpt_more( $more ) {
+	return ' &hellip;' . sgp_continue_reading_link();
+}
+add_filter( 'excerpt_more', 'sgp_auto_excerpt_more' );
+
+/**
+ * Adds a pretty "Continue Reading" link to custom post excerpts.
+ *
+ * To override this link in a child theme, remove the filter and add your own
+ * function tied to the get_the_excerpt filter hook.
+ *
+
+ * @return string Excerpt with a pretty "Continue Reading" link
+ */
+function sgp_custom_excerpt_more( $output ) {
+	if ( has_excerpt() && ! is_attachment() ) {
+		$output .= sgp_continue_reading_link();
+	}
+	return $output;
+}
+add_filter( 'get_the_excerpt', 'sgp_custom_excerpt_more' );
+
+/**
+ * Remove inline styles printed when the gallery shortcode is used.
+ *
+ * Galleries are styled by the theme in Twenty Ten's style.css.
+ *
+
+ * @return string The gallery style filter, with the styles themselves removed.
+ */
+ 
+function sgp_remove_gallery_css( $css ) {
+	return preg_replace( "#<style type='text/css'>(.*?)</style>#s", '', $css );
+}
+add_filter( 'gallery_style', 'sgp_remove_gallery_css' );
+
+if ( ! function_exists( 'sgp_comment' ) ) :
+
+/**
+ * Template for comments and pingbacks.
+ *
+ * Used as a callback by wp_list_comments() for displaying the comments.
+ *
+
+ */
+ 
+function sgp_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment; ?>
+    	 
+                     		<?php if ( '' == $comment->comment_type ) : ?>      	
+			
+        <div id="comment-<?php comment_ID() ?>" class="fl ar">
+            <div class="pic"><?php echo get_avatar( $comment, 80 ); ?></div>
+            <div class="comm-name"><a href="<?php comment_author_url(); ?>" target="_blank"><?php comment_author(); ?></a></div>
+            <div class="comm-date"><small><em><?php comment_date( $d, $comment_ID ); ?></em></small></div>
+        </div>
+
+   		<div class="fr">
+        
+		<?php if ( $comment->comment_approved == '0' ) : ?>
+			<em><?php _e( 'Your comment is awaiting moderation.','sheffieldgreens' ); ?></em>
+			<br />
+		<?php endif; ?>
+
+		<div class="box2 <?php if (1 == $comment->user_id) $oddcomment = authcomment; echo $oddcomment; ?>">
+		
+		<?php comment_text(); ?>
+        
+        <div class="reply">
+
+		<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+        
+        </div>
+
+        </div>
+  
+        </div>
+   
+        <div class="clfix"></div>    	
+		
+		     <?php else : ?>     
+        
+	<li class="post pingback">
+		<p><?php _e( 'Pingback:','sheffieldgreens' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __('(Edit)','sheffieldgreens'), ' ' ); ?></p>
+   
+		<?php endif;
+}
+endif;
+
+/**
+ * Register widgetized areas, including two sidebars and four widget-ready columns in the footer.
+ *
+ * To override sgp_widgets_init() in a child theme, remove the action hook and add your own
+ * function tied to the init hook.
+ *
+
+ * @uses register_sidebar
+ */
+ 
+function sgp_widgets_init() {
+	// Area 1, located at the top of the sidebar.
+	register_sidebar( array(
+		'name' => __( 'Primary Widget Area','sheffieldgreens' ),
+		'id' => 'primary-widget-area',
+		'description' => __( 'The primary widget area','sheffieldgreens' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+	// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
+	register_sidebar( array(
+		'name' => __( 'Secondary Widget Area','sheffieldgreens' ),
+		'id' => 'secondary-widget-area',
+		'description' => __( 'The secondary widget area','sheffieldgreens' ),
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+}
+/** Register sidebars by running sgp_widgets_init() on the widgets_init hook. */
+add_action( 'widgets_init', 'sgp_widgets_init' );
+
+/**
+ * Removes the default styles that are packaged with the Recent Comments widget.
+ *
+ * To override this in a child theme, remove the filter and optionally add your own
+ * function tied to the widgets_init action hook.
+ *
+
+ */
+function sgp_remove_recent_comments_style() {
+	global $wp_widget_factory;
+	remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style' ) );
+}
+add_action( 'widgets_init', 'sgp_remove_recent_comments_style' );
+
+//
+
+function exclude_category($query) {
+	if ( $query->is_feed ) {
+		$query->set('cat', '-6683,-6684');
+	}
+return $query;
+}
+add_filter('pre_get_posts', 'exclude_category');

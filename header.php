@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+
+	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/print.css" type="text/css" media="print" />
+
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/includes/banner/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/includes/banner/bjqs.css" type="text/css" media="screen" />
+
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+   
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/ie6/ie6.css" />
+    <![endif]-->
+    
+    <title>
+    <?php if ( is_home() ) { ?><?php bloginfo('name'); ?>&nbsp;|&nbsp;<?php bloginfo('description'); ?><?php } ?>
+    
+    <?php if ( is_search() ) { ?><?php bloginfo('name'); ?>&nbsp;|&nbsp;Search Results<?php } ?>
+    
+    <?php if ( is_single() ) { ?><?php wp_title(''); ?>&nbsp;|&nbsp;<?php bloginfo('name'); ?><?php } ?>
+    
+    <?php if ( is_page() ) { ?><?php bloginfo('name'); ?>&nbsp;|&nbsp;<?php wp_title(''); ?><?php } ?>
+    
+    <?php if ( is_category() ) { ?><?php bloginfo('name'); ?>&nbsp;|&nbsp;Archive&nbsp;|&nbsp;<?php single_cat_title(); ?><?php } ?>
+    
+    <?php if ( is_month() ) { ?><?php bloginfo('name'); ?>&nbsp;|&nbsp;Archive&nbsp;|&nbsp;<?php the_time('F'); ?><?php } ?>
+    
+    <?php if (function_exists('is_tag')) { if ( is_tag() ) { ?><?php bloginfo('name'); ?>&nbsp;|&nbsp;Tag Archive&nbsp;|&nbsp;<?php  single_tag_title("", true); } } ?>
+    </title>
+    
+    <?php
+
+	if ( is_singular() && get_option( 'thread_comments' ) )
+		wp_enqueue_script( 'comment-reply' );
+	 
+	wp_head();
+	?>
+
+</head>
+
+<body <?php body_class($class); ?>>
+
+
+<!-- BEGIN OPTIONS POPUP -->
+<div id="utility">
+<?php include(TEMPLATEPATH . '/includes/popup-panel.php'); ?>
+</div>
+<!-- END OPTIONS POPUP -->
+
+<div id="main">
+<!-- BEGIN HEADER -->
+<div id="green-header">
+
+<!-- BEGIN NAVIGATION MENU -->
+    <div id="access">   
+	
+		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'Main' ) ); ?>
+    
+    </div>
+<!-- END NAVIGATION MENU -->
+
+<?php if ( is_page(array('Home')) ) {
+	
+	 ?><!-- Main conditional tag -->
+
+<!--no banner-->
+<?php } else { ?>
+
+<!-- BEGIN BANNER -->
+    <div id="banner" class="rounded">
+
+		<?php if ( is_singular()||is_archive()): ?>
+        <img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+		<?php endif; ?>       
+        
+                    
+    <!-- BEGIN LOGO -->
+ 			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<h1 class="site-title"><img src="<?php bloginfo('template_directory'); ?>/images/logo-green.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></h1>
+                
+            <h2 class="description"><?php bloginfo('description'); ?></h2>
+            
+			</a>
+
+           
+    <!-- END LOGO-->
+        
+
+    <!-- BEGIN SEARCH FORM-->
+
+                	<?php get_search_form(); ?>
+                   
+    <!-- END SEARCH FORM-->
+    
+    </div> 
+<!-- END BANNER -->
+
+<?php } ?><!-- /Main conditional tag -->
+
+</div>
+<!-- END HEADER -->

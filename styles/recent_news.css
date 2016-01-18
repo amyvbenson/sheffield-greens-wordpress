@@ -1,0 +1,40 @@
+#recent_news {
+	margin-bottom: 20px;
+	font-family: Arial,Helvetica,Tahoma,sans-serif;
+}
+#recent_news h2 {
+	font-family: 'Segoe UI', Arial,Helvetica,Tahoma,sans-serif;
+	line-height:18px;
+	margin:5px 0;
+	font-size:12px;
+	line-height:18px;
+	margin-bottom:4px;
+}
+#recent_news h2 a{
+	font-weight: normal;
+	color: #333333
+}
+#recent_news h2 a:hover {
+	text-decoration: underline;
+}
+#recent_news h4.title {
+	font-family: Arial,Helvetica,Tahoma,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	margin: 15px 0;
+	text-transform: uppercase;
+}
+#recent_news .posts {
+	margin: 10px 0;
+}
+#recent_news p.postmetadata {
+	font-size: 11px;
+	padding: 0;
+}
+#recent_news .post-edit-link {
+	background: none repeat scroll 0 0 #EB435C;
+    color: #FFFFFF;
+	font-size: 10px;
+    padding: 0 5px;
+}

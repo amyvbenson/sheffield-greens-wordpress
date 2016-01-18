@@ -1,0 +1,222 @@
+h1#express_yourself {
+	border-bottom: 2px solid #73A533;
+	color: #73A533;
+	font-family: 'Segoe UI',Arial,Verdana,Helvetica,sans-serif;
+	font-size: 22px;
+	letter-spacing: -1px;
+	margin: 10px 0;
+	padding-bottom: 1px;
+	padding-top: 6px;
+	clear: both;
+}
+h3#reply-title {
+    border: medium none;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+p.comment-subscription-form {
+	clear: both;
+}
+#commentform p.form-submit {
+	float: left;
+}
+.express_text {
+	color: #73A533;
+	font-size: 0.9em;
+}
+#comments {
+	font-size: 0.9em;
+	color:#404040;
+}
+ul.children {
+	padding: 0 !important;
+}
+.authcomment {
+	background: none repeat scroll 0 0 #D1ECB8 !important ;
+	border: 1px solid #6EA83A;
+}
+.box h2 {
+	color:#222222;
+	font-size:1.5em;
+	font-weight:normal;
+	letter-spacing:-1px;
+	margin:0 0 1em;
+}
+/*- Post Comments -*/
+.post-comments .fl {
+	width: 80px;
+}
+.post-comments .fr {
+	width: 80%;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*=== Styling Boxes ===*/
+/*- Box1 -*/
+#respond h3 {
+
+}
+.box, #respond {
+	background: #ffffff;
+	border: 1px solid #cfcfcf;
+	margin: 0 0 28px;
+	clear: both;
+	position: relative;
+}
+.box .content, #commentform {
+	background: none repeat scroll 0 0 #E3E3E3;
+	padding: 18px;
+}
+.box.ads .content {
+	padding-left: 15px;
+	padding-right: 0;
+	text-align: center;
+}
+#rightcol .box {
+	margin: 0 0 10px;
+}
+.reply {
+	border-top: 1px solid;
+	color: #66BB00;
+	height: 30px;
+	margin: 10px 0;
+}
+.reply a {
+	color: #66BB00;
+	text-decoration: underline;
+}
+#commentform p.newsletter label {
+	float:none;
+	width: auto;
+}
+#commentform p.comment-subscription-form label {
+	float:none;
+	width: auto;
+}
+
+
+/*- Box2 -*/
+.box2 {
+	background: #f9f9f9;
+	border: 1px solid #cfcfcf;
+	height: 1%;
+	margin: 0 0 20px;
+	padding: 18px;
+	min-height: 115px;
+	position: relative;
+}
+.box2.alt {
+	background: #FFFFFF;
+}
+.box2.alt {
+	background: #FFFFFF;
+}
+.comm-name, .comm-date {
+	line-height: 20px;
+}
+/*- Message -*/
+#commentform div {
+	margin: 0 0 18px;
+}
+#commentform input {
+	padding: 9px 15px;
+	width: 74%;
+	background: none repeat scroll 0 0 #EEFFFF;
+	border: 1px solid #CCCCCC;
+	color: #545454;
+}
+#commentform textarea {
+	background: none repeat scroll 0 0 #EEFFFF;
+	border: 1px solid #CCCCCC;
+	color: #545454;
+	height: 150px;
+	overflow: auto;
+	padding: 9px 15px;
+	width: 94%;
+	font-family: Verdana;
+}
+#commentform .submit {
+	float: left;
+}
+#commentform #submit {
+    background: none repeat scroll 0 0 #136899;
+    border: medium none;
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    height: 40px;
+    text-align: center;
+    transition: all 0.15s linear 0s;
+    width: 140px;
+}
+#commentform .notice {
+	color: #a4a4a4;
+	float: right;
+	font-style: italic;
+	padding: 10px 0 0;
+}
+#commentform label {
+	float: left;
+	width: 125px;
+}
+/*=== Pics, Thumbs, Ads etc. ===*/
+.pic img {
+	border: 1px solid #cfcfcf;
+	display: block;
+	margin: 0 0 .8em;
+}
+.pic.fl img {
+	margin-right: 23px;
+}
+.pic.fr img {
+	margin-left: 23px;
+}
+.th {
+	display: block;
+	margin: 0 0 .5em;
+	position: relative;
+}
+.th.fl img {
+	margin-right: 10px;
+}
+.th.fl img
+{
+	width:40px;
+	height:40px;
+	border: 1px solid #cfcfcf;
+}
+.ads img, .ads.flickr .content img {
+	margin: 0 14px 15px 0;
+}
+.ads.flickr .content img {
+	border: 1px solid #cfcfcf;
+}
+.ads.flickr .ac img {
+	border: 0;
+	margin: 0;
+}
+/*=== Styling Forms ===*/
+input.btn {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+select {
+	padding: 1px;
+}
+.clfix {
+clear:both;
+height:1px;
+margin:-1px 0 0;
+overflow:hidden;
+}

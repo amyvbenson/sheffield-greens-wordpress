@@ -1,0 +1,101 @@
+.calendar-table {
+	width: 950px;
+	height: 800px;
+	table-layout: fixed;
+}
+.calendar-table td {
+	border: none;
+	padding: 0;
+}
+.calendar-heading {
+	height: 50px;
+}
+.calendar-prev {
+	text-align: left;
+}
+.calendar-month {
+	font-size: 25px;
+	text-align: center;
+	height: 50px;
+}
+.calendar-next {
+	text-align: right;
+}
+.normal-day-heading, .weekend-heading {
+	background: none repeat scroll 0 0 #F1F1F1;
+	border-left: 3px solid #FFFFFF !important;
+	height: 30px;
+	width: 120px;
+	text-align: center;
+}
+.current-day {
+	background-color: #FFF7D7;
+	vertical-align: top;
+}
+.current-day .day-number {
+	background-color: #FAD163;
+	width: 131px;
+}
+.day-without-date {
+	border-left: 1px solid #ffffff !important;
+	border-top: 1px solid #ffffff !important;
+	height: 120px;
+	vertical-align: top;
+}
+.day-with-date {
+	background-color: #F8F9FF;
+	border-left: 3px solid #ffffff !important;
+	height: 120px;
+	vertical-align: top;
+}
+.day-number {
+	background-color: #F8F9FF;
+	border-top: 3px solid #ffffff !important;
+	color: #666666;
+	float: left;
+	line-height: 16px;
+	overflow: hidden;
+	padding: 2px;
+	text-align: left;
+	width: 129px;
+}
+.category-key {
+}
+
+.calnk a:hover {
+	 background: none !important;
+	 text-decoration: none;  
+	 color: #000000;
+}
+.calnk a:visited {
+	 text-decoration: none;
+	 color: #000000;
+}
+.calnk a {
+	font-size: 13px;
+	text-decoration: none; 
+	color: #000000; 
+	padding: 0 !important;
+}
+.calnk a span { 
+	display: none; 
+}
+.calnk a:hover span {
+	color: #333333; 
+	display: block;
+	position: absolute; 
+	margin-top: 1px; 
+	padding: 5px; 
+	width: 200px; 
+	z-index: 100;
+}
+div.kjo-link[style] {
+	color: #ffffff !important;
+	display: none !important;
+}
+div.kjo-link a {
+	display: none;
+}
+div.kjo-link p {
+	display: none;
+}

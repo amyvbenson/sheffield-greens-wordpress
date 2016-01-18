@@ -1,0 +1,59 @@
+#tabs {	
+	background:#e6e6e6; 
+	height:auto; 
+	display: block; 
+	padding:5px; 
+	margin-bottom:30px; 
+}
+#tabs ul.sgpTabs { 
+	padding:0px;
+}
+#tabs ul.sgpTabs li { 
+	float: left; 
+	display:inline; 
+	color: #ffffff; 
+	margin:0px; 
+	cursor: pointer;
+}
+#tabs ul.sgpTabs li a.selected, #tabs ul.sgpTabs li a:hover { 
+	background:#F8F8F8; 
+	text-decoration:none;
+}
+#tabs ul.sgpTabs li a {	
+	color:#777; 
+	display: block;
+	float: left;
+	padding: 8px; 
+	text-transform:uppercase; 
+	font:16px/18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#tabs .inside { 
+	background:#F8F8F8; 
+	padding:5px;
+	float: left;
+}
+#tabs .inside li { 
+	background:#fff; 
+}
+#tabs .inside ul { 
+	margin: 0; 
+	height: 470px;
+}
+#tabs .inside li { 
+	border: 1px solid #e6e6e6; 
+	border-width: 1px 1px 1px 1px; 
+	padding: 10px;
+	margin: 4px 0;
+	width: 572px;
+}
+#tabs .inside li a { 
+	color:#555; 
+	font:bold 12px/18px Georgia, serif;
+	overflow: hidden;
+}
+#tabs .inside a:hover{}
+#tabs .inside li span.meta { 
+	display:block; font:11px/20px "Trebuchet MS", Arial, Helvetica, sans-serif; 
+	text-transform:uppercase; 
+	color:#777; 
+}

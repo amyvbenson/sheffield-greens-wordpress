@@ -1,0 +1,66 @@
+#donor_left {
+	float: left;
+	width: 280px;
+}
+#donor_right {
+}
+#total_amount {
+	text-align: left;
+}
+#donations span.total {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: right;
+	color: #ffffff;
+}
+p.donate_amount {
+}
+p.recognition_wall {
+}
+p.donor_name {
+}
+p.donor_email {
+}
+p.donor_url {
+}
+p.donor_comment {
+	float: right;
+	width: 300px;
+}
+p.submit {
+}
+p.submit input {
+	border: none;
+}
+select#wall {
+	border: 1px solid #CCCCCC;
+	color: #545454;
+	line-height: 20px;
+	padding: 0;
+}
+/*input#amount {
+	background: none repeat scroll 0 0 #EEFFFF;
+	border: 1px solid #CCCCCC;
+	color: #545454;
+	font-size: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	width: 55px;
+}
+input#donor_name, input#donor_email, input#donor_url {
+	background: none repeat scroll 0 0 #EEFFFF;
+	border: 1px solid #CCCCCC;
+	color: #545454;
+	font-size: 20px;
+	height: 35px;
+	line-height: 35px;
+	width: 230px;
+}*/
+textarea#donor_comment {
+	background: none repeat scroll 0 0 #EEFFFF;
+	border: 1px solid #CCCCCC;
+	height: 186px;
+}

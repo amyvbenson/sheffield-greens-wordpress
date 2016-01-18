@@ -1,0 +1,72 @@
+#elections {
+}
+#elections .council {
+	border: 1px solid #E9E9E9;
+	float: left;
+	margin: 10px 0;
+	width: 658px;
+}
+#elections .parliamentary {
+	border: 1px solid #E9E9E9;
+	float: left;
+	margin: 10px 0;
+	width: 658px;
+}
+#elections .european {
+	border: 1px solid #E9E9E9;
+	float: left;
+	margin: 10px 0;
+	width: 658px;
+}
+#elections .parish {
+	border: 1px solid #E9E9E9;
+	float: left;
+	margin: 10px 0;
+	width: 658px;
+}
+#elections .election_info {
+	background: none repeat scroll 0 0 #E9E9E9;
+	float: right;
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	width: 385px;
+}
+#elections .election_info h1, .election_page h1 {
+	background: none repeat scroll 0 0 #73A533;
+	color: #FFFFFF;
+	line-height: 30px;
+	margin: 0 0 10px;
+	padding: 0 5px;
+}
+#elections .election_info h1 a, .election_page h1 a {
+	color: #ffffff;
+}
+#elections .infoleft, .page_infoleft {
+	width: 230px;
+	font-size: 12px;
+	float: left;
+	padding: 10px;
+}
+#elections .election_date {
+	color: #0000FF;
+	font-weight: bold;
+}
+.election_sidebar h3 {
+	border-bottom: 3px solid #73A533;
+	margin: 0 0 10px 0;
+}
+.election_page {
+	background: none repeat scroll 0 0 #F1F1F1;
+	float: left;
+	margin: 10px 0;
+	width: 660px;
+}
+.electionpage_info {
+	background: none repeat scroll 0 0 #E9E9E9;
+	float: right;
+	height: 250px;
+	overflow: hidden;
+	padding: 10px;
+	width: 385px;
+}
