@@ -281,8 +281,11 @@
         <?php endwhile;  endif;// end of the loop. ?>
         
         <?php if ( is_page(  array('Issues','Councillors','Green Party Officers','Activists') ) ) { ?>
-        
-			<?php query_posts('orderby=menu_order&order=ASC&posts_per_page=-1&post_type=page&post_parent='.$parent); ?>
+          <?php if ( is_page(  array('Issues') ) ) { ?>
+            <?php query_posts('orderby=menu_order&order=ASC&posts_per_page=-1&post_type=page&post_parent='.$parent); ?>
+          <?php } else { ?>
+             <?php query_posts('orderby=post_title&order=ASC&posts_per_page=-1&post_type=page&post_parent='.$parent); ?>
+          <?php } ?>
             
             <ul id="xyz">
 				<?php while (have_posts()) : the_post(); ?>

@@ -2,12 +2,22 @@
 
     <?php include(TEMPLATEPATH . '/includes/version.php'); ?>
     
-    <?php if ( is_page( array('About Us!','Get Involved','Affinity Schemes','People','Activists','Councillors','Green Party Officers','faqs','Why Join?','Donate')) ) { ?>
+    <?php if ( is_page( array('About Us!','Get Involved','Affinity Schemes','faqs','Why Join?','Donate')) ) { ?>
 
     <h1 class="side_subpages-title">Sheffield Greens</h1> 
        
     <ul class="side_subpages">
         <?php wp_list_pages('depth=1&title_li=&child_of='.$post->ID.''); ?>
+    </ul>
+    
+    <?php } ?>
+
+    <?php if ( is_page( array('People','Activists','Councillors','Green Party Officers')) ) { ?>
+
+    <h1 class="side_subpages-title">Sheffield Greens</h1> 
+       
+    <ul class="side_subpages">
+        <?php wp_list_pages('depth=1&title_li=&child_of='.$post->ID.'&sort_column=post_title'); ?>
     </ul>
     
     <?php } ?>
