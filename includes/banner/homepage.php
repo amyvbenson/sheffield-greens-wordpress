@@ -1,4 +1,4 @@
-    <div id="election_container">
+<div id="election_container">
 
     <!-- BEGIN LOGO -->
     <h1 class="site-title-election"><img src="<?php bloginfo('template_directory'); ?>/images/logo-green.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></h1>

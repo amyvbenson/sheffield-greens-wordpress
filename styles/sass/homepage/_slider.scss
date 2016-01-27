@@ -1,0 +1,120 @@
+.election-candidate {
+  clear: both;
+  float: left;
+  font-family: 'segoe ui';
+  font-size: 35px;
+  line-height: 40px;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+pre + h2{
+  margin-top: 80px;
+}
+
+#election_container {
+  height: auto;
+  margin: 0 auto 0;
+  position: relative;
+  width: 100%;
+
+  @include media-query(xs) {
+    margin: 70px auto 0;
+  }
+}
+
+#banner-fade,
+#banner-slide{
+  margin: 0;
+}
+
+ul.bjqs-controls.v-centered li a{
+  display:block;
+  padding:10px;
+  background:#fff;
+  color:#000;
+  text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+  background:#000;
+  color:#fff;
+}
+
+ol.bjqs-markers li a{
+  background: none repeat scroll 0 0 #50B848;
+  color: #FFFFFF;
+  padding: 9px 15px;
+  text-decoration: none;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+  background: none repeat scroll 0 0 #34495E;
+}
+
+.bjqs p.bjqs-caption{
+  display: none;
+  @include media-query(xs) {
+    display: block;
+    background: none repeat scroll 0 0 #50B848;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    width: 100%;
+  }
+}
+.site-title-election {
+  line-height: 0; 
+  background: $gp-green;
+
+  @include media-query(xs) {
+    background: none;
+    margin: 0 auto;
+    position: absolute;
+    top: -40px;
+    z-index: 998;
+  }
+}
+.site-title-election img {
+  margin: 0;
+}
+.description-election {
+  display: none;
+
+  @include media-query(xs) {
+    display: block;
+    color: #fff;
+    float: left;
+    font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin: 0;
+    max-height: 299px;
+    padding: 15px;
+    position: absolute;
+    text-shadow: 0 0 3px #002300;
+    top: 28px;
+    width: 370px;
+    z-index: 997;
+  }
+}
+
+a.banner_more {
+  background: none repeat scroll 0 0 #4B7BBA;
+  color: #FFFFFF;
+  display: block;
+  float: right;
+  font-family: 'Segoe UI';
+  line-height: normal;
+  margin: 15px;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bjqs-markers, .bjqs-controls {
+  display: none;
+  @include media-query(xs) {
+    display: block;
+  }
+}
