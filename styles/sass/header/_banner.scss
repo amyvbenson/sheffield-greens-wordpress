@@ -1,0 +1,155 @@
+.banner {
+	background: $gp-green;
+	width: 100%;
+
+	.search-active & {
+		margin-top: 32px;
+	}
+}
+
+#green-logo {
+	background: url('images/logo-white.png') no-repeat 0px -5px;
+	width: 100%;
+	height: 130px;
+	position: relative;
+}
+#logo-link {
+	height: 200px;
+	text-indent: -900em;
+	width: 100%;
+	position: absolute;
+}
+
+.site-title {
+	margin: 0;
+}
+
+.description {
+    color: #FFFFFF;
+    font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    
+}
+
+.search-button {
+	position: absolute;
+	top: 0;
+	right: 76px;
+	z-index: 1000;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+  -webkit-appearance: none;
+  line-height: 1;
+  padding: 0 8px 0 30px;
+  height: 33px;
+
+  &.search-active {
+    background: $gp-green;
+  }
+
+  &:before {
+    content: "";
+    background: url("images/icons/search.svg") center no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 33px;
+  }
+}
+
+.banner .search-form {
+    position: absolute;
+    left: 0;
+    top: 33px;
+    width: 100%;
+    display: none;
+    background: #fff;
+
+    &.search-active {
+    	display: block;
+    }
+}
+
+.banner .search-field {
+    background-color: #FFFFFF;
+    background-image: url("images/search-icon.png");
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: medium none;
+    cursor: pointer;
+    height: 32px;
+    margin: 2px 0;
+    padding: 0 0 0 34px;
+    position: relative;
+    transition: width 400ms ease 0s, background 400ms ease 0s;
+    width: 100%;
+}
+
+.banner .search-field:focus {
+	background-color: #fff;
+	cursor: text;
+	outline: 0;
+	width: 230px;
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+.search-form .search-submit {
+    display: none;
+}
+
+@include media-query(xs) {
+  .search-button {
+    right: 0;
+  }
+
+  .banner {
+    .search-active & {
+      margin-top: 0;
+    }
+  }
+}
+
+@include media-query(sm) {
+
+	.banner {
+		height: 200px;
+		margin: 10px 0 0 0;
+		position: relative;
+	}
+
+	.site-title img {
+		margin: 15px;
+	}
+
+	.description {
+		background: $gp-green;
+		margin: 15px;
+		position: absolute;
+		bottom: 0;
+		float: left;
+	}
+
+	.banner .search-form {
+		left: auto;
+    right: 20px;
+    top: 15px;
+    width: auto;
+    display: block;
+	}
+
+	.banner .search-field {
+    width: 120px;
+	}
+
+  .search-button {
+    display: none;
+  }
+
+}

@@ -10,6 +10,15 @@ Text Domain: sheffieldgreens
 Author: Samuel Musarika
 */
 
+@import 'sass/variables/colors';
+@import 'sass/mixins/media-query';
+@import 'sass/general/base.scss';
+@import 'sass/general/layout.scss';
+@import 'sass/header/header.scss';
+@import 'sass/header/nav.scss';
+@import 'sass/header/banner.scss';
+@import 'sass/footer/footer.scss';
+
 @import 'sass/admin.scss';
 @import 'sass/archives.scss';
 @import 'sass/calendar.scss';

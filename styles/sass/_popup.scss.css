@@ -144,7 +144,7 @@
 	text-decoration: underline;
 }
 /* Panel Tab/button */
-.tab {
+/*.tab {
     background: none repeat scroll 0 0 #000000;
     height: 35px;
     left: 0;
@@ -184,26 +184,15 @@
     margin: 3px 0;
     vertical-align: middle;
 }
-.tab a.open, .tab a.close {
 
-}
-.tab a.open {
-}
-.tab a.close {
-}
-.usr a.open, .usr a.close {
-}
 .gst a.open {
 	width: 112px;
 }
 .gst a.close {
 	width: 95px;
 	z-index: 999;
-}
-.tab a:hover.open {
-}
-.tab a:hover.close {
-}
+}*/
+
 
 #backgroundPopup{
 	display: none;
@@ -239,7 +228,7 @@
 	width: 12px;
 	padding: 5px;
 }
-#utility{
+/*#utility{
     background: none repeat scroll 0 0 #000000;
     color: #FFFFFF;
     font-family: roboto;
@@ -247,7 +236,7 @@
 	margin: 0 0 10px;
     width: 100%;
     z-index: 999;
-}
+}*/
 span.follow a img {
     height: 25px;
     margin: 2px 5px;

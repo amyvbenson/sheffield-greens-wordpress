@@ -10,7 +10,7 @@
  
 	<?php } // if pages=2 ?>
     
-    <div id="post">
+    <div id="post" class="col-main">
 
 <?php query_posts($query_string . '&cat=-6684'); ?>
 
@@ -56,7 +56,7 @@
 
     </div> <!-- /content -->
     
-    <div id="sidebar">
+    <div id="sidebar" class="col-sidebar">
     	<?php get_sidebar(); ?>
     </div> <!-- /sidebar -->
     

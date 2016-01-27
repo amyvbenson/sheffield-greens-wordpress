@@ -1,0 +1,84 @@
+#green-header {
+	width: 100%;
+}
+
+.top-header {
+	background: #000;
+	color: #FFF;
+	font-family: roboto;
+	height: 35px;
+	width: 100%;
+	z-index: 999;
+} 
+
+.top-header-options, .top-header-utilities {
+	display: none;
+}
+
+.tab {
+	height: 35px;
+	left: 0;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 999;
+}
+.tab ul.login {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.tab ul.login li {
+	float: left;
+	margin: 0 10px;
+	text-align: left;
+}
+.tab ul.login li a {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold !important;
+}
+.tab ul.login li a:hover {
+	color: #ffffff;
+}
+#toggle {
+}
+.tab .sep {
+	color: #ffffff;
+}
+.tab .follow {
+	float: left;
+	font-size: 10px;
+	margin: 3px 0;
+	vertical-align: middle;
+}
+
+.gst a.open {
+	width: 112px;
+}
+.gst a.close {
+	width: 95px;
+	z-index: 999;
+}
+
+.header-rss {
+	display: none;
+}
+
+@include media-query(xs) {
+	.header-rss {
+		display: inline-block;
+	}
+}
+
+@include media-query(sm) {
+	.top-header {
+		margin: 0 0 10px 0;
+	}
+	
+	.top-header-options, .top-header-utilities {
+		display: block;
+	}
+}

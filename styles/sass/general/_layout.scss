@@ -1,0 +1,68 @@
+
+#main {
+	width: 100%;
+	max-width: 970px;
+	margin: 0 auto;
+}
+
+
+#main-container {
+	box-sizing: border-box;
+	background: #FFF;
+	padding: 20px 15px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+#container {
+	position: relative;
+}
+
+.col-main, .col-sidebar, .col-thirds {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+@include media-query(sm) {
+
+	#main-container {
+		margin: 20px 0;
+	}
+
+	.col-main {
+		margin: 10px 1%;
+		padding: 15px;
+		width: 69%;
+		float: left;
+	}
+
+	.col-sidebar {
+		float: right;
+		width: 27%;
+		margin: 25px 1% 30px 1%;
+	}
+
+	.col-thirds {
+		width: percentage(1/3);
+		float: left;
+	}
+
+}
+
+
+
+#post {
+	/*display: inline;*/
+	
+	font-family: "Segoe UI",Tahoma,Geneva,sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	
+	/*width: 640px;*/
+}
+
+#sidebar {
+	
+	font-size: 0.9em;
+	/*display: inline;*/
+}

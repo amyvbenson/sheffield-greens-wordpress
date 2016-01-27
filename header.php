@@ -3,6 +3,7 @@
 <head>
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
@@ -42,13 +43,23 @@
 	wp_head();
 	?>
 
+    <?php if ( is_singular()||is_archive()): ?>
+        <style>
+        @media (min-width: 768px) {
+            .banner {
+                background: url('<?php header_image(); ?>') center 100% no-repeat;
+            }
+        }
+        </style>
+    <?php endif; ?>   
+
 </head>
 
 <body <?php body_class($class); ?>>
 
 
 <!-- BEGIN OPTIONS POPUP -->
-<div id="utility">
+<div id="utility" class="top-header">
 <?php include(TEMPLATEPATH . '/includes/popup-panel.php'); ?>
 </div>
 <!-- END OPTIONS POPUP -->
@@ -58,9 +69,13 @@
 <div id="green-header">
 
 <!-- BEGIN NAVIGATION MENU -->
-    <div id="access">   
+    <div id="access" class="nav" role="navigation">   
 	
 		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'Main' ) ); ?>
+
+        <button class="search-button" data-toggle-search>Search</button>
+
+        <button class="nav-button" data-toggle-nav>Menu</button>
     
     </div>
 <!-- END NAVIGATION MENU -->
@@ -73,13 +88,9 @@
 <?php } else { ?>
 
 <!-- BEGIN BANNER -->
-    <div id="banner" class="rounded">
+    <div id="banner" class="banner">
 
-		<?php if ( is_singular()||is_archive()): ?>
-        <img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
-		<?php endif; ?>       
-        
-                    
+		        
     <!-- BEGIN LOGO -->
  			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 			<h1 class="site-title"><img src="<?php bloginfo('template_directory'); ?>/images/logo-green.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></h1>

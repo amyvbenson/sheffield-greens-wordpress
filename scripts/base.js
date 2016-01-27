@@ -9,5 +9,7 @@ jQuery(document).ready(function(){
 		autoHeight: false
 	});
 
+	console.log('jj')
+
 });
 })(jQuery);

@@ -111,7 +111,7 @@
 
     <div id="container">
     
-        <div id="post">
+        <div id="post" class="col-main">
             
             <h1 class="page_h1"><?php the_title(); ?> <?php edit_post_link( __( 'Edit Page','sheffieldgreens' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?></h1>
             
@@ -245,7 +245,7 @@
 
     <div id="container">
     
-        <div id="post">
+        <div id="post" class="col-main">
         
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         
@@ -262,6 +262,7 @@
             <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:','sheffieldgreens' ), 'after' => '</div>' ) ); ?>
           
 			<?php if ( is_page(  array('People','Affinity Schemes','results') ) ) { ?>
+      
                 <ul id="subpages_ul">
                 <?php wp_list_pages('depth=1&title_li=&child_of='.$post->ID.''); ?>
                 </ul>
@@ -419,7 +420,7 @@
       
         </div><!-- #post -->
     
-        <div id="sidebar">
+        <div id="sidebar" class="col-sidebar">
         
         <?php get_sidebar(); ?>
         

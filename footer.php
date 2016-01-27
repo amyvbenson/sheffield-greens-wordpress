@@ -4,12 +4,12 @@
 
 <div class="centre">
 
-<div id="footer-menu">
+<div id="footer-menu" class="col-thirds">
 	<?php wp_nav_menu( array( 'theme_location' => 'Footer' ) ); ?>
 </div> <!-- /Menu -->
 
 
-<div id="newsletter">
+<div id="newsletter" class="col-thirds">
 
 <h1>Join our mailing list</h1>
 
@@ -55,7 +55,7 @@
 
 </div>
 
-<div id="copyright">
+<div id="copyright" class="col-thirds">
     <p>Promoted by <?php if ( get_option('green_promoted_by') <> "" ) { echo stripslashes(get_option('green_promoted_by')); } ?></p>
     <p><?php if ( get_option('green_promoted_by_address') <> "" ) { echo stripslashes(get_option('green_promoted_by_address')); } ?></p>
     <p>on behalf of Sheffield Green Party</p>
@@ -103,6 +103,18 @@
             var p = jQuery(window).scrollTop();
             jQuery(div).css('position',((p)>start) ? 'fixed' : 'static');
             jQuery(div).css('top',((p)>start) ? '0px' : '');
+        });
+
+        jQuery('[data-toggle-nav]').on('click', function () {
+            jQuery(this).toggleClass('active')
+            jQuery('.menu-header').toggleClass('active');
+            jQuery('.search-active, [data-toggle-search]').removeClass('search-active');
+        });
+
+        jQuery('[data-toggle-search]').on('click', function () {
+            jQuery(this).toggleClass('search-active');
+            jQuery('.banner .search-form, #green-header').toggleClass('search-active');
+            jQuery('.menu-header, [data-toggle-nav]').removeClass('active');
         });
      
     });

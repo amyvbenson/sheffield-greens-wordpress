@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0
+}
+body{
+	background: #EBEBEB url("images/bg.png") repeat scroll 0 0;
+	color: #000;
+	font-family: Helvetica,Arial,"Lucida Grande",Verdana,sans-serif;
+	font-size: 100%;
+	line-height: 20px;
+}
+
+a { 
+	text-decoration: none;
+	font-weight: normal;
+	color:#005F7F;
+
+	&:hover, &:focus, &:active {
+		color:#66B800;
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+	display: inline-block;
+}
