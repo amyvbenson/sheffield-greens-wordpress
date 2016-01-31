@@ -118,7 +118,7 @@
 <div id="donate"  class="featured-section">
 
 
-  <div id="donations">
+  <div id="donations" class="featured-main-wide">
 
     <h2>Donate</h2>
 
@@ -136,7 +136,7 @@
 
   </div>      
 
-  <div class="donation_info">
+  <div class="donation_info" class="featured-main-wide">
 
     <p>We don't get donations from big private companies and unions like other parties do. Instead, we rely on small donations from lots of individuals. Can you help, please?</p>
     <p>What your donation could fund :</p>

@@ -670,7 +670,10 @@ a.banner_more {
   .video-menu, .featured-sidebar {
     width: 28%;
     float: left;
-    margin-left: 2%; } }
+    margin-left: 2%; }
+  .featured-main-wide, .featured-sidebar-wide {
+    width: 50%;
+    float: left; } }
 
 #donations {
   background: #E74C3C;
@@ -706,11 +709,6 @@ a.banner_more {
   background: none repeat scroll 0 0 #FFFFFF;
   padding: 30px;
   box-sizing: border-box; }
-
-@media only screen and (min-width: 768px) {
-  #donations, .donation_info {
-    width: 50%;
-    float: left; } }
 
 #login h1 a {
   background: url("../images/admin/logo-white.png") no-repeat top;
@@ -2657,7 +2655,7 @@ span.edit-link {
   width: auto; }
 
 .entry-content img {
-  max-width: 640px;
+  max-width: 50%;
   height: auto; }
 
 #slider-posts .feature .alignleft {
@@ -2688,6 +2686,8 @@ span.edit-link {
   background: none repeat scroll 0 0 #FFFFDA;
   padding: 0;
   text-align: center; }
+  .entry-content .wp-caption {
+    max-width: 50%; }
 
 .wp-caption-text {
   font-size: 12px;
@@ -2696,8 +2696,8 @@ span.edit-link {
   text-align: center; }
 
 .wp-caption img {
-  background: transparent none repeat scroll 0 0;
-  border: 0 none; }
+  width: 100%;
+  max-width: 100%; }
 
 p#slider-nav {
   margin: 0  0 10px 15px;

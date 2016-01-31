@@ -285,7 +285,7 @@ span.edit-link {
 	width: auto;
 }
 .entry-content img {
-	max-width: 640px;
+	max-width: 50%;
 	height: auto;
 }	
 #slider-posts .feature .alignleft {
@@ -314,10 +314,14 @@ span.edit-link {
 
 /*== CAPTION LAYOUT==*/
 
-.wp-caption{
+.wp-caption {
 	background: none repeat scroll 0 0 #FFFFDA;
 	padding: 0;
 	text-align: center;
+
+  .entry-content & {
+    max-width: 50%; 
+  }
 }
 .wp-caption-text
 {
@@ -327,8 +331,8 @@ span.edit-link {
 	text-align: center;
 }
 .wp-caption img {
-	background:transparent none repeat scroll 0 0;
-	border:0 none;
+  width: 100%;
+  max-width: 100%;
 }
 
 

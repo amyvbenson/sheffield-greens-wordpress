@@ -36,10 +36,3 @@
   box-sizing: border-box;
   
 }
-
-@include media-query(sm) {
-  #donations, .donation_info {
-    width: 50%;
-    float: left;
-  }
-}
