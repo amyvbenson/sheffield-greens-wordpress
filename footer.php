@@ -116,6 +116,10 @@
             jQuery('.banner .search-form, #green-header').toggleClass('search-active');
             jQuery('.menu-header, [data-toggle-nav]').removeClass('active');
         });
+
+        jQuery('#video iframe, #video object').each(function(){
+            jQuery(this).wrap('<div class="video-wrapper" />')
+        })
      
     });
     </script>

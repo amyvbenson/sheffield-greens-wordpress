@@ -1,0 +1,45 @@
+#donations {
+  background: #E74C3C;
+  color: #FFFFFF;
+  font-family: 'Roboto', arial, sans-serif;
+  padding: 50px;
+  position: relative;
+  box-sizing: border-box;
+}
+#donations h2 {
+  font-family: 'Roboto';
+  font-size: 40px;
+  margin: 0 0 20px;
+}
+#donateplusform input {
+  background: #FFFFFF !important;
+  border: medium none !important;
+  color: #E74C3C !important;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 10px 0 !important;
+  outline: medium none !important;
+  padding-left: 15px !important;
+}
+
+#donations .submit input {
+  background: rgba(0, 0, 0, 0) !important;
+  border: medium none !important;
+  height: auto !important;
+  padding: 0 !important;
+  width: auto !important;
+}
+.donation_info {
+  background: none repeat scroll 0 0 #FFFFFF;
+  padding: 30px;
+  
+  box-sizing: border-box;
+  
+}
+
+@include media-query(sm) {
+  #donations, .donation_info {
+    width: 50%;
+    float: left;
+  }
+}
