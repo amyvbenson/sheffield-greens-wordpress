@@ -135,18 +135,19 @@
     <?php } ?>	          
 
   </div>      
+  <div class="featured-main-wide">
+    <div class="donation_info">
 
-  <div class="donation_info" class="featured-main-wide">
+      <p>We don't get donations from big private companies and unions like other parties do. Instead, we rely on small donations from lots of individuals. Can you help, please?</p>
+      <p>What your donation could fund :</p>
 
-    <p>We don't get donations from big private companies and unions like other parties do. Instead, we rely on small donations from lots of individuals. Can you help, please?</p>
-    <p>What your donation could fund :</p>
-
-    <p><strong>&pound;20</strong> would pay for 750 window posters for the next local elections.</p>
-    <p><strong>&pound;50</strong> would pay for 2,000 full colour council election leaflets to elect more councillors.</p>
-    <p><strong>&pound;100</strong> would pay for 10,000 full colour leaflets to elect an MEP in the region in May 2014. Under the Freepost scheme those leaflets will be delivered free by The Royal Mail saving &pound;5,000 postage costs </p>
-    <p>Every pound helps us to get our message across and get more Greens elected. Please <a href="http://sheffieldgreenparty.org.uk/about-us/donate/">click here</a> to make a donation.</p> 
+      <p><strong>&pound;20</strong> would pay for 750 window posters for the next local elections.</p>
+      <p><strong>&pound;50</strong> would pay for 2,000 full colour council election leaflets to elect more councillors.</p>
+      <p><strong>&pound;100</strong> would pay for 10,000 full colour leaflets to elect an MEP in the region in May 2014. Under the Freepost scheme those leaflets will be delivered free by The Royal Mail saving &pound;5,000 postage costs </p>
+      <p>Every pound helps us to get our message across and get more Greens elected. Please <a href="http://sheffieldgreenparty.org.uk/about-us/donate/">click here</a> to make a donation.</p> 
 
 
+    </div>
   </div>
 
 </div><!-- /donate -->
@@ -166,25 +167,7 @@
       <div id="join">
         <a id="join-link" href="http://join.greenparty.org.uk/"></a>
       </div>
-<!--            
-        <div id="join-image" class="">
-        </div>
 
-        <br />
-
-        <div class="joindd"><a class="joindd-link" href="https://www.edirectdebit.com/greenparty/"><span class="hidden"></span></a></div>
-
-        <br />
-
-        <div class="joincard">
-            <a class="joincard-link" href="http://join.greenparty.org.uk/membership/credit_cards.html"><span class="hidden"></span></a>
-        </div>
-
-        <br />
-
-        <div class="joinform">
-            <a class="joinform-link"  href="http://www.greenparty.org.uk/files/housestyle/2007/2Form-WEB.pdf"><span class="hidden"></span></a>
-          </div>-->
 
         </div>            
       </div>
@@ -192,8 +175,6 @@
     </div><!-- /home-info --> 
     
 <div id="search-info"  class="featured-section"> 
-
-  <div class="spacer"></div>
 
   <div id="search_box">
     <p>To search the website, please use the form below. If you are having problems or you can not find what you are looking for, please contact us using the options on our contact page.</p>

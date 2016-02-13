@@ -147,6 +147,13 @@
   }
 }
 
+.featured-section {
+  .search-field {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
 
 @include media-query(sm) {
 

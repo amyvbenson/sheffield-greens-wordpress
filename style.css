@@ -646,6 +646,10 @@ a.banner_more {
   height: auto;
   min-height: 300px; }
 
+.featured-section .search-field {
+  font-size: 16px;
+  padding: 8px; }
+
 @media only screen and (min-width: 768px) {
   .featured-menu-item {
     width: 16.6666666667%;
