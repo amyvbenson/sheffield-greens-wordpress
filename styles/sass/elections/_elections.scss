@@ -1,0 +1,102 @@
+.elections-section {
+	border: 1px solid #E9E9E9;
+	margin: 10px 0;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.election-summary {
+	box-sizing: border-box;
+	font-size: 12px;
+	padding: 10px;
+	order: 2;
+
+	img {
+		width: 100px;
+		float: left;
+		margin-right: 10px;
+	}
+}
+
+.election-info {
+	box-sizing: border-box;
+	background: #E9E9E9;
+	overflow: hidden;
+	padding: 10px;
+	order: 1;
+
+
+	h1 {
+		background: #73A533;
+		color: #FFFFFF;
+		line-height: 30px;
+		margin: 0 0 10px;
+		padding: 0 5px;
+	}
+
+	a {
+		color: #ffffff;
+	}
+}
+
+.election-date {
+	color: #0000FF;
+	font-weight: bold;
+}
+
+.election-page-section {
+	background: #F1F1F1;
+	margin: 10px 0;
+	overflow: auto;
+}
+
+.election-page-image {
+	display: none;
+}
+
+.election-page-info {
+	box-sizing: border-box;
+	background: #E9E9E9;
+	padding: 10px;
+}
+
+@include media-query(xs) {
+	.elections-section {
+		display: block;
+	}
+
+	.election-summary, .election-page-image {
+		width: 34%;
+		float: left;
+	}
+
+	.election-summary {
+		img {
+			width: auto;
+			float: none;
+			margin-right: 0;
+		}
+	}
+
+	.election-info, .election-page-info {
+		width: 66%;
+		float: left;
+	}
+
+	.election-page-info {
+		min-height: 250px;
+	}
+
+	.election-page-image {
+		display: block;
+	}
+}
+
+
+
+
+.election_sidebar h3 {
+	border-bottom: 3px solid #73A533;
+	margin: 0 0 10px 0;
+}

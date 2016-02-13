@@ -714,6 +714,112 @@ a.banner_more {
   padding: 30px;
   box-sizing: border-box; }
 
+.next_election {
+  margin-bottom: 10px;
+  overflow: auto; }
+  .next_election h1 {
+    border-bottom: 3px solid #CCCC22;
+    line-height: 30px;
+    margin: 0 0 15px 0; }
+  .next_election p {
+    overflow: hidden; }
+
+.ballot_box {
+  display: none; }
+
+.election_info {
+  box-sizing: border-box;
+  background: none repeat scroll 0 0 #E9E9E9;
+  padding: 10px;
+  width: 100%; }
+
+@media only screen and (min-width: 450px) {
+  .next_election {
+    margin: 10px;
+    padding: 10px; }
+  .ballot_box {
+    display: block;
+    float: left;
+    margin: 0 2% 0 0;
+    width: 28%; }
+    .ballot_box img {
+      margin: 0 0 10px 0; }
+  .election_info {
+    float: left;
+    padding: 10px;
+    width: 70%; } }
+
+.elections-section {
+  border: 1px solid #E9E9E9;
+  margin: 10px 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column; }
+
+.election-summary {
+  box-sizing: border-box;
+  font-size: 12px;
+  padding: 10px;
+  order: 2; }
+  .election-summary img {
+    width: 100px;
+    float: left;
+    margin-right: 10px; }
+
+.election-info {
+  box-sizing: border-box;
+  background: #E9E9E9;
+  overflow: hidden;
+  padding: 10px;
+  order: 1; }
+  .election-info h1 {
+    background: #73A533;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin: 0 0 10px;
+    padding: 0 5px; }
+  .election-info a {
+    color: #ffffff; }
+
+.election-date {
+  color: #0000FF;
+  font-weight: bold; }
+
+.election-page-section {
+  background: #F1F1F1;
+  margin: 10px 0;
+  overflow: auto; }
+
+.election-page-image {
+  display: none; }
+
+.election-page-info {
+  box-sizing: border-box;
+  background: #E9E9E9;
+  padding: 10px; }
+
+@media only screen and (min-width: 450px) {
+  .elections-section {
+    display: block; }
+  .election-summary, .election-page-image {
+    width: 34%;
+    float: left; }
+  .election-summary img {
+    width: auto;
+    float: none;
+    margin-right: 0; }
+  .election-info, .election-page-info {
+    width: 66%;
+    float: left; }
+  .election-page-info {
+    min-height: 250px; }
+  .election-page-image {
+    display: block; } }
+
+.election_sidebar h3 {
+  border-bottom: 3px solid #73A533;
+  margin: 0 0 10px 0; }
+
 #login h1 a {
   background: url("../images/admin/logo-white.png") no-repeat top;
   width: 100%; }
@@ -1139,76 +1245,6 @@ textarea#donor_comment {
 	border: 1px solid #CCCCCC;
 	height: 186px;
 }*/
-#elections .council {
-  border: 1px solid #E9E9E9;
-  float: left;
-  margin: 10px 0;
-  width: 658px; }
-
-#elections .parliamentary {
-  border: 1px solid #E9E9E9;
-  float: left;
-  margin: 10px 0;
-  width: 658px; }
-
-#elections .european {
-  border: 1px solid #E9E9E9;
-  float: left;
-  margin: 10px 0;
-  width: 658px; }
-
-#elections .parish {
-  border: 1px solid #E9E9E9;
-  float: left;
-  margin: 10px 0;
-  width: 658px; }
-
-#elections .election_info {
-  background: none repeat scroll 0 0 #E9E9E9;
-  float: right;
-  height: auto;
-  overflow: hidden;
-  padding: 10px;
-  width: 385px; }
-
-#elections .election_info h1, .election_page h1 {
-  background: none repeat scroll 0 0 #73A533;
-  color: #FFFFFF;
-  line-height: 30px;
-  margin: 0 0 10px;
-  padding: 0 5px; }
-
-#elections .election_info h1 a, .election_page h1 a {
-  color: #ffffff; }
-
-#elections .infoleft, .page_infoleft {
-  width: 230px;
-  font-size: 12px;
-  float: left;
-  padding: 10px; }
-
-#elections .election_date {
-  color: #0000FF;
-  font-weight: bold; }
-
-.election_sidebar h3 {
-  border-bottom: 3px solid #73A533;
-  margin: 0 0 10px 0; }
-
-.election_page {
-  background: none repeat scroll 0 0 #F1F1F1;
-  float: left;
-  margin: 10px 0;
-  width: 660px; }
-
-.electionpage_info {
-  background: none repeat scroll 0 0 #E9E9E9;
-  float: right;
-  height: 250px;
-  overflow: hidden;
-  padding: 10px;
-  width: 385px; }
-
 #newsletter {
   color: #FFFFFF;
   float: left;
@@ -1698,34 +1734,6 @@ div#header div#slide-holder div#slide-controls p#slide-nav a {
 .accordion ul li {
   margin: 10px 0 0px 25px;
   list-style-type: decimal !important; }
-
-.next_election {
-  margin: 10px;
-  padding: 10px;
-  float: left; }
-
-.next_election h1 {
-  border-bottom: 3px solid #CCCC22;
-  line-height: 30px;
-  margin: 0 0 15px 0; }
-
-.next_election p {
-  overflow: hidden; }
-
-.ballot_box {
-  float: left;
-  margin: 0 10px 0 0;
-  width: 260px; }
-
-.ballot_box img {
-  margin: 0 0 10px 0; }
-
-.election_info {
-  background: none repeat scroll 0 0 #E9E9E9;
-  height: auto;
-  float: right;
-  padding: 10px;
-  width: 640px; }
 
 /* SLIDING PANEL */
 #toppanel {

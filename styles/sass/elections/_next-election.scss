@@ -1,0 +1,50 @@
+.next_election {
+  margin-bottom: 10px;
+  overflow: auto;
+
+  h1 {
+    border-bottom: 3px solid #CCCC22;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+  }
+
+  p {
+    overflow: hidden;
+  }
+}
+
+
+.ballot_box {
+  display: none;
+}
+
+.election_info {
+  box-sizing: border-box;
+  background: none repeat scroll 0 0 #E9E9E9;
+  padding: 10px;
+  width: 100%;
+}
+
+@include media-query(xs) {
+  .next_election {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .ballot_box {
+    display: block;
+    float: left;
+    margin: 0 2% 0 0;
+    width: 28%;
+
+    img {
+      margin: 0 0 10px 0; 
+    }
+  }
+
+  .election_info {
+    float: left;
+    padding: 10px;
+    width: 70%;
+  }
+}
