@@ -4,7 +4,7 @@
 
 <div id="container">
     
-    <div id="post">
+    <div id="post" class="col-main">
 
 <h1 class="page_h1">Search results</h1>
 
@@ -15,7 +15,7 @@
 <?php while (have_posts()) : the_post(); ?>	
 	
 <!-- BEGIN ENTRY LAYOUT -->
-<div class="post_news" id="post-<?php the_ID(); ?>">
+<div id="post-<?php the_ID(); ?>">
     <div id="search">	         		
    				
 	<?php $cti = catch_that_image(); if(isset($cti)){ ?>
@@ -58,7 +58,7 @@
 
     </div> <!-- /content -->
     
-    <div id="sidebar">
+    <div id="sidebar" class="col-sidebar">
     	<?php get_sidebar(); ?>
     </div> <!-- /sidebar -->
     

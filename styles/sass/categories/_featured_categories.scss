@@ -1,5 +1,6 @@
 #featuredCategoriesTabs {
 	margin: 15px 15px 0 15px;
+	overflow: auto;
 }
 #featuredCategoriesTabs a {
 	color: #333333;
@@ -24,60 +25,44 @@
 #featuredCategoriesTabs li a:hover {
 	background-color:#DDDDDD;
 }
-.tab_content {
-	
-}
-#featuredCategories {
+
+
+
+.featured-categories {
 	border: 10px solid #f1f1f1;
 	color:#333333;
 	font-size: 0.8em;
-	float: left;
+	overflow: auto;
 	margin-bottom:30px;
 	background-color:#FFFFFF;
 	padding:15px 14px;
 	background-color:#FFFFFF;
-	width: 922px;
-	display: inline;
 }
-#featuredCategories .meta-nav {
-	display: none;
-}
-#featuredCategories div.post-featured {
-	display: inline;
-	float: left;
+
+.featured-post {
 	margin-bottom: 10px;
-	margin-right: 10px;
-	width: 360px;
+
+	.meta-nav {
+		display: block;
+	}
+
+	.title {
+		font-size: 30px;
+	}
 }
-#featuredCategories div.post-featured .meta-nav {
-	display: block;
-	margin: 20px 0;
-}
-#featuredCategories div.posts {
-	display: inline;
-	float: right;
-	margin-bottom: 10px;
-	width: 540px;
-}
-#featuredCategories div.posts .post {
-	clear: both;
-	height: 70px;
-	margin: 15px 0;
-}
-#featuredCategories h3.title, #archive h1.title {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
-	font-weight: normal;
-	line-height: 45px;
-	margin-bottom: 15px;
-}
-#featuredCategories div.post h2 {
+
+.featured-post-title {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:14px;
 	line-height:20px;
 	margin: 2px 0;
 }
-#featuredCategories div.posts h4.title {
+
+.featured-categories-posts {
+	margin-bottom: 10px;
+}
+
+.featured-categories-title {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height:30px;
 	font-size:14px;
@@ -85,15 +70,12 @@
 	margin-bottom:15px;
 	text-transform:uppercase;
 }
-#featuredCategories div.posts h4.title img {
-	display:inline-block;
-	margin-left:5px;
-}
-#featuredCategories div.cover {
-	display:inline;
+
+.featured-categories-posts .post .cover {
 	float:left;
 	margin-right:10px;
 }
+
 a.readmore, p.more a {
 	background-color: #E62747;
 	color: #FFFFFF;
@@ -105,10 +87,19 @@ a.readmore:hover, p.more a:hover {
 	color: #ffffff;
 	text-decoration: underline;
 }
-#calendar {
-	display: inline;
-	float: left;
-	margin: 10px;
-	overflow: hidden;
-	width: 950px;
+
+@include media-query(sm) {
+
+	.featured-post {
+		float: left;
+		margin-right: 2%;
+		width: 40%;
+	}
+
+	.featured-categories-posts {
+		float: left;
+		width: 58%;
+	}
+
 }
+

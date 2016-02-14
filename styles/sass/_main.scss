@@ -92,9 +92,8 @@ td {
     font-size: 14px !important;
 }
 .post_news, #archive_post {
-	float: left;
 	margin: 10px 0;
-	width: 655px;
+	width: 100%;
 }
 .newsentry {
 	margin: 5px;
@@ -121,7 +120,7 @@ td {
 }
 .wp-pagenavi {
 	clear: both;
-	height: 40px;
+	min-height: 40px;
 }
 .wp-pagenavi a {
 	color: #FF0000;
@@ -133,6 +132,7 @@ td {
 	margin: 2px;
 	padding: 3px 5px;
 	text-decoration: none;
+  display: inline-block;
 }
 /* 3.1 Typographic Elements */
 
