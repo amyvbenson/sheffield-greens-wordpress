@@ -260,37 +260,38 @@ span.edit-link {
 }
 
 /*== IMAGE LAYOUT==*/
-.article img {
-	max-width: 300px;
+
+.entry-content img, .article img {
 	height: auto;
-	width: auto;
-}
-.entry-content img {
-	max-width: 50%;
-	height: auto;
+  &.alignleft, &.alignright {
+    max-width: 50%;
+  }
 }	
 #slider-posts .feature .alignleft {
     float: left;
-    height: auto;
+    
     margin: 0;	
 }
 .article .alignleft, .alignleft {
     float: left;
-    height: auto;
+    
     margin: 0 20px 20px 0;
-    max-width: 640px;
 }
 .entry-content .article .alignleft {
     float: left;
-    height: auto;
+    
     margin: 0;
-    max-width: 660px;
 }
 .article .alignright, .alignright {
 	float: right;
 	margin: 10px 0 10px 15px;
-	width: auto;
-	height: auto;
+}
+
+.wp-caption {
+  max-width: 100%;
+  &.alignright, &.alignleft {
+    max-width: 50%;
+  }
 }
 
 /*== CAPTION LAYOUT==*/

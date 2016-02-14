@@ -2620,37 +2620,31 @@ span.edit-link {
   font-size: 12px; }
 
 /*== IMAGE LAYOUT==*/
-.article img {
-  max-width: 300px;
-  height: auto;
-  width: auto; }
-
-.entry-content img {
-  max-width: 50%;
+.entry-content img, .article img {
   height: auto; }
+  .entry-content img.alignleft, .entry-content img.alignright, .article img.alignleft, .article img.alignright {
+    max-width: 50%; }
 
 #slider-posts .feature .alignleft {
   float: left;
-  height: auto;
   margin: 0; }
 
 .article .alignleft, .alignleft {
   float: left;
-  height: auto;
-  margin: 0 20px 20px 0;
-  max-width: 640px; }
+  margin: 0 20px 20px 0; }
 
 .entry-content .article .alignleft {
   float: left;
-  height: auto;
-  margin: 0;
-  max-width: 660px; }
+  margin: 0; }
 
 .article .alignright, .alignright {
   float: right;
-  margin: 10px 0 10px 15px;
-  width: auto;
-  height: auto; }
+  margin: 10px 0 10px 15px; }
+
+.wp-caption {
+  max-width: 100%; }
+  .wp-caption.alignright, .wp-caption.alignleft {
+    max-width: 50%; }
 
 /*== CAPTION LAYOUT==*/
 .wp-caption {
