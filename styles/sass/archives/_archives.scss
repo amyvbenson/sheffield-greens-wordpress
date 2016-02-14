@@ -30,3 +30,23 @@
 		}
 	}
 }
+
+#archive {
+	font-size: 0.8em;
+}
+#archive_post .meta-nav {
+	margin: 10px 0;
+}
+
+#archives_banner {
+	background-image: url("images/archives.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: 260px;
+	height: 77px;
+
+	a {
+		display: block;	
+	}
+	
+}

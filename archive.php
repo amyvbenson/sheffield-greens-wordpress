@@ -4,7 +4,7 @@
 
 		<div id="container">
         
-			<div id="archive" role="main">
+			<div id="archive" role="main" class="col-main">
             
 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
@@ -67,7 +67,7 @@
 
 			</div><!-- #post -->
             
-            <div id="sidebar">
+            <div id="sidebar" class="col-sidebar">
             	<?php get_sidebar(); ?>
             </div><!-- #sidebar -->
 

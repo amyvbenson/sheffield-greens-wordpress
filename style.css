@@ -931,6 +931,21 @@ a.readmore:hover, p.more a:hover {
     font-weight: normal;
     text-decoration: none; }
 
+#archive {
+  font-size: 0.8em; }
+
+#archive_post .meta-nav {
+  margin: 10px 0; }
+
+#archives_banner {
+  background-image: url("images/archives.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 260px;
+  height: 77px; }
+  #archives_banner a {
+    display: block; }
+
 #login h1 a {
   background: url("../images/admin/logo-white.png") no-repeat top;
   width: 100%; }
@@ -2408,17 +2423,6 @@ td {
   border-radius: 20px; }
 
 /* Content layout */
-#archive {
-  float: left;
-  width: 660px;
-  margin: 10px;
-  font-size: 0.8em;
-  overflow: hidden;
-  display: inline; }
-
-#archive_post .meta-nav {
-  margin: 10px 0; }
-
 #widecolumn {
   display: inline;
   float: left;
@@ -2833,17 +2837,6 @@ p#slider-nav a.activeSlide, p#slider-nav a:hover {
   float: left; }
 
 /* Sidebar */
-#archives_banner {
-  background-image: url("images/archives.png");
-  background-repeat: no-repeat;
-  height: 77px;
-  width: 260px; }
-
-#archives_banner a {
-  display: block;
-  height: 77px;
-  width: 260px; }
-
 div#sidebar h1.widget-title {
   background: none repeat scroll 0 0 #6AB023;
   color: #ffffff;

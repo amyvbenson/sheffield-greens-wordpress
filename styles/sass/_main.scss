@@ -67,17 +67,7 @@ td {
 
 /* Content layout */
 
-#archive {
-	float: left;
-	width: 660px;
-	margin: 10px;
-	font-size: 0.8em;
-	overflow: hidden;
-	display: inline;
-}
-#archive_post .meta-nav {
-	margin: 10px 0;
-}
+
 #widecolumn {
 	display: inline;
 	float: left;
@@ -512,18 +502,6 @@ li.nums {
 	float: left;
 }
 /* Sidebar */
-
-#archives_banner {
-	background-image: url("images/archives.png");
-	background-repeat: no-repeat;
-	height: 77px;
-	width: 260px;
-}
-#archives_banner a {
-	display: block;
-	height: 77px;
-	width: 260px;
-}
 
 div#sidebar h1.widget-title {
 	background: none repeat scroll 0 0 $gp-green;
