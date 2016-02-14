@@ -25,7 +25,7 @@
     <div id="proposedmap">
 		<div id="sheffmap">
 	
-    	  <p><img src="<?php echo bloginfo('template_url'); ?>/images/X-20090129153042390-[Latest].png" alt="" width="900" height="511" border="0" usemap="#Map2" class="mapper noborder iradius16 iopacity70 icolorff0000" style="width: auto; height: auto;" href="<?php bloginfo('url'); ?>/area/east-ecclesfield"/></p>
+    	  <p><img src="<?php echo bloginfo('template_url'); ?>/images/X-20090129153042390-[Latest].png" alt="" border="0" usemap="#Map2" class="mapper noborder iradius16 iopacity70 icolorff0000" style="width: auto; height: auto;" href="<?php bloginfo('url'); ?>/area/east-ecclesfield"/></p>
 		  <p>
 		    
 		    <map name="Map2" id="Map2">

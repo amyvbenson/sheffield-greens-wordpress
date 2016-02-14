@@ -49,6 +49,9 @@ img {
   max-width: 100%;
   display: inline-block; }
 
+#widecolumn {
+  margin: 10px; }
+
 #main {
   width: 100%;
   max-width: 970px;
@@ -2423,13 +2426,6 @@ td {
   border-radius: 20px; }
 
 /* Content layout */
-#widecolumn {
-  display: inline;
-  float: left;
-  margin: 10px;
-  overflow: hidden;
-  width: 950px; }
-
 .article span[style] {
   color: #000000 !important;
   font-family: "Segoe UI",Tahoma,Geneva,sans-serif !important;
