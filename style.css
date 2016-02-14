@@ -905,50 +905,35 @@ a.readmore:hover, p.more a:hover {
     float: left;
     width: 58%; } }
 
-#login h1 a {
-  background: url("../images/admin/logo-white.png") no-repeat top;
-  width: 100%; }
-
-.arclist_fl {
+.arclist_fl, .arclist_fr, #archivebox {
   border-bottom: 3px solid #C0C0C0;
-  display: inline;
-  float: left;
-  margin: 20px;
-  width: 260px; }
-
-.arclist_fr {
-  border-bottom: 3px solid #C0C0C0;
-  display: inline;
-  float: left;
-  margin: 20px;
-  width: 260px; }
+  margin: 20px 0;
+  padding: 0 20px; }
 
 #archivebox {
-  border-bottom: 3px solid #C0C0C0;
-  display: inline;
-  float: right;
-  line-height: 30px;
-  margin: 20px;
-  width: 310px; }
+  line-height: 30px; }
 
-.arclist ul li {
+.arclist li {
   border-bottom: 1px solid #E6E4DB;
   color: #C0C0C0;
   font-size: 14px;
   font-weight: normal; }
 
-.arclist ul li a {
+.arclist a {
   color: #2F2419;
   display: block;
   font-weight: normal;
   line-height: 30px;
   padding: 0 0 0 5px; }
+  .arclist a:hover, .arclist a:focus, .arclist a:active {
+    color: #66b800;
+    display: block;
+    font-weight: normal;
+    text-decoration: none; }
 
-.arclist ul li a:hover {
-  color: #66b800;
-  display: block;
-  font-weight: normal;
-  text-decoration: none; }
+#login h1 a {
+  background: url("../images/admin/logo-white.png") no-repeat top;
+  width: 100%; }
 
 .calendar-table {
   width: 950px;

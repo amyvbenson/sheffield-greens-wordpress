@@ -1,0 +1,32 @@
+.arclist_fl, .arclist_fr, #archivebox  {
+	border-bottom: 3px solid #C0C0C0;
+	margin: 20px 0;
+	padding: 0 20px;
+}
+#archivebox {
+	line-height:30px;
+}
+
+.arclist {
+	li {
+		border-bottom: 1px solid #E6E4DB;
+		color: #C0C0C0;
+		font-size: 14px;
+		font-weight: normal;
+	}
+
+	a {
+		color: #2F2419;
+		display: block;
+		font-weight: normal;
+		line-height: 30px;
+		padding: 0 0 0 5px;
+
+		&:hover, &:focus, &:active {
+			color: #66b800;
+			display: block;
+			font-weight: normal;
+			text-decoration: none;
+		}
+	}
+}
