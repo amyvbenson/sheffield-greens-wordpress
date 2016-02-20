@@ -1,31 +1,44 @@
 module.exports = function(grunt) {
 
-  // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
-      options: {
-          sourceMap: true
+      dev: {
+        options: {
+          sourcemap: 'auto',
+          style: 'expanded'
+        },
+        files: {
+          'style.css': 'styles/styles.scss'
+        }
+        
       },
       dist: {
-          files: {
-              'style.css': 'styles/styles.scss'
-          }
+        options: {
+          sourcemap: 'none',
+          style: 'compressed'
+        },
+        files: {
+          'style.css': 'styles/styles.scss'
+        }
+        
       }
     },
 
     watch: {
       sass: {
         files: 'styles/**/*.scss',
-        tasks: ['sass'],
+        tasks: ['sass:dev']
       }
     }
+
   });
 
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  // Default task(s).
-  grunt.registerTask('default', ['sass']);
+  grunt.registerTask('default', ['sass:dev']);
+  grunt.registerTask('dist', ['sass:dist']);
 
 };
