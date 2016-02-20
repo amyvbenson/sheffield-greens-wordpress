@@ -1032,3 +1032,45 @@ function exclude_category($query) {
 return $query;
 }
 add_filter('pre_get_posts', 'exclude_category');
+
+/**
+ * Get related posts - posts in category that matches the page slug, used on people pages
+ */
+function get_related_posts() {
+    global $post;
+
+    $related_posts = get_posts(array( 'numberposts' => 10, 'category_name' => $post->post_name ));
+    if ($related_posts) {
+
+	    $output = '<h2>Related posts</h2>';
+	    $output .= '<ul class="related-posts">';
+	    foreach ( $related_posts as $related_post ) {
+	        $output .= '<li><a href="' . get_permalink( $related_post->ID ) . '">' . apply_filters( 'the_title', $related_post->post_title, $related_post->ID ) . '</a></li>';
+	    }
+	    $output .= '</ul>';
+
+	    return $output;
+	  }
+}
+
+/**
+ * Get slug of the parent page
+ */
+function the_parent_slug() {
+  global $post;
+  if($post->post_parent == 0) return '';
+  $post_data = get_post($post->post_parent);
+  return $post_data->post_name;
+}
+
+/**
+ * Show related posts - only show for children on specific categories
+ */
+function show_related_posts() {
+	global $post;
+	$parent_slug = the_parent_slug();
+	if ($parent_slug == 'activist' || $parent_slug == 'councillors' || $parent_slug == 'green-party-officers') {
+		return true;
+	}
+	return false;
+}

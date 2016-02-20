@@ -128,7 +128,12 @@
         
             <div class="entry-content">
             
-			<?php the_content(); ?>
+      			<?php the_content(); ?>
+            <?php $parent_slug = the_parent_slug(); 
+              if (show_related_posts()) {
+                echo get_related_posts();;
+              }
+            ?>   
             
             <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:','sheffieldgreens' ), 'after' => '</div>' ) ); ?>
           
