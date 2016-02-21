@@ -15,21 +15,22 @@
 
 .featured-list-image {
   background: #FFF;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 
 .featured-list-content {
   display: block;
-  width: 50%;
+  width: 60%;
   float: left;
   padding: 10px;
   box-sizing: border-box;
   color: #FFF;
 
   h2 {
-    font-size: 18px;
     margin: 0;
+    font-size: 16px;
+    word-break: break-word;
   }
 
   &:hover, &:focus, &:active {
@@ -173,9 +174,22 @@
     width: 54%;
   }
 
+  .featured-list-image {
+    width: 50%;
+  }
+
+  .featured-list-content {
+    width: 50%;
+    h2 {
+      font-size: 18px;
+    }
+  }
+
   .featured-sidebar-articles {
     float: left;
     max-width: 46%; 
+    padding-left: 20px;
+    box-sizing: border-box;
   }
 
   .video-content, .featured-main {

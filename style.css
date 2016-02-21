@@ -680,21 +680,22 @@ a.banner_more {
 
 .featured-list-image {
   background: #FFF;
-  width: 50%;
+  width: 40%;
   float: left;
 }
 
 .featured-list-content {
   display: block;
-  width: 50%;
+  width: 60%;
   float: left;
   padding: 10px;
   box-sizing: border-box;
   color: #FFF;
 }
 .featured-list-content h2 {
-  font-size: 18px;
   margin: 0;
+  font-size: 16px;
+  word-break: break-word;
 }
 .featured-list-content:hover, .featured-list-content:focus, .featured-list-content:active {
   text-decoration: underline;
@@ -817,9 +818,22 @@ a.banner_more {
     width: 54%;
   }
 
+  .featured-list-image {
+    width: 50%;
+  }
+
+  .featured-list-content {
+    width: 50%;
+  }
+  .featured-list-content h2 {
+    font-size: 18px;
+  }
+
   .featured-sidebar-articles {
     float: left;
     max-width: 46%;
+    padding-left: 20px;
+    box-sizing: border-box;
   }
 
   .video-content, .featured-main {
@@ -3292,11 +3306,7 @@ p#slider-nav a.activeSlide, p#slider-nav a:hover {
 }
 
 #recent-article li {
-  display: inline;
-  float: left;
-  font-size: 16px;
-  padding: 0 0 10px 20px;
-  width: 320px;
+  padding: 0 0 10px 0;
 }
 
 #recent-article li a {
@@ -3589,7 +3599,7 @@ img#wpstats {
   clear: both;
   color: #ffffff;
   display: block;
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 0;
 }
 
 #shop_link a {

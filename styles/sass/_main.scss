@@ -388,9 +388,7 @@ p#slider-nav a.activeSlide,p#slider-nav a:hover {
 #comm ul li a {
 	display: inline;
 }
-#recent-article {
 
-}
 #recent-article .th {
 	float: left;
 	margin: 0 5px 5px 0;
@@ -401,12 +399,8 @@ p#slider-nav a.activeSlide,p#slider-nav a:hover {
 #recent-article p {
 	font-size: 0.9em;
 }
-#recent-article li {
-    display: inline;
-    float: left;
-    font-size: 16px;
-    padding: 0 0 10px 20px;
-    width: 320px;
+#recent-article li {    
+    padding: 0 0 10px 0;
 }
 #recent-article li a {
 	color: #444444;
@@ -686,7 +680,7 @@ img#wpstats {
     clear: both;
 	color: #ffffff;
     display: block;
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 0;
 }
 #shop_link a {
 	color: #ffffff;

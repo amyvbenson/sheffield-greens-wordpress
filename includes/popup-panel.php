@@ -44,7 +44,7 @@ if (is_user_logged_in()) {
 		<span class="follow">
 			<a target="_blank" href="http://www.facebook.com/pages/Sheffield-Green-Party/175900643477"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.png" alt="Facebook"/></a>
 			<a target="_blank" href="http://twitter.com/sheffieldgreens"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.png" alt="Twitter"/></a>
-			<a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png" alt="RSS"/></a>
+			<a href="<?php bloginfo('rss2_url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/rss.png" alt="RSS" class="header-rss"/></a>
 			<a href="http://eepurl.com/bcDkFr"><img src="<?php bloginfo('template_directory'); ?>/images/email.png" alt="Email"/></a> 
 			<a href="http://www.youtube.com/user/sheffieldgreenparty/"><img src="<?php bloginfo('template_directory'); ?>/images/youtube.png" alt="Youtube"/></a>
 		</span>
