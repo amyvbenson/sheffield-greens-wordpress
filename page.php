@@ -259,7 +259,11 @@
 
 <?php } elseif (is_page(array('Streets Ahead. The battle for our Street Trees'))) { ?>
 
-	<?php query_posts('showposts=5&category_name=Trees'); ?>    
+	<?php query_posts('showposts=5&category_name=Trees'); ?>   
+
+<?php } elseif (is_page(array('EU Referendum-vote Yes'))) { ?>
+
+  <?php query_posts('showposts=5&category_name=EU Referendum'); ?>   
     
 <?php } elseif (is_page()) { ?>
 
