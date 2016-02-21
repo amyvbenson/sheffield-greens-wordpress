@@ -32,8 +32,9 @@ get_header(); ?>
    
    <div id="post" class="col-main">
 
-       <div id="font_tools">Font not the right size? &nbsp; <span class="increase_font"><input type="button" value="increase" class="increaseFont"></input></span> &nbsp; 
-        <span class="decrease_font"><input type="button" value="decrease" class="decreaseFont"></input></span></div>  
+       <div id="font_tools">
+       Font not the right size? &nbsp; <span class="increase_font"><input type="button" value="increase" class="increaseFont" /></span> &nbsp; 
+        <span class="decrease_font"><input type="button" value="decrease" class="decreaseFont"/></span></div>  
         
         <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 

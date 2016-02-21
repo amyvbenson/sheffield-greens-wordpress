@@ -28,6 +28,12 @@ pre + h2{
   margin: 0;
 }
 
+#banner-slide {
+  @include media-query(md) {
+    min-height: 400px;
+  }
+}
+
 ul.bjqs-controls.v-centered li a{
   display:block;
   padding:10px;

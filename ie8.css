@@ -1,30 +1,3 @@
-/*!
-Theme Name: Sheffield Greens
-Theme URI: http://www.sheffieldgreenparty.org.uk/
-Description: Sheffield Green Party Website theme version 3.0.0 now with added responsiveness.
-Version: 3.0.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: featured-images, green
-Text Domain: sheffieldgreens
-Author: Samuel Musarika
-*/
-/**
- * Media query mixin
- *
- * Sets min-width media queries at specified breakpoints
- *
- * Usage:
- * @include media-query(sm) {
- *   // content
- * }
- *
- * Results in:
- * @media only screen and (min-width: 1200px) {
- *   // content
- * }
- *
- */
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 * {
   margin: 0;
@@ -83,29 +56,28 @@ img {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-  #main-container {
-    margin: 20px 0;
-  }
-
-  .col-main {
-    margin: 10px 1%;
-    padding: 15px;
-    width: 69%;
-    float: left;
-  }
-
-  .col-sidebar {
-    float: right;
-    width: 27%;
-    margin: 25px 1% 30px 1%;
-  }
-
-  .col-thirds {
-    width: 33.33333%;
-    float: left;
-  }
+#main-container {
+  margin: 20px 0;
 }
+
+.col-main {
+  margin: 10px 1%;
+  padding: 15px;
+  width: 69%;
+  float: left;
+}
+
+.col-sidebar {
+  float: right;
+  width: 27%;
+  margin: 25px 1% 30px 1%;
+}
+
+.col-thirds {
+  width: 33.33333%;
+  float: left;
+}
+
 #post {
   /*display: inline;*/
   font-family: "Segoe UI",Tahoma,Geneva,sans-serif;
@@ -194,20 +166,18 @@ img {
   display: none;
 }
 
-@media only screen and (min-width: 450px) {
-  .header-rss {
-    display: inline-block;
-  }
+.header-rss {
+  display: inline-block;
 }
-@media only screen and (min-width: 768px) {
-  .top-header {
-    margin: 0 0 10px 0;
-  }
 
-  .top-header-options, .top-header-utilities {
-    display: block;
-  }
+.top-header {
+  margin: 0 0 10px 0;
 }
+
+.top-header-options, .top-header-utilities {
+  display: block;
+}
+
 .nav {
   background: #6AB023;
   width: 100%;
@@ -298,29 +268,28 @@ img {
   width: 200px;
 }
 
-@media only screen and (min-width: 450px) {
-  .nav {
-    margin: 20px 0;
-    min-height: 30px;
-    overflow: auto;
-  }
-  .search-active .nav {
-    margin-top: 32px;
-  }
-
-  .nav-button {
-    display: none;
-  }
-
-  .menu {
-    display: block;
-  }
-
-  .menu-item {
-    float: left;
-    position: relative;
-  }
+.nav {
+  margin: 20px 0;
+  min-height: 30px;
+  overflow: auto;
 }
+.search-active .nav {
+  margin-top: 32px;
+}
+
+.nav-button {
+  display: none;
+}
+
+.menu {
+  display: block;
+}
+
+.menu-item {
+  float: left;
+  position: relative;
+}
+
 .banner {
   background: #6AB023;
   width: 100%;
@@ -425,50 +394,48 @@ img {
   display: none;
 }
 
-@media only screen and (min-width: 450px) {
-  .search-button {
-    right: 0;
-  }
-
-  .search-active .banner {
-    margin-top: 0;
-  }
+.search-button {
+  right: 0;
 }
-@media only screen and (min-width: 768px) {
-  .banner {
-    height: 200px;
-    margin: 10px 0 0 0;
-    position: relative;
-  }
 
-  .site-title img {
-    margin: 15px;
-  }
-
-  .description {
-    background: #6AB023;
-    margin: 15px;
-    position: absolute;
-    bottom: 0;
-    float: left;
-  }
-
-  .banner .search-form {
-    left: auto;
-    right: 20px;
-    top: 15px;
-    width: auto;
-    display: block;
-  }
-
-  .banner .search-field {
-    width: 120px;
-  }
-
-  .search-button {
-    display: none;
-  }
+.search-active .banner {
+  margin-top: 0;
 }
+
+.banner {
+  height: 200px;
+  margin: 10px 0 0 0;
+  position: relative;
+}
+
+.site-title img {
+  margin: 15px;
+}
+
+.description {
+  background: #6AB023;
+  margin: 15px;
+  position: absolute;
+  bottom: 0;
+  float: left;
+}
+
+.banner .search-form {
+  left: auto;
+  right: 20px;
+  top: 15px;
+  width: auto;
+  display: block;
+}
+
+.banner .search-field {
+  width: 120px;
+}
+
+.search-button {
+  display: none;
+}
+
 #footer {
   background: url("images/bg_footer.png") no-repeat scroll right 0 #001d00;
   padding: 10px 0 0 0;
@@ -552,11 +519,7 @@ pre + h2 {
   margin: 0 auto 0;
   position: relative;
   width: 100%;
-}
-@media only screen and (min-width: 450px) {
-  #election_container {
-    margin: 70px auto 0;
-  }
+  margin: 70px auto 0;
 }
 
 #banner-fade,
@@ -564,10 +527,8 @@ pre + h2 {
   margin: 0;
 }
 
-@media only screen and (min-width: 993px) {
-  #banner-slide {
-    min-height: 400px;
-  }
+#banner-slide {
+  min-height: 400px;
 }
 
 ul.bjqs-controls.v-centered li a {
@@ -597,29 +558,21 @@ ol.bjqs-markers li a:hover {
 
 .bjqs p.bjqs-caption {
   display: none;
-}
-@media only screen and (min-width: 450px) {
-  .bjqs p.bjqs-caption {
-    display: block;
-    background: none repeat scroll 0 0 #6AB023;
-    color: #FFFFFF;
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-    width: 100%;
-  }
+  display: block;
+  background: none repeat scroll 0 0 #6AB023;
+  color: #FFFFFF;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  width: 100%;
 }
 
 .site-title-election {
   line-height: 0;
   background: #6AB023;
-}
-@media only screen and (min-width: 450px) {
-  .site-title-election {
-    background: none;
-    margin: 0 auto;
-    position: absolute;
-    top: -40px;
-    z-index: 998;
-  }
+  background: none;
+  margin: 0 auto;
+  position: absolute;
+  top: -40px;
+  z-index: 998;
 }
 
 .site-title-election img {
@@ -628,23 +581,19 @@ ol.bjqs-markers li a:hover {
 
 .description-election {
   display: none;
-}
-@media only screen and (min-width: 450px) {
-  .description-election {
-    display: block;
-    color: #fff;
-    float: left;
-    font-family: "Segoe UI",Arial,Helvetica,sans-serif;
-    font-size: 14px;
-    margin: 0;
-    max-height: 299px;
-    padding: 15px;
-    position: absolute;
-    text-shadow: 0 0 3px #002300;
-    top: 28px;
-    width: 370px;
-    z-index: 997;
-  }
+  display: block;
+  color: #fff;
+  float: left;
+  font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  margin: 0;
+  max-height: 299px;
+  padding: 15px;
+  position: absolute;
+  text-shadow: 0 0 3px #002300;
+  top: 28px;
+  width: 370px;
+  z-index: 997;
 }
 
 a.banner_more {
@@ -663,11 +612,7 @@ a.banner_more {
 
 .bjqs-markers, .bjqs-controls {
   display: none;
-}
-@media only screen and (min-width: 450px) {
-  .bjqs-markers, .bjqs-controls {
-    display: block;
-  }
+  display: block;
 }
 
 .featured-section {
@@ -808,61 +753,60 @@ a.banner_more {
   padding: 8px;
 }
 
-@media only screen and (min-width: 768px) {
-  .featured-menu-item {
-    width: 16.66667%;
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 18px;
-    padding: 15px 10px;
-    float: none;
-    min-height: 0;
-  }
-
-  .featured-list {
-    float: left;
-    position: relative;
-    width: 54%;
-  }
-
-  .featured-list-image {
-    width: 50%;
-  }
-
-  .featured-list-content {
-    width: 50%;
-  }
-  .featured-list-content h2 {
-    font-size: 18px;
-  }
-
-  .featured-sidebar-articles {
-    float: left;
-    max-width: 46%;
-    padding-left: 20px;
-    box-sizing: border-box;
-  }
-
-  .video-content, .featured-main {
-    width: 70%;
-    float: left;
-  }
-
-  .featured-main {
-    min-height: 500px;
-  }
-
-  .video-menu, .featured-sidebar {
-    width: 28%;
-    float: left;
-    margin-left: 2%;
-  }
-
-  .featured-main-wide, .featured-sidebar-wide {
-    width: 50%;
-    float: left;
-  }
+.featured-menu-item {
+  width: 16.66667%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding: 15px 10px;
+  float: none;
+  min-height: 0;
 }
+
+.featured-list {
+  float: left;
+  position: relative;
+  width: 54%;
+}
+
+.featured-list-image {
+  width: 50%;
+}
+
+.featured-list-content {
+  width: 50%;
+}
+.featured-list-content h2 {
+  font-size: 18px;
+}
+
+.featured-sidebar-articles {
+  float: left;
+  max-width: 46%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.video-content, .featured-main {
+  width: 70%;
+  float: left;
+}
+
+.featured-main {
+  min-height: 500px;
+}
+
+.video-menu, .featured-sidebar {
+  width: 28%;
+  float: left;
+  margin-left: 2%;
+}
+
+.featured-main-wide, .featured-sidebar-wide {
+  width: 50%;
+  float: left;
+}
+
 #donations {
   background: #E74C3C;
   color: #FFFFFF;
@@ -927,28 +871,27 @@ a.banner_more {
   width: 100%;
 }
 
-@media only screen and (min-width: 450px) {
-  .next_election {
-    margin: 10px;
-    padding: 10px;
-  }
-
-  .ballot_box {
-    display: block;
-    float: left;
-    margin: 0 2% 0 0;
-    width: 28%;
-  }
-  .ballot_box img {
-    margin: 0 0 10px 0;
-  }
-
-  .election_info {
-    float: left;
-    padding: 10px;
-    width: 70%;
-  }
+.next_election {
+  margin: 10px;
+  padding: 10px;
 }
+
+.ballot_box {
+  display: block;
+  float: left;
+  margin: 0 2% 0 0;
+  width: 28%;
+}
+.ballot_box img {
+  margin: 0 0 10px 0;
+}
+
+.election_info {
+  float: left;
+  padding: 10px;
+  width: 70%;
+}
+
 .elections-section {
   border: 1px solid #E9E9E9;
   margin: 10px 0;
@@ -1008,35 +951,34 @@ a.banner_more {
   padding: 10px;
 }
 
-@media only screen and (min-width: 450px) {
-  .elections-section {
-    display: block;
-  }
-
-  .election-summary, .election-page-image {
-    width: 34%;
-    float: left;
-  }
-
-  .election-summary img {
-    width: auto;
-    float: none;
-    margin-right: 0;
-  }
-
-  .election-info, .election-page-info {
-    width: 66%;
-    float: left;
-  }
-
-  .election-page-info {
-    min-height: 250px;
-  }
-
-  .election-page-image {
-    display: block;
-  }
+.elections-section {
+  display: block;
 }
+
+.election-summary, .election-page-image {
+  width: 34%;
+  float: left;
+}
+
+.election-summary img {
+  width: auto;
+  float: none;
+  margin-right: 0;
+}
+
+.election-info, .election-page-info {
+  width: 66%;
+  float: left;
+}
+
+.election-page-info {
+  min-height: 250px;
+}
+
+.election-page-image {
+  display: block;
+}
+
 .election_sidebar h3 {
   border-bottom: 3px solid #73A533;
   margin: 0 0 10px 0;
@@ -1134,18 +1076,17 @@ a.readmore:hover, p.more a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 768px) {
-  .featured-post {
-    float: left;
-    margin-right: 2%;
-    width: 40%;
-  }
-
-  .featured-categories-posts {
-    float: left;
-    width: 58%;
-  }
+.featured-post {
+  float: left;
+  margin-right: 2%;
+  width: 40%;
 }
+
+.featured-categories-posts {
+  float: left;
+  width: 58%;
+}
+
 .arclist_fl, .arclist_fr, #archivebox {
   border-bottom: 3px solid #C0C0C0;
   margin: 20px 0;
@@ -1226,41 +1167,39 @@ a.readmore:hover, p.more a:hover {
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 450px) {
-  .post-header__heading {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
+.post-header__heading {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
-@media only screen and (min-width: 768px) {
-  .post-header {
-    margin: 0;
-  }
 
-  .post-header__date {
-    position: absolute;
-    right: 0;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 10px;
-    padding: 5px;
-  }
-
-  .post-header__image {
-    display: block;
-  }
-
-  .post-header__heading {
-    font-size: 26px;
-    left: 0;
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    font-size: 40px;
-    width: 80%;
-    margin: 15px;
-  }
+.post-header {
+  margin: 0;
 }
+
+.post-header__date {
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+}
+
+.post-header__image {
+  display: block;
+}
+
+.post-header__heading {
+  font-size: 26px;
+  left: 0;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  font-size: 40px;
+  width: 80%;
+  margin: 15px;
+}
+
 #login h1 a {
   background: url("../images/admin/logo-white.png") no-repeat top;
   width: 100%;
@@ -3622,4 +3561,4 @@ img#wpstats {
   margin: 5px 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=ie8.css.map */

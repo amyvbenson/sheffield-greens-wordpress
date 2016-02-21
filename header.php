@@ -6,7 +6,13 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
-	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/ie8.css" type="text/css"/>
+    <![endif]-->
+    <!--[if gt IE 8]> <!-- -->
+        <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <!-- <![endif]-->
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/print.css" type="text/css" media="print" />
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/includes/banner/demo.css" type="text/css" media="screen" />
