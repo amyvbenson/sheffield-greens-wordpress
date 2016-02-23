@@ -49,7 +49,10 @@ ul.children {
 }
 /*- Post Comments -*/
 .post-comments .fl {
-	width: 80px;
+	width: 20%;
+	max-width: 80px;
+	box-sizing: border-box;
+	padding-right: 10px;
 }
 .post-comments .fr {
 	width: 80%;

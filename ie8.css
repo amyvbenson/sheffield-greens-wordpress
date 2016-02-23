@@ -24,6 +24,7 @@ a:hover, a:focus, a:active {
 
 img {
   max-width: 100%;
+  height: auto;
   display: inline-block;
   border: none;
 }
@@ -1384,7 +1385,10 @@ ul.children {
 
 /*- Post Comments -*/
 .post-comments .fl {
-  width: 80px;
+  width: 20%;
+  max-width: 80px;
+  box-sizing: border-box;
+  padding-right: 10px;
 }
 
 .post-comments .fr {
