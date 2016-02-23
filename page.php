@@ -268,7 +268,7 @@
 <?php } elseif (is_page(array('TTIP- a corporate power grab that must be stopped'))) { ?>
 
   <?php query_posts('showposts=5&category_name=TTIP'); ?>  
-  
+
 <?php } elseif (is_page()) { ?>
 
 	<?php query_posts('showposts=1&category_name=unknown'); ?>
@@ -277,19 +277,19 @@
 
 <?php if (have_posts()) : ?>
 
-<h3>Recent Issues</h3>
+<h2>Recent Issues</h2>
 
 <?php while (have_posts()) : the_post(); ?>		
 
 <div id="blog">
 <div class="cat-post" id="post-<?php the_ID(); ?>">
 
-<p>
-<h2>
+
+<h3>
 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 <?php edit_post_link( __( 'Edit Page','sheffieldgreens' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
-</h2>
-
+</h3>
+<p>
 <?php echo strip_tags(get_the_excerpt(), '<a><strong>'); ?>
 </p>
                 

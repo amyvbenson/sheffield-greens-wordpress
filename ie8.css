@@ -179,7 +179,7 @@ img {
 }
 
 .nav {
-  background: #6AB023;
+  background: #78b82a;
   width: 100%;
 }
 
@@ -198,7 +198,7 @@ img {
   height: 35px;
 }
 .nav-button.active {
-  background: #6AB023;
+  background: #78b82a;
 }
 .nav-button:before {
   content: "";
@@ -291,7 +291,7 @@ img {
 }
 
 .banner {
-  background: #6AB023;
+  background: #78b82a;
   width: 100%;
 }
 .search-active .banner {
@@ -338,7 +338,7 @@ img {
   height: 33px;
 }
 .search-button.search-active {
-  background: #6AB023;
+  background: #78b82a;
 }
 .search-button:before {
   content: "";
@@ -413,7 +413,7 @@ img {
 }
 
 .description {
-  background: #6AB023;
+  background: #78b82a;
   margin: 15px;
   position: absolute;
   bottom: 0;
@@ -545,7 +545,7 @@ ul.bjqs-controls.v-centered li a:hover {
 }
 
 ol.bjqs-markers li a {
-  background: none repeat scroll 0 0 #6AB023;
+  background: none repeat scroll 0 0 #78b82a;
   color: #FFFFFF;
   padding: 9px 15px;
   text-decoration: none;
@@ -559,7 +559,7 @@ ol.bjqs-markers li a:hover {
 .bjqs p.bjqs-caption {
   display: none;
   display: block;
-  background: none repeat scroll 0 0 #6AB023;
+  background: none repeat scroll 0 0 #78b82a;
   color: #FFFFFF;
   font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
   width: 100%;
@@ -567,7 +567,7 @@ ol.bjqs-markers li a:hover {
 
 .site-title-election {
   line-height: 0;
-  background: #6AB023;
+  background: #78b82a;
   background: none;
   margin: 0 auto;
   position: absolute;
@@ -624,7 +624,7 @@ a.banner_more {
 }
 
 .featured-list-item {
-  background: #6AB023;
+  background: #78b82a;
   overflow: auto;
   margin-bottom: 10px;
   position: relative;
@@ -634,6 +634,7 @@ a.banner_more {
   background: #FFF;
   width: 40%;
   float: left;
+  line-height: 0;
 }
 
 .featured-list-content {
@@ -704,7 +705,7 @@ a.banner_more {
   background: #003B65;
 }
 .featured-menu-item.home-info {
-  background: #6AB023;
+  background: #78b82a;
 }
 .featured-menu-item.search-info {
   background: #B20039;
@@ -1829,7 +1830,7 @@ div#header div#slide-holder div#slide-controls p#slide-nav a {
 }
 
 .slider-container {
-  background: none repeat scroll 0 0 #6AB023;
+  background: none repeat scroll 0 0 #78b82a;
   margin: 0 0 10px;
 }
 
@@ -1977,6 +1978,7 @@ div#header div#slide-holder div#slide-controls p#slide-nav a {
   -o-transition: all 0.5s linear;
   -ms-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  line-height: 1;
 }
 
 .view-tenth:hover img {
@@ -2007,24 +2009,23 @@ div#header div#slide-holder div#slide-controls p#slide-nav a {
   opacity: 1;
 }
 
-/*.view {
-    background: url("../images/bgimg.jpg") no-repeat scroll center center #FFFFFF;
-    cursor: default;
-    float: left;
-    height: 180px;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    width: 250px;
-}*/
+.view {
+  background: url("../images/bgimg.jpg") no-repeat scroll center center #FFFFFF;
+  cursor: default;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 .view .mask, .view .content {
-  height: 160px;
+  height: 100%;
+  box-sizing: border-box;
   left: 0;
   overflow: hidden;
   padding: 10px;
   position: absolute;
   top: 0;
-  width: 230px;
+  width: 100%;
 }
 
 .view a.info {
@@ -3085,7 +3086,7 @@ p.postdata em {
 }
 
 h1.page_h1 {
-  background: none repeat scroll 0 0 #6AB023;
+  background: none repeat scroll 0 0 #78b82a;
   color: #ffffff;
   font-family: georgia,times,'times new roman',serif;
   font-size: 24px;
@@ -3358,7 +3359,7 @@ p#slider-nav a.activeSlide, p#slider-nav a:hover {
 
 /* Sidebar */
 div#sidebar h1.widget-title {
-  background: none repeat scroll 0 0 #6AB023;
+  background: none repeat scroll 0 0 #78b82a;
   color: #ffffff;
   line-height: 30px;
   padding: 0 5px;
@@ -3403,7 +3404,7 @@ ul.side_subpages li a {
 }
 
 h1.side_subpages-title {
-  background: none repeat scroll 0 0 #6AB023;
+  background: none repeat scroll 0 0 #78b82a;
   color: #FFFFFF;
   line-height: 30px;
   margin: 0;
@@ -3542,7 +3543,7 @@ img#wpstats {
 }
 
 #shop_link {
-  background: none repeat scroll 0 0 #6AB023;
+  background: none repeat scroll 0 0 #78b82a;
   clear: both;
   color: #ffffff;
   display: block;

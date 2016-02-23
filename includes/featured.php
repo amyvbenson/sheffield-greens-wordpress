@@ -29,17 +29,17 @@
 
         <div class="featured-list-item">
 
-          <div class="featured-list-image">
+          <div class="featured-list-image view view-tenth">
 
             <?php $cti = catch_that_image(); if(isset($cti)){ ?>
             <img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&amp;h=180&amp;w=250&amp;q=100&amp;zc=1" alt="Featured article image" />
             <?php } ?>	
 
-            <!-- <div class="mask">
+            <div class="mask">
              <h2><?php the_title(); ?></h2>
              <?php the_excerpt(); ?>
              <a href="<?php the_permalink() ?>" class="info">Read More</a>
-           </div> -->
+           </div> 
           </div>          
 
           <a title="Permanent Link to <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark" class="featured-list-content">
