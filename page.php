@@ -4,66 +4,9 @@
 
 <?php if ( is_page(array('area')) ) { ?><!-- Main conditional tag -->
 
-    <div id="widecolumn">
+  <?php include(TEMPLATEPATH . '/includes/areas.php'); ?>
+
     
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    
-    <?php $parent = $post->ID; ?>
-    
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        
-            <h1 class="page_h1"><?php the_title(); ?> <?php edit_post_link( __( 'Edit Page','sheffieldgreens' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?></h1>         
-            <div class="entry-content">
-                <?php the_content(); ?>
-                <?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:','sheffieldgreens' ), 'after' => '</div>' ) ); ?>
-            </div><!-- .article -->
-        
-        </div>
-            
-    <?php endwhile;  endif;// end of the loop. ?>
-    
-    <div id="proposedmap">
-		<div id="sheffmap">
-	
-    	  <p><img src="<?php echo bloginfo('template_url'); ?>/images/X-20090129153042390-[Latest].png" alt="" border="0" usemap="#Map2" class="mapper noborder iradius16 iopacity70 icolorff0000" style="width: auto; height: auto;" href="<?php bloginfo('url'); ?>/area/east-ecclesfield"/></p>
-		  <p>
-		    
-		    <map name="Map2" id="Map2">
-            
-		      <area shape="rect" coords="159,394,230,411" href="southey" />
-		      <area shape="rect" coords="18,478,115,493" href="mosborough" />
-              <area shape="rect" coords="159,480,253,494" href="woodhouse" />
-              <area shape="rect" coords="18,460,121,477" href="manor-castle" />
-              <area shape="rect" coords="159,462,268,479" href="west-ecclesfield" />
-                  <area shape="rect" coords="159,413,260,428" href="stannington" />
-		      <area shape="rect" coords="18,445,118,459" href="hillsborough" />
-              <area shape="rect" coords="159,443,228,461" href="walkley" />
-              <area shape="rect" coords="19,429,108,444" href="graves-park" />
-              <area shape="rect" coords="18,411,129,427" href="gleadless-valley" />
-                  <area shape="rect" coords="159,429,326,442" href="stocksbridge-and-upper-don" />
-		      <area shape="rect" coords="19,393,98,410" href="fulwood" />
-              <area shape="rect" coords="19,224,79,240" href="birley" />
-              <area shape="rect" coords="19,242,175,259" href="broomhill-and-sharrow-vale-ward" />
-              <area shape="rect" coords="19,260,101,274" href="burngreave" />
-              <area shape="rect" coords="19,275,65,292" href="city-ward" />
-              <area shape="rect" coords="19,293,156,307" href="crookes-and-crosspool-ward" />
-              <area shape="rect" coords="19,307,78,324" href="darnall" />
-              <area shape="rect" coords="19,325,110,342" href="dore-and-totley" />
-              <area shape="rect" coords="19,344,126,358" href="east-ecclesfield" />
-              <area shape="rect" coords="19,360,98,374" href="ecclesall" />
-              <area shape="rect" coords="19,376,98,392" href="firth-park" />
-              <area shape="rect" coords="159,326,309,341" href="nether-edge-and-sharrow-ward" />
-                  <area shape="rect" coords="19,188,156,205" href="beauchief-and-greenhill" />
-		      <area shape="rect" coords="159,342,296,359" href="park-and-arbourthorne" />
-              <area shape="rect" coords="159,361,245,376" href="richmond" />
-              <area shape="rect" coords="159,378,310,392" href="shiregreen-and-brightside" />
-              <area shape="rect" coords="19,207,86,223" href="beighton" />
-		    </map>
-	      </p>
-      </div>
-	</div>
-    
-    </div>
     
 <?php } elseif (is_page(array('Amazon'))) { ?>
 

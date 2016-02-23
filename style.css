@@ -1277,6 +1277,29 @@ a.readmore:hover, p.more a:hover {
     margin: 15px;
   }
 }
+.wards {
+  overflow: auto;
+}
+
+.wards__list li {
+  margin-bottom: 5px;
+}
+
+.wards__map {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 450px) {
+  .wards__list {
+    width: 30%;
+    float: left;
+  }
+
+  .wards__map {
+    width: 70%;
+    float: right;
+  }
+}
 #login h1 a {
   background: url("../images/admin/logo-white.png") no-repeat top;
   width: 100%;

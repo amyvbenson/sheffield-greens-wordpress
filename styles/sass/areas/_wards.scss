@@ -1,0 +1,25 @@
+.wards {
+  overflow: auto;
+}
+
+.wards__list {
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.wards__map {
+  margin-bottom: 10px;
+}
+
+@include media-query(xs) {
+  .wards__list {
+    width: 30%;
+    float: left;
+  }
+
+  .wards__map {
+    width: 70%;
+    float: right;
+  }
+}
