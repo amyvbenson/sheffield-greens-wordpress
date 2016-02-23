@@ -265,6 +265,10 @@
 
   <?php query_posts('showposts=5&category_name=EU Referendum'); ?>   
     
+<?php } elseif (is_page(array('TTIP- a corporate power grab that must be stopped'))) { ?>
+
+  <?php query_posts('showposts=5&category_name=TTIP'); ?>  
+  
 <?php } elseif (is_page()) { ?>
 
 	<?php query_posts('showposts=1&category_name=unknown'); ?>
