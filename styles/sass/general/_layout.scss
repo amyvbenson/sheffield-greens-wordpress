@@ -1,6 +1,6 @@
 
 #widecolumn {
-	margin: 10px;
+	// margin: 10px;
 }
 
 #main {
@@ -13,7 +13,7 @@
 #main-container {
 	box-sizing: border-box;
 	background: #FFF;
-	padding: 20px 15px;
+	padding: 10px;
 	overflow: hidden;
 	position: relative;
 	width: 100%;
@@ -31,6 +31,7 @@
 
 	#main-container {
 		margin: 20px 0;
+		padding: 20px 15px;
 	}
 
 	.col-main {

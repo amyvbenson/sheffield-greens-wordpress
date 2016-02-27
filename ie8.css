@@ -1,3 +1,6 @@
+/**
+  * IE8 styles, same as main stylesheet but includes different version of media query mixin
+  */
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
 * {
   margin: 0;
@@ -29,10 +32,6 @@ img {
   border: none;
 }
 
-#widecolumn {
-  margin: 10px;
-}
-
 #main {
   width: 100%;
   max-width: 970px;
@@ -42,7 +41,7 @@ img {
 #main-container {
   box-sizing: border-box;
   background: #FFF;
-  padding: 20px 15px;
+  padding: 10px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -59,6 +58,7 @@ img {
 
 #main-container {
   margin: 20px 0;
+  padding: 20px 15px;
 }
 
 .col-main {
@@ -148,10 +148,9 @@ img {
 }
 
 .tab .follow {
-  float: left;
+  display: block;
+  padding-top: 2px;
   font-size: 10px;
-  margin: 3px 0;
-  vertical-align: middle;
 }
 
 .gst a.open {
@@ -169,6 +168,11 @@ img {
 
 .header-rss {
   display: inline-block;
+}
+
+.tab .follow {
+  float: left;
+  display: inline;
 }
 
 .top-header {
@@ -292,8 +296,9 @@ img {
 }
 
 .banner {
-  background: #78b82a;
+  background: #63B84D;
   width: 100%;
+  padding-bottom: 5px;
 }
 .search-active .banner {
   margin-top: 32px;
@@ -320,8 +325,9 @@ img {
 .description {
   color: #FFFFFF;
   font-family: "Segoe UI",Arial,Helvetica,sans-serif;
-  font-size: 16px;
+  font-size: 13px;
   padding: 5px;
+  margin: 0;
 }
 
 .search-button {
@@ -337,6 +343,9 @@ img {
   line-height: 1;
   padding: 0 8px 0 30px;
   height: 33px;
+}
+.home .search-button {
+  display: none;
 }
 .search-button.search-active {
   background: #78b82a;
@@ -406,6 +415,7 @@ img {
 .banner {
   height: 200px;
   margin: 10px 0 0 0;
+  padding-bottom: 0;
   position: relative;
 }
 
@@ -419,6 +429,7 @@ img {
   position: absolute;
   bottom: 0;
   float: left;
+  font-size: 16px;
 }
 
 .banner .search-form {
@@ -2875,9 +2886,12 @@ td {
 /* 3.1 Typographic Elements */
 #post blockquote {
   background: url(images/blockquote.png) no-repeat 0 12px;
-  padding: 10px 20px 10px 50px;
+  background-size: 20px;
+  padding: 10px 20px 10px 30px;
   color: #444;
   overflow: hidden;
+  padding: 10px 20px 10px 50px;
+  background-size: auto;
 }
 
 #post blockquote p {
@@ -2902,14 +2916,18 @@ td {
   list-style-type: disc;
 }
 
+.entry-content {
+  word-break: break-word;
+}
+
 .entry-content ul li {
   list-style: square outside none !important;
   margin: 5px 20px;
 }
 
 #post ol {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0;
+  padding: 0;
 }
 
 #post ol ol {
@@ -2961,9 +2979,10 @@ ul#xyz h3 {
 }
 
 ul#xyz li {
-  height: 120px;
+  box-sizing: border-box;
   list-style-type: none;
   width: 100%;
+  overflow: auto;
 }
 
 .meta-nav {

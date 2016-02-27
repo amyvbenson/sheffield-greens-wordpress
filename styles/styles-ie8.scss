@@ -1,3 +1,6 @@
+/**
+  * IE8 styles, same as main stylesheet but includes different version of media query mixin
+  */
 @import 'sass/variables/colors';
 @import 'sass/mixins/media-query-ie8';
 @import 'sass/general/base';
@@ -16,21 +19,16 @@
 @import 'sass/post/post-header';
 @import 'sass/areas/wards';
 
-
 @import 'sass/admin';
-
 @import 'sass/calendar';
 @import 'sass/comments';
 @import 'sass/donate';
-// @import 'sass/elections';
 @import 'sass/email';
-// @import 'sass/featured_categories';
 @import 'sass/featured_slide';
 @import 'sass/homepage';
 @import 'sass/hovereffects';
 @import 'sass/links';
 @import 'sass/news';
-// @import 'sass/next_election';
 @import 'sass/popup';
 @import 'sass/recent_news';
 @import 'sass/register';
