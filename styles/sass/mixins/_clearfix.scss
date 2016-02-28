@@ -1,0 +1,31 @@
+/**
+ * Clearfix placeholder mixin
+ *
+ * Usage:
+ * .my-class {
+ *   @extend %clearfix;
+ * }
+ *
+ * Results in:
+ * .my-class {
+ *   &:before, &:after {
+ *     content: " ";
+ *     display: table;
+ *   }
+ *   &:after {
+ *     clear: both;
+ *   }
+ * }
+ *
+ */
+
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

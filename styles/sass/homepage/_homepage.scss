@@ -7,8 +7,9 @@
 }
 
 .featured-list-item {
+  @extend %clearfix;
   background: $gp-green;
-  overflow: auto;
+  // overflow: auto;
   margin-bottom: 10px;
   position: relative; 
 }
