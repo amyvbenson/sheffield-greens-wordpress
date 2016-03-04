@@ -115,7 +115,7 @@
             jQuery('.menu-header, [data-toggle-nav]').removeClass('active');
         });
 
-        jQuery('#video iframe, #video object, .entry-content iframe, .entry-content object').each(function(){
+        jQuery('#video iframe, #video object, .entry-content iframe, .entry-content object, .article iframe, .article object').each(function(){
             jQuery(this).wrap('<div class="video-wrapper" />')
         })
      
