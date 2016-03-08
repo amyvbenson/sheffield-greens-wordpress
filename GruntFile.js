@@ -20,7 +20,8 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'style.css': 'styles/styles.scss'
+          'style.css': 'styles/styles.scss',
+          'ie8.css': 'styles/styles-ie8.scss'
         }
         
       }
