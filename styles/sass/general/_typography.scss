@@ -1,0 +1,25 @@
+@font-face{ 
+  font-family: 'bebas-neue';
+  src: url('fonts/bebasneue-webfont.eot');
+  src: url('fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/bebasneue-webfont.woff') format('woff'),
+       url('fonts/bebasneue-webfont.ttf') format('truetype'),
+       url('fonts/bebasneue-webfont.svg#webfont') format('svg');
+}
+
+.text-highlight {
+  font-family: 'bebas-neue', helvetica, arial, sans-serif;
+  display: inline-block;
+  padding: 5px 10px;
+  
+  line-height: 1.1;
+  background: white;
+  color: $gp-green;
+  text-transform: uppercase;
+  transform: rotate(-5deg);
+}
+
+.text-highlight--dark {
+  background: $gp-green;
+  color: white;
+}

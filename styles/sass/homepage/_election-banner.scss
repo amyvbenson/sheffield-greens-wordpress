@@ -1,0 +1,155 @@
+
+.election-banner {
+  position: relative;
+}
+
+.election-banner__main {
+  display: block;
+  box-sizing: border-box;
+  background: $gp-green;
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+
+  &:hover, &:focus, &:active {
+
+    .election-banner__heading {
+      .text-highlight {
+        background: $gp-dark-green;
+        color: white;
+      }
+    }
+
+  }
+}
+
+.election-banner__heading {
+  margin: 0;
+  font-size: 26px;
+
+  .text-highlight {
+    transition: all ease-in 0.3s;
+  }
+}
+
+.election-banner__manifesto, .election-banner__candidates {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  transition: all ease-in 0.3s;
+
+  &:hover, &:focus, &:active {
+    background: $gp-dark-green;
+    color: white;
+  }
+}
+
+.election-banner__manifesto {
+  background: $gp-green;
+  color: white;
+  
+}
+
+.election-banner__candidates {
+  background: white;
+  color: $gp-green;
+  border-bottom: 1px solid $gp-green;
+}
+
+.election-banner__sub-heading {
+  font-family: 'bebas-neue', helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+
+  strong {
+    font-weight: normal;
+  }
+}
+
+@include media-query(xs) {
+
+  .election-banner {
+    margin-top: 70px;
+  }
+
+  .election-banner__main {
+    width: 100%;
+    background: url('images/homepage/events.jpg') center no-repeat;
+    background-size: cover;
+    padding: 50px 30px 40px 30px;
+    border: none;
+  }
+
+  .election-banner__heading {
+    font-size: 40px;
+  }
+
+  .election-banner__tagline {
+    font-size: 30px;
+  }
+
+  .election-banner__side {
+    display: flex;
+    width: 100%;
+  }
+
+  .election-banner__manifesto, .election-banner__candidates {
+    width: 50%;
+    padding: 20px;
+    border: none;
+  }
+
+  
+
+  .election-banner__sub-heading {
+    font-size: 24px;
+
+    strong {
+      font-size: 40px;
+      display: block;
+      line-height: 1.2;
+    }
+  }
+
+}
+
+@include media-query(sm) {
+  
+  .election-banner {
+    display: flex;
+  }
+
+  .election-banner__main {
+    width: percentage(2/3);
+    padding: 100px 30px 40px 30px;
+  }
+
+  .election-banner__heading {
+    font-size: 50px;
+  }
+
+  .election-banner__tagline {
+    font-size: 36px;
+  }
+
+  .election-banner__side {
+    width: percentage(1/3);
+    padding-left: 20px;
+    display: block;
+  }
+
+  .election-banner__manifesto, .election-banner__candidates {
+    width: 100%;
+    min-height: 150px;
+  }
+
+  .election-banner__manifesto {
+    margin-bottom: 20px; 
+  }
+
+  .election-banner__sub-heading {
+    strong {
+      font-size: 50px;
+    }
+  }
+}
