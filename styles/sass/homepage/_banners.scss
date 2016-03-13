@@ -40,13 +40,6 @@
   }
 }
 
-.home-banner__logo {
-  // line-height: 0; 
-  // background: $green;
-  // padding: 10px;
-  // box-sizing: border-box;
-}
-
 @include media-query(xs) {
 
   .home-banner {
@@ -68,7 +61,7 @@
     width: 400px;
     margin: 0 auto;
     position: absolute;
-    top: -40px;
+    top: -50px;
     z-index: 998;
 
   }
