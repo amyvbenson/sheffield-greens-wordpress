@@ -51,11 +51,11 @@ Author: Samuel Musarika
  * }
  *
  */
-.featured-list-item:before, .no-flexbox .home-banner__link:before, #post.election-2016 ul li:before, .featured-list-item:after, .no-flexbox .home-banner__link:after, #post.election-2016 ul li:after {
+.banner:before, .featured-list-item:before, .no-flexbox .home-banner__link:before, #post.election-2016 ul li:before, .banner:after, .featured-list-item:after, .no-flexbox .home-banner__link:after, #post.election-2016 ul li:after {
   content: " ";
   display: table;
 }
-.featured-list-item:after, .no-flexbox .home-banner__link:after, #post.election-2016 ul li:after {
+.banner:after, .featured-list-item:after, .no-flexbox .home-banner__link:after, #post.election-2016 ul li:after {
   clear: both;
 }
 
@@ -458,7 +458,10 @@ p {
 }
 
 .site-title {
-  margin: 0;
+  line-height: 0;
+  background: #6AB023;
+  padding: 10px 10px 12px 10px;
+  box-sizing: border-box;
 }
 
 .description {
@@ -560,7 +563,8 @@ p {
     position: relative;
   }
 
-  .site-title img {
+  .site-title {
+    width: 400px;
     margin: 15px;
   }
 
@@ -724,24 +728,6 @@ ol.bjqs-markers li a:hover {
     color: #FFFFFF;
     width: 100%;
   }
-}
-
-.site-title-election {
-  line-height: 0;
-  background: #6AB023;
-}
-@media only screen and (min-width: 450px) {
-  .site-title-election {
-    background: none;
-    margin: 0 auto;
-    position: absolute;
-    top: -40px;
-    z-index: 998;
-  }
-}
-
-.site-title-election img {
-  margin: 0;
 }
 
 .description-election {
@@ -1213,6 +1199,14 @@ a.banner_more {
   }
   .no-backgroundsize .home-banner__image {
     display: none;
+  }
+
+  .home-banner__logo {
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: -40px;
+    z-index: 998;
   }
 }
 @media only screen and (min-width: 768px) {

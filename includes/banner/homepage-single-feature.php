@@ -1,6 +1,6 @@
 <div class="home-banner home-banner--single">
 
-  <h1 class="site-title-election"><img src="<?php bloginfo('template_directory'); ?>/images/logo-green.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></h1>
+  <h1 class="site-title home-banner__logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></h1>
 
   <a href="http://www.crowdfunder.co.uk/sheffield-green-party-election-fund" class="home-banner__link">
     <div class="home-banner__image">

@@ -2,6 +2,7 @@
 	background: $green;
 	width: 100%;
   padding-bottom: 5px;
+  @extend %clearfix;
 
 	.search-active & {
 		margin-top: 32px;
@@ -22,7 +23,10 @@
 }
 
 .site-title {
-	margin: 0;
+	line-height: 0; 
+  background: $green;
+  padding: 10px 10px 12px 10px;
+  box-sizing: border-box;
 }
 
 .description {
@@ -129,9 +133,10 @@
 		position: relative;
 	}
 
-	.site-title img {
-		margin: 15px;
-	}
+	.site-title {
+    width: 400px; 
+    margin: 15px;
+  }
 
 	.description {
 		background: $green;

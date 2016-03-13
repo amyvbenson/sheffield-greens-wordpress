@@ -67,21 +67,7 @@ ol.bjqs-markers li a:hover{
     width: 100%;
   }
 }
-.site-title-election {
-  line-height: 0; 
-  background: $green;
 
-  @include media-query(xs) {
-    background: none;
-    margin: 0 auto;
-    position: absolute;
-    top: -40px;
-    z-index: 998;
-  }
-}
-.site-title-election img {
-  margin: 0;
-}
 .description-election {
   display: none;
 
