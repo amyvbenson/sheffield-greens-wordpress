@@ -9,30 +9,7 @@ select{
 li{
 	list-style: none
 }
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-	margin: 0;
-	font-family: georgia,times,'times new roman',serif;
-	line-height: normal;
-}
-h1 {font-size: 20px; } 
-h2 {
-	font-family: "Segoe UI",Tahoma,Geneva,sans-serif;
-	font-size: 20px;
-    margin: 10px 0 20px;} 
-h3 { 
-	font-family: "Segoe UI",Tahoma,Geneva,sans-serif;
-	font-size: 16px; 
-	font-weight: normal;
-	line-height: 30px;
-	margin: 0 0 15px 0;
-} 
-h4  {font-size: 14px;} 
-h5  {font-size: 12px;} 
-h6  {font-size: 10px;}
-p {
-	padding: 0 0 1.3em;
-}
+
 
 
 
@@ -223,8 +200,8 @@ p.postdata em {
 h1.page_h1 {
 	background: none repeat scroll 0 0 $gp-green;
 	color: #ffffff;
-	font-family: georgia,times,'times new roman',serif;
-	font-size: 24px;
+	font-family: $heading-font;
+	font-size: 32px;
 	margin-bottom: 20px;
 	padding: 5px;
 }

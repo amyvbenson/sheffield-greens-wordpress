@@ -46,7 +46,6 @@
 .election-banner__manifesto {
   background: $gp-green;
   color: white;
-  
 }
 
 .election-banner__candidates {
@@ -74,7 +73,7 @@
 
   .election-banner__main {
     width: 100%;
-    background: url('images/homepage/events.jpg') center no-repeat;
+    background: url('images/election-launch.jpg') top center no-repeat;
     background-size: cover;
     padding: 50px 30px 40px 30px;
     border: none;
@@ -107,7 +106,7 @@
     strong {
       font-size: 40px;
       display: block;
-      line-height: 1.2;
+      line-height: 1;
     }
   }
 
@@ -121,7 +120,7 @@
 
   .election-banner__main {
     width: percentage(2/3);
-    padding: 100px 30px 40px 30px;
+    padding: 130px 30px 0 30px;
   }
 
   .election-banner__heading {

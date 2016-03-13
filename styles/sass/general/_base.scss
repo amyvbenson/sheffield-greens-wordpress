@@ -5,7 +5,7 @@
 body{
 	background: #EBEBEB url("images/bg.png") repeat scroll 0 0;
 	color: #000;
-	font-family: Helvetica,Arial,"Lucida Grande",Verdana,sans-serif;
+	font-family: $body-font;
 	font-size: 100%;
 	line-height: 20px;
 }

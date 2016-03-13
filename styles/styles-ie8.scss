@@ -2,6 +2,7 @@
   * IE8 styles, same as main stylesheet but includes different version of media query mixin
   */
 @import 'sass/variables/colors';
+@import 'sass/variables/fonts';
 @import 'sass/mixins/media-query-ie8';
 @import 'sass/mixins/clearfix';
 @import 'sass/general/base';
@@ -22,6 +23,7 @@
 @import 'sass/archives/archives';
 @import 'sass/post/post-header';
 @import 'sass/areas/wards';
+@import 'sass/manifesto/manifesto';
 
 @import 'sass/admin';
 @import 'sass/calendar';

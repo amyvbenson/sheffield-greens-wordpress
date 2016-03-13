@@ -9,7 +9,6 @@
 .featured-list-item {
   @extend %clearfix;
   background: $gp-green;
-  // overflow: auto;
   margin-bottom: 10px;
   position: relative; 
 }
@@ -32,6 +31,7 @@
   h2 {
     margin: 0;
     font-size: 16px;
+    font-family: $body-font;
     word-break: break-word;
   }
 

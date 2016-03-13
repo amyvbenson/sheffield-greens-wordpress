@@ -1,5 +1,9 @@
 <div class="election_sidebar col-sidebar" id="sidebar">
 
+  <a href="/elections/council-elections/council-election-manifesto-2016/" class="election-sidebar__manifesto">
+    <h3 class="election-sidebar__sub-heading">Read the Sheffield Green Party <strong>Manifesto</strong></h3>
+  </a>
+
   <h3>Want to vote? Register now!</h3>
 
   <p>To be able to vote you must be on the electoral register and be 18 or   over on or before polling. If you are a citizen of an EU member state registered to vote in this country, you are entitled do vote in the   council elections only. Contact Electoral Services on (0114) 273 6910 if you&rsquo;re not sure whether you are registered and any other information.</p>

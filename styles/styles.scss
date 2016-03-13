@@ -11,6 +11,7 @@ Author: Samuel Musarika
 */
 
 @import 'sass/variables/colors';
+@import 'sass/variables/fonts';
 @import 'sass/mixins/media-query';
 @import 'sass/mixins/clearfix';
 @import 'sass/general/base';
@@ -31,6 +32,7 @@ Author: Samuel Musarika
 @import 'sass/archives/archives';
 @import 'sass/post/post-header';
 @import 'sass/areas/wards';
+@import 'sass/manifesto/manifesto';
 
 @import 'sass/admin';
 @import 'sass/calendar';
