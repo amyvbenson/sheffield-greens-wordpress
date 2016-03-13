@@ -47,7 +47,7 @@ ul.bjqs-controls.v-centered li a:hover{
 }
 
 ol.bjqs-markers li a{
-  background: none repeat scroll 0 0 $gp-green;
+  background: none repeat scroll 0 0 $green;
   color: #FFFFFF;
   padding: 9px 15px;
   text-decoration: none;
@@ -62,14 +62,14 @@ ol.bjqs-markers li a:hover{
   display: none;
   @include media-query(xs) {
     display: block;
-    background: none repeat scroll 0 0 $gp-green;
+    background: none repeat scroll 0 0 $green;
     color: #FFFFFF;
     width: 100%;
   }
 }
 .site-title-election {
   line-height: 0; 
-  background: $gp-green;
+  background: $green;
 
   @include media-query(xs) {
     background: none;

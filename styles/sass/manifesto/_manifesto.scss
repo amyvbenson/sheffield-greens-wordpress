@@ -2,7 +2,7 @@
 
   h2 {
     font-size: 32px;
-    color: $gp-green;
+    color: $green;
   }
 
   h3 {
@@ -52,12 +52,12 @@
   display: block;
   padding: 20px;
   transition: all ease-in 0.3s;
-  background: $gp-green;
+  background: $green;
   color: white;
   margin-bottom: 15px;
 
   &:hover, &:focus, &:active {
-    background: $gp-dark-green;
+    background: $dark-green;
     color: white;
   }
 }

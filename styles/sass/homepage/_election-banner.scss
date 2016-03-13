@@ -6,7 +6,7 @@
 .election-banner__main {
   display: block;
   box-sizing: border-box;
-  background: $gp-green;
+  background: $green;
   padding: 20px 0;
   border-bottom: 1px solid white;
 
@@ -14,7 +14,7 @@
 
     .election-banner__heading {
       .text-highlight {
-        background: $gp-dark-green;
+        background: $dark-green;
         color: white;
       }
     }
@@ -38,20 +38,20 @@
   transition: all ease-in 0.3s;
 
   &:hover, &:focus, &:active {
-    background: $gp-dark-green;
+    background: $dark-green;
     color: white;
   }
 }
 
 .election-banner__manifesto {
-  background: $gp-green;
+  background: $green;
   color: white;
 }
 
 .election-banner__candidates {
   background: white;
-  color: $gp-green;
-  border-bottom: 1px solid $gp-green;
+  color: $green;
+  border-bottom: 1px solid $green;
 }
 
 .election-banner__sub-heading {

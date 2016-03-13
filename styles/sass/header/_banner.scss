@@ -1,5 +1,5 @@
 .banner {
-	background: $banner-green;
+	background: $green;
 	width: 100%;
   padding-bottom: 5px;
 
@@ -51,7 +51,7 @@
   }
 
   &.search-active {
-    background: $gp-green;
+    background: $green;
   }
 
   &:before {
@@ -134,7 +134,7 @@
 	}
 
 	.description {
-		background: $gp-green;
+		background: $green;
 		margin: 15px;
 		position: absolute;
 		bottom: 0;

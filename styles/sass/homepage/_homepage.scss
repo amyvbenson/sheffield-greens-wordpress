@@ -8,7 +8,7 @@
 
 .featured-list-item {
   @extend %clearfix;
-  background: $gp-green;
+  background: $green;
   margin-bottom: 10px;
   position: relative; 
 }
@@ -99,7 +99,7 @@
   }
 
   &.home-info {
-    background: $gp-green; 
+    background: $green; 
   }
 
   &.search-info {

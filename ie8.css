@@ -192,13 +192,13 @@ p {
   padding: 5px 10px;
   line-height: 1.1;
   background: white;
-  color: #78b82a;
+  color: #6AB023;
   text-transform: uppercase;
   transform: rotate(-5deg);
 }
 
 .text-highlight--dark {
-  background: #78b82a;
+  background: #6AB023;
   color: white;
 }
 
@@ -294,7 +294,7 @@ p {
 }
 
 .nav {
-  background: #78b82a;
+  background: #6AB023;
   width: 100%;
 }
 
@@ -313,7 +313,7 @@ p {
   height: 35px;
 }
 .nav-button.active {
-  background: #78b82a;
+  background: #6AB023;
 }
 .nav-button:before {
   content: "";
@@ -347,13 +347,13 @@ p {
 .menu-item:hover a, .menu-item:focus a, .menu-item:active a {
   border-bottom: 2px solid #FFF;
   color: #fff;
-  background: #20BA9C;
+  background: #00afd0;
 }
 .menu-item:hover ul, .menu-item:focus ul, .menu-item:active ul {
   display: block;
 }
 .menu-item.current_page_item a, .menu-item.current-menu-ancestor a, .menu-item.current-menu-item a, .menu-item.current-menu-parent a {
-  background: #34495E;
+  background: #00558c;
   border-bottom: 2px solid #FFFFFF;
   color: #FFFFFF;
 }
@@ -406,7 +406,7 @@ p {
 }
 
 .banner {
-  background: #63B84D;
+  background: #6AB023;
   width: 100%;
   padding-bottom: 5px;
 }
@@ -457,7 +457,7 @@ p {
   display: none;
 }
 .search-button.search-active {
-  background: #78b82a;
+  background: #6AB023;
 }
 .search-button:before {
   content: "";
@@ -533,7 +533,7 @@ p {
 }
 
 .description {
-  background: #78b82a;
+  background: #6AB023;
   margin: 15px;
   position: absolute;
   bottom: 0;
@@ -665,7 +665,7 @@ ul.bjqs-controls.v-centered li a:hover {
 }
 
 ol.bjqs-markers li a {
-  background: none repeat scroll 0 0 #78b82a;
+  background: none repeat scroll 0 0 #6AB023;
   color: #FFFFFF;
   padding: 9px 15px;
   text-decoration: none;
@@ -679,14 +679,14 @@ ol.bjqs-markers li a:hover {
 .bjqs p.bjqs-caption {
   display: none;
   display: block;
-  background: none repeat scroll 0 0 #78b82a;
+  background: none repeat scroll 0 0 #6AB023;
   color: #FFFFFF;
   width: 100%;
 }
 
 .site-title-election {
   line-height: 0;
-  background: #78b82a;
+  background: #6AB023;
   background: none;
   margin: 0 auto;
   position: absolute;
@@ -741,7 +741,7 @@ a.banner_more {
 }
 
 .featured-list-item {
-  background: #78b82a;
+  background: #6AB023;
   margin-bottom: 10px;
   position: relative;
 }
@@ -822,7 +822,7 @@ a.banner_more {
   background: #003B65;
 }
 .featured-menu-item.home-info {
-  background: #78b82a;
+  background: #6AB023;
 }
 .featured-menu-item.search-info {
   background: #B20039;
@@ -972,7 +972,7 @@ a.banner_more {
 .election-banner__main {
   display: block;
   box-sizing: border-box;
-  background: #78b82a;
+  background: #6AB023;
   padding: 20px 0;
   border-bottom: 1px solid white;
 }
@@ -1001,14 +1001,14 @@ a.banner_more {
 }
 
 .election-banner__manifesto {
-  background: #78b82a;
+  background: #6AB023;
   color: white;
 }
 
 .election-banner__candidates {
   background: white;
-  color: #78b82a;
-  border-bottom: 1px solid #78b82a;
+  color: #6AB023;
+  border-bottom: 1px solid #6AB023;
 }
 
 .election-banner__sub-heading {
@@ -1103,7 +1103,7 @@ a.banner_more {
 }
 
 .home-banner__link:hover .home-banner__content, .home-banner__link:focus .home-banner__content, .home-banner__link:active .home-banner__content {
-  background: #78b82a;
+  background: #6AB023;
 }
 
 .home-banner__content {
@@ -1564,7 +1564,7 @@ a.readmore:hover, p.more a:hover {
 
 #post.election-2016 h2 {
   font-size: 32px;
-  color: #78b82a;
+  color: #6AB023;
 }
 #post.election-2016 h3 {
   font-family: "bebas-neue", helvetica, arial, sans-serif;
@@ -1603,7 +1603,7 @@ a.readmore:hover, p.more a:hover {
   display: block;
   padding: 20px;
   transition: all ease-in 0.3s;
-  background: #78b82a;
+  background: #6AB023;
   color: white;
   margin-bottom: 15px;
 }
@@ -2267,7 +2267,7 @@ div#header div#slide-holder div#slide-controls p#slide-nav a {
 }
 
 .slider-container {
-  background: none repeat scroll 0 0 #78b82a;
+  background: none repeat scroll 0 0 #6AB023;
   margin: 0 0 10px;
 }
 
@@ -3344,7 +3344,7 @@ p.postdata em {
 }
 
 h1.page_h1 {
-  background: none repeat scroll 0 0 #78b82a;
+  background: none repeat scroll 0 0 #6AB023;
   color: #ffffff;
   font-family: "bebas-neue", helvetica, arial, sans-serif;
   font-size: 32px;
@@ -3621,7 +3621,7 @@ p#slider-nav a.activeSlide, p#slider-nav a:hover {
 
 /* Sidebar */
 div#sidebar h1.widget-title {
-  background: none repeat scroll 0 0 #78b82a;
+  background: none repeat scroll 0 0 #6AB023;
   color: #ffffff;
   line-height: 30px;
   padding: 0 5px;
@@ -3666,7 +3666,7 @@ ul.side_subpages li a {
 }
 
 h1.side_subpages-title {
-  background: none repeat scroll 0 0 #78b82a;
+  background: none repeat scroll 0 0 #6AB023;
   color: #FFFFFF;
   line-height: 30px;
   margin: 0;
@@ -3805,7 +3805,7 @@ img#wpstats {
 }
 
 #shop_link {
-  background: none repeat scroll 0 0 #78b82a;
+  background: none repeat scroll 0 0 #6AB023;
   clear: both;
   color: #ffffff;
   display: block;

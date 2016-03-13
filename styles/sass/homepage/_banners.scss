@@ -7,7 +7,7 @@
 
   &:hover, &:focus, &:active {
     .home-banner__content {
-      background: $gp-green;
+      background: $green;
     }
   }
 
@@ -18,7 +18,7 @@
 
 .home-banner__content {
   box-sizing: border-box;  
-  background: $gp-dark-green;
+  background: $dark-green;
   color: white;
   padding: 20px;
   transition: all ease 0.3s;
