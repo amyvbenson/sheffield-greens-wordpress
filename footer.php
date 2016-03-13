@@ -71,6 +71,7 @@
 <?php wp_footer(); ?>
 
 <?php if ( get_option('green_google_analytics') <> "" ) { echo stripslashes(get_option('green_google_analytics')); } ?>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/modernizr.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/jquery.idTabs.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/custom.js"> </script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/scripts/fade/jquery.innerfade.js"> </script>

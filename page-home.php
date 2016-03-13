@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<?php include(TEMPLATEPATH . '/includes/banner/homepage.php'); ?>
+<?php include(TEMPLATEPATH . '/includes/banner/homepage-single-feature.php'); ?>
 
 <div id="main-container">
   
