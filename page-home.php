@@ -2,11 +2,7 @@
 
 <?php get_header(); ?>
 
-
-<?php include(TEMPLATEPATH . '/includes/banner/homepage-election.php'); ?>
-<?php
- // include(TEMPLATEPATH . '/includes/banner/homepage.php'); ?>
-
+<?php include(TEMPLATEPATH . '/includes/banner/homepage.php'); ?>
 
 <div id="main-container">
   
