@@ -1,3 +1,6 @@
+<div class="header-search header-search--home">
+  <?php get_search_form(); ?>
+</div>
 <div class="home-banner home-banner--single">
 
   <h1 class="site-title home-banner__logo"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></h1>

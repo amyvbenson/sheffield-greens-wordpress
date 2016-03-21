@@ -112,7 +112,7 @@
 
         jQuery('[data-toggle-search]').on('click', function () {
             jQuery(this).toggleClass('search-active');
-            jQuery('.banner .search-form, #green-header').toggleClass('search-active');
+            jQuery('.header-search, .header-search .search-form, #green-header').toggleClass('search-active');
             jQuery('.menu-header, [data-toggle-nav]').removeClass('active');
         });
 

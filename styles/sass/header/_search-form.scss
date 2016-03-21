@@ -1,0 +1,135 @@
+.header-search {
+
+  .search-form {
+    position: absolute;
+    left: 0;
+    top: 33px;
+    width: 100%;
+    display: none;
+    background: #fff;
+
+    &.search-active {
+      display: block;
+    }
+  }
+
+  .search-field {
+    background-color: #FFFFFF;
+    background-image: url("images/search-icon.png");
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    border: medium none;
+    cursor: pointer;
+    height: 32px;
+    margin: 2px 0;
+    padding: 0 0 0 34px;
+    position: relative;
+    transition: width 400ms ease 0s, background 400ms ease 0s;
+    width: 100%;
+
+    &:focus {
+      background-color: #fff;
+      cursor: text;
+      outline: 0;
+      width: 230px;
+    }
+  }
+
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 76px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+  -webkit-appearance: none;
+  line-height: 1;
+  padding: 0 8px 0 30px;
+  height: 33px;
+
+  &.search-active {
+    background: $green;
+  }
+
+  &:before {
+    content: "";
+    background: url("images/icons/search.svg") center no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 33px;
+  }
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+.search-form .search-submit {
+  display: none;
+}
+
+@include media-query(xs) {
+  .search-button {
+    right: 0;
+  }
+
+  .header-search .search-form {
+    position: absolute;
+    left: 0;
+    top: 33px;
+  }
+}
+
+@include media-query(sm) { 
+
+  .header-search {
+
+    .search-form {
+      left: auto;
+      right: 20px;
+      top: 15px;
+      width: auto;
+      display: block;
+    }
+
+    .search-field {
+      width: 120px;
+    }
+  }
+
+  .header-search--home {
+
+    .search-form {
+      position: absolute;
+      right: 0;
+      top: 60px;
+    }
+
+  }
+
+  .search-button {
+    display: none;
+  }
+
+}
+
+@include media-query(md) {
+
+  .header-search--home {
+
+    .search-form {
+      top: 49px;
+    }
+
+  }
+
+}
+

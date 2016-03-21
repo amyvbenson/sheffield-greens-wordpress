@@ -1,6 +1,9 @@
 .home-banner {
-  position: relative;
   width: 100%;
+}
+
+.search-active + .home-banner {
+  margin-top: 32px;
 }
 
 .home-banner__link {
@@ -44,6 +47,11 @@
 
   .home-banner {
     margin-top: 70px;
+    position: relative;
+  }
+
+  .search-active + .home-banner {
+    margin-top: 64px;
   }
 
   .home-banner__image {

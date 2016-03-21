@@ -471,86 +471,7 @@ p {
   margin: 0;
 }
 
-.search-button {
-  position: absolute;
-  top: 0;
-  right: 76px;
-  z-index: 1000;
-  background: none;
-  border: none;
-  box-shadow: none;
-  color: white;
-  -webkit-appearance: none;
-  line-height: 1;
-  padding: 0 8px 0 30px;
-  height: 33px;
-}
-.home .search-button {
-  display: none;
-}
-.search-button.search-active {
-  background: #6AB023;
-}
-.search-button:before {
-  content: "";
-  background: url("images/icons/search.svg") center no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 30px;
-  height: 33px;
-}
-
-.banner .search-form {
-  position: absolute;
-  left: 0;
-  top: 33px;
-  width: 100%;
-  display: none;
-  background: #fff;
-}
-.banner .search-form.search-active {
-  display: block;
-}
-
-.banner .search-field {
-  background-color: #FFFFFF;
-  background-image: url("images/search-icon.png");
-  background-position: 5px center;
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  border: medium none;
-  cursor: pointer;
-  height: 32px;
-  margin: 2px 0;
-  padding: 0 0 0 34px;
-  position: relative;
-  -webkit-transition: width 400ms ease 0s, background 400ms ease 0s;
-          transition: width 400ms ease 0s, background 400ms ease 0s;
-  width: 100%;
-}
-
-.banner .search-field:focus {
-  background-color: #fff;
-  cursor: text;
-  outline: 0;
-  width: 230px;
-}
-
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-}
-
-.search-form .search-submit {
-  display: none;
-}
-
 @media only screen and (min-width: 450px) {
-  .search-button {
-    right: 0;
-  }
-
   .search-active .banner {
     margin-top: 0;
   }
@@ -576,21 +497,113 @@ p {
     float: left;
     font-size: 16px;
   }
+}
+.header-search .search-form {
+  position: absolute;
+  left: 0;
+  top: 33px;
+  width: 100%;
+  display: none;
+  background: #fff;
+}
+.header-search .search-form.search-active {
+  display: block;
+}
+.header-search .search-field {
+  background-color: #FFFFFF;
+  background-image: url("images/search-icon.png");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  border: medium none;
+  cursor: pointer;
+  height: 32px;
+  margin: 2px 0;
+  padding: 0 0 0 34px;
+  position: relative;
+  -webkit-transition: width 400ms ease 0s, background 400ms ease 0s;
+          transition: width 400ms ease 0s, background 400ms ease 0s;
+  width: 100%;
+}
+.header-search .search-field:focus {
+  background-color: #fff;
+  cursor: text;
+  outline: 0;
+  width: 230px;
+}
 
-  .banner .search-form {
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 76px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+  -webkit-appearance: none;
+  line-height: 1;
+  padding: 0 8px 0 30px;
+  height: 33px;
+}
+.search-button.search-active {
+  background: #6AB023;
+}
+.search-button:before {
+  content: "";
+  background: url("images/icons/search.svg") center no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 33px;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+
+.search-form .search-submit {
+  display: none;
+}
+
+@media only screen and (min-width: 450px) {
+  .search-button {
+    right: 0;
+  }
+
+  .header-search .search-form {
+    position: absolute;
+    left: 0;
+    top: 33px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-search .search-form {
     left: auto;
     right: 20px;
     top: 15px;
     width: auto;
     display: block;
   }
-
-  .banner .search-field {
+  .header-search .search-field {
     width: 120px;
+  }
+
+  .header-search--home .search-form {
+    position: absolute;
+    right: 0;
+    top: 60px;
   }
 
   .search-button {
     display: none;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .header-search--home .search-form {
+    top: 49px;
   }
 }
 #footer {
@@ -912,6 +925,10 @@ a.banner_more {
 }
 
 @media only screen and (min-width: 768px) {
+  .home #main {
+    position: relative;
+  }
+
   .featured-menu-item {
     width: 16.66667%;
     display: table-cell;
@@ -1149,8 +1166,11 @@ a.banner_more {
   }
 }
 .home-banner {
-  position: relative;
   width: 100%;
+}
+
+.search-active + .home-banner {
+  margin-top: 32px;
 }
 
 .home-banner__link:hover .home-banner__content, .home-banner__link:focus .home-banner__content, .home-banner__link:active .home-banner__content {
@@ -1190,6 +1210,11 @@ a.banner_more {
 @media only screen and (min-width: 450px) {
   .home-banner {
     margin-top: 70px;
+    position: relative;
+  }
+
+  .search-active + .home-banner {
+    margin-top: 64px;
   }
 
   .home-banner__image {

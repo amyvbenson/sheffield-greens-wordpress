@@ -160,6 +160,10 @@
 
 @include media-query(sm) {
 
+  .home #main {
+    position: relative;
+  }
+
   .featured-menu-item {
     width: percentage(1/6);
     display: table-cell;
