@@ -10,7 +10,7 @@
     </div>
 
     <div class="home-banner__content">
-      <h2 class="home-banner__heading">Support our <strong>Crowdfunder Appeal</strong></h2>
+      <h2 class="home-banner__heading">Thanks to everyone who <strong>supported our Crowdfunder!</strong></h2>
     </div>
 
   </a>
