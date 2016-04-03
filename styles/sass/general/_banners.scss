@@ -1,0 +1,43 @@
+.banner-in-page {
+  box-sizing: border-box;
+  background: $green url("images/icons/chevron_right.svg") no-repeat;
+  background-size: 30px;
+  background-position: 96% center;
+  display: block;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+
+  &:hover, &:focus, &:active {
+    background-color: $dark-green;
+    color: white;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+    padding: 0 40px 0 0;
+  }
+
+  p {
+    padding: 0 40px 0 0;
+  }
+}
+
+@include media-query(sm) {
+
+  .banner-in-page {
+    background-size: 50px;
+
+    h2 {
+      font-size: 60px;
+    }
+
+    h2, p {
+      padding: 0 74px 0 0;
+    }
+
+  }
+
+}
