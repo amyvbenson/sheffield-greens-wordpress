@@ -12,7 +12,9 @@
 
        <h1 class="page-wide__heading"><?php the_title(); ?> <?php edit_post_link( __( 'Edit Page','sheffieldgreens' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?></h1> 
 
-        <?php the_content(); ?>
+        <div class="page-wide__main-content">
+          <?php the_content(); ?>
+        </div>
 
         <div class="page-grid">
 

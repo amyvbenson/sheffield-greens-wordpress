@@ -12,6 +12,16 @@
 
 }
 
+.page-wide__main-content {
+  h2:last-of-type {
+    clear: both;
+  }
+
+  img {
+    max-width: 50%;
+  }
+}
+
 .page-wide__heading {
   font-size: 32px;
   background: $green;

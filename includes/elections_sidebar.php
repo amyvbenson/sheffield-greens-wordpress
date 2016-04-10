@@ -1,32 +1,36 @@
 <div class="election_sidebar col-sidebar" id="sidebar">
 
-  <a href="/elections/council-elections/council-election-manifesto-2016/" class="election-sidebar__manifesto">
-    <h3 class="election-sidebar__sub-heading">Read the Sheffield Green Party <strong>Manifesto</strong></h3>
+  <a href="/elections/council-elections/sheffield-green-party-council-candidates-2016/" class="election-sidebar__manifesto">
+    <h3 class="election-sidebar__sub-heading">Find your local Green <strong>candidates</strong></h3>
   </a>
 
-  <h3>Want to vote? Register now!</h3>
+  <a href="/elections/council-elections/council-election-manifesto-2016/" class="election-sidebar__manifesto">
+    <h3 class="election-sidebar__sub-heading">Read our <strong>Manifesto</strong></h3>
+  </a>
 
-  <p>To be able to vote you must be on the electoral register and be 18 or   over on or before polling. If you are a citizen of an EU member state registered to vote in this country, you are entitled do vote in the   council elections only. Contact Electoral Services on (0114) 273 6910 if you&rsquo;re not sure whether you are registered and any other information.</p>
+  <h3>Register to vote now!</h3>
 
-  <h3>Forms to download :</h3>
+  <p><a href="https://www.gov.uk/register-to-vote">Register to vote online</a>.</p>
+  <p>Register by 18 April to vote in the 5 May elections, or by 7 June to vote in the EU referendum on 23 June.</p>
+  
 
-  <p><a href="https://www.sheffield.gov.uk/your-city-council/elections/register" target="_new" >Electoral Registration Form</a></p>
+  <h3>Are you likely to be out of Sheffield on polling day?</h3>
 
-  <p>Are you likely to be out of Sheffield on polling day? A student studying elsewhere in the country? You need to think about completing a   postal or proxy voting registration form.</p>
+  <p>Don't worry you can still vote, find out how to apply for a postal or proxy vote:</p>
 
   <p>Postal vote: <a href="http://www.sheffield.gov.uk/your-city-council/elections/voting-by-post" target="_new" >http://www.sheffield.gov.uk/your-city-council/elections/voting-by-post</a>.</p>
 
   <p>Proxy vote: <a href="http://www.sheffield.gov.uk/your-city-council/elections/voting-by-proxy" target="_new" >http://www.sheffield.gov.uk/your-city-council/elections/voting-by-proxy</a></p>
+
+  <h3>Why not give us a hand?</h3>
+
+  <p>We are always keen to hear from people willing to lend a hand with   delivering leaflets, canvassing for votes, or spending some time with   activities. <a href="/2016/04/04/help-sheffield-greens-win-in-2016/">Find out ways you can get involved here</a>.</p>
 
   <h3>Election Links</h3>
 
   <p><a href="http://yorkshireandhumber.greenparty.org.uk/region/yorkshireandhumber" target="_self"><strong>Yorkshire and Humber Green Party</strong></a>              </p>
   <p><a href="http://www.greenparty.org.uk/policies.html"><strong>National Policies: </strong>Key priorities for Green Party Action</a></p>
   <p><a href="http://www.youtube.com/greenpartyew"><strong>YouTube: </strong>Visit the Green Party's YouTube channel</a></p>
-
-  <h3>Why not give us a hand?</h3>
-
-  <p>We are always keen to hear from people willing to lend a hand with   delivering leaflets, canvassing for votes, or spending some time with   activities. Eamonn Ward is always glad to hear from people willing to   support, <a href="mailto:info@sheffieldgreenparty.org.uk">send Eamonn an email</a> or telephone him on <strong>0750 3883740 or 0114 231 1548</strong></p>
 
   <h3>Download a window poster</h3>
 

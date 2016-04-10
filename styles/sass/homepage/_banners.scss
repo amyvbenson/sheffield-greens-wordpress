@@ -37,9 +37,11 @@
   max-width: 100%;
 
   strong {
-    font-size: 50px;
+    margin-top: 10px;
+    font-size: 40px;
     font-weight: normal;
     display: block;
+    line-height: 1;
   }
 }
 
@@ -92,7 +94,7 @@
   }
 
   .home-banner__image {
-    width: 60%;
+    width: 55%;
     height: 100%;
 
     .no-flexbox & {
@@ -101,7 +103,7 @@
   }
 
   .home-banner__content {
-    width: 40%;
+    width: 45%;
     padding: 40px;
     height: 100%;
 
@@ -119,7 +121,7 @@
     font-size: 24px;
 
     strong {
-      font-size: 50px;
+      font-size: 48px;
     }
   }
 
@@ -129,10 +131,6 @@
 
   .home-banner__heading {
     font-size: 30px;
-
-    strong {
-      font-size: 60px;
-    }
   }
 
 }
