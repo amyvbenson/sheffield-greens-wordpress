@@ -30,10 +30,14 @@
         <div class="featured-list-item">
 
           <div class="featured-list-image view view-tenth">
-
+          <?php if ( has_post_thumbnail() ) { ?>
+           <?php the_post_thumbnail(array(250,180)) ?>
+          <?php } else { ?>
             <?php $cti = catch_that_image(); if(isset($cti)){ ?>
+
             <img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&amp;h=180&amp;w=250&amp;q=100&amp;zc=1" alt="Featured article image" />
             <?php } ?>	
+          <?php } ?>  
 
             <div class="mask">
              <h2><?php the_title(); ?></h2>
