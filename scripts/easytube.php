@@ -49,8 +49,6 @@ add_filter('the_content','gvideo_content');
 
 function ytube_content($content) {
 
-
-
     $regex = '/\[youtube:(.*?)]/i';
 
 	preg_match_all( $regex, $content, $matches );
@@ -87,7 +85,9 @@ function ytube_content($content) {
 
 			}
 
-			$replace = '<object class="embed" width="'.$width.'" height="'.$height.'" type="application/x-shockwave-flash" data="http://www.youtube.com/v/'.$vid.'"><param name="movie" value="http://www.youtube.com/v/'.$vid.'" /><param name="wmode" value="transparent" /><em>You need a flashplayer enabled browser to view this YouTube video</em></object>';
+			// $replace = '<object class="embed" width="'.$width.'" height="'.$height.'" type="application/x-shockwave-flash" data="http://www.youtube.com/v/'.$vid.'"><param name="movie" value="http://www.youtube.com/v/'.$vid.'" /><param name="wmode" value="transparent" /><em>You need a flashplayer enabled browser to view this YouTube video</em></object>';
+
+			$replace = '<iframe width="'.$width.'" height="'.$height.'" src="https://www.youtube.com/embed/'.$vid.'" frameborder="0" allowfullscreen></iframe>';
 
 		}
 
@@ -99,7 +99,9 @@ function ytube_content($content) {
 
 			$vid = $vid[1];
 
-			$replace = '<object class="embed" width="650" height="510" type="application/x-shockwave-flash" data="http://www.youtube.com/v/'.$vid.'"><param name="wmode" value="transparent" /><param name="movie" value="http://www.youtube.com/v/'.$vid.'" /><em>You need a flashplayer enabled browser to view this YouTube video</em></object>';
+			// $replace = '<object class="embed" width="650" height="510" type="application/x-shockwave-flash" data="http://www.youtube.com/v/'.$vid.'"><param name="wmode" value="transparent" /><param name="movie" value="http://www.youtube.com/v/'.$vid.'" /><em>You need a flashplayer enabled browser to view this YouTube video</em></object>';
+
+			$replace = '<iframe width="'.$width.'" height="'.$height.'" src="https://www.youtube.com/embed/'.$vid.'" frameborder="0" allowfullscreen></iframe>';
 
 		}
 
