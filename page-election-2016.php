@@ -28,4 +28,8 @@
     <?php include(TEMPLATEPATH . '/includes/elections_sidebar.php'); ?>
   </div>
 </div>
+
+</div>
 <?php get_footer(); ?>
+</body>
+</html>

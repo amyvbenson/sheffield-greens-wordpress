@@ -44,5 +44,7 @@
 	</div> <!-- /container -->
 	
 </div> <!-- /main-container -->
-
+</div>
 <?php get_footer(); ?>
+</body>
+</html>

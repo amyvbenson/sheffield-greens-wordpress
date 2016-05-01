@@ -1,5 +1,3 @@
-</div>
-
 <div id="footer">
 
 <div class="centre">
@@ -66,6 +64,8 @@
 
 </div> <!-- /Centre -->
 
+<?php include(TEMPLATEPATH . '/includes/footer/admin-links.php'); ?>
+
 </div> <!-- /footer -->
 
 <?php wp_footer(); ?>
@@ -96,7 +96,9 @@
     jQuery(document).ready(function() {
      
         var div = jQuery('#utility');
-        var start = jQuery(div).offset().top;
+        if (div.length) {
+            var start = jQuery(div).offset().top;
+        }
      
         jQuery.event.add(window, "scroll", function() {
             var p = jQuery(window).scrollTop();
@@ -112,12 +114,15 @@
 
         jQuery('[data-toggle-search]').on('click', function () {
             jQuery(this).toggleClass('search-active');
-            jQuery('.header-search, .header-search .search-form, #green-header').toggleClass('search-active');
+            jQuery('.header-search, .header-search .search-form, #green-header, .main-header').toggleClass('search-active');
             jQuery('.menu-header, [data-toggle-nav]').removeClass('active');
         });
-
         jQuery('#video iframe, #video object, .entry-content iframe, .entry-content object, .article iframe, .article object').each(function(){
             jQuery(this).wrap('<div class="video-wrapper" />')
+        })
+
+        jQuery('[data-faux-link]').on('mouseenter mouseleave', function () {
+            jQuery(this).parent('div').toggleClass('hover');
         })
      
     });
@@ -206,6 +211,3 @@
      </script>
  
 	<div id="backgroundPopup"></div>
-
-</body>
-</html>

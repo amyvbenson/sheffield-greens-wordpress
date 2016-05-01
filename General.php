@@ -40,5 +40,7 @@ Template Name: Council Election results 2010
 
 		</div><!-- #container -->
 </div>
-
+</div>
 <?php get_footer(); ?>
+</body>
+</html>

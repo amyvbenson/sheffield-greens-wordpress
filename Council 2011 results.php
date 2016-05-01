@@ -2243,4 +2243,7 @@ Template Name: Council Election results 2011
 		</div><!-- #container -->
 </div>
 
+</div>
 <?php get_footer(); ?>
+</body>
+</html>

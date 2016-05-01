@@ -247,5 +247,7 @@
 <?php } ?><!-- /Main conditional tag -->
 
 </div>
-
+</div>
 <?php get_footer(); ?>
+</body>
+</html>
