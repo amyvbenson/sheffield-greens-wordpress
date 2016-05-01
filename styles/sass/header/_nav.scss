@@ -54,21 +54,18 @@
     padding: 0 5px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-	}
 
-	&:hover, &:focus, &:active {
-
-		a {
+    &:hover, &:focus, &:active {
 			border-bottom: 2px solid #FFF;
 	    color: #fff;
 	    background: $turquoise;
 		}
+	}
 
-		ul {
+	ul {
 			display: block;
 		}
-
-	}
+	
 
 	&.current_page_item, &.current-menu-ancestor, &.current-menu-item, &.current-menu-parent {
 		a {
