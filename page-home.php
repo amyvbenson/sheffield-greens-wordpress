@@ -30,7 +30,7 @@
       </div>
 
       <div class="home-banner__content">
-        <h2 class="home-banner__heading">5th May Council Elections <strong>Meet your candidates &amp; read our vision for Sheffield</strong></h2>
+        <h2 class="home-banner__heading"><strong>Thank you to everyone who Voted Green in Sheffield!</strong></h2>
       </div>
 
     </a>
