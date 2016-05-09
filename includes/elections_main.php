@@ -18,7 +18,7 @@
       <div class="election-info">
         <h1>Council Elections</h1>
         <?php if ( get_option('green_info_council_election') <> "" ) { echo stripslashes(get_option('green_info_council_election')); } ?>
-        <a rel="nofollow" class="readmore" href="<?php bloginfo('url'); ?>/elections/council-elections/greens-can-win-local-elections-2016/">More on Council Elections &raquo;</a>
+        <a rel="nofollow" class="readmore" href="<?php bloginfo('url'); ?>/elections/council-elections">More on Council Elections &raquo;</a>
       </div>
 
     </div>

@@ -25,7 +25,7 @@
 
   <div class="container container--no-pad home-banner home-banner--new">
 
-    <a href="/elections/council-elections/greens-can-win-local-elections-2016/" class="home-banner__link">
+    <a href="/elections/council-elections/results/2016-election-results/" class="home-banner__link">
       <div class="home-banner__image">
       </div>
 
