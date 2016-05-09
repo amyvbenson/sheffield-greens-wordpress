@@ -1,13 +1,5 @@
 <div class="election_sidebar col-sidebar" id="sidebar">
 
-  <a href="/elections/council-elections/sheffield-green-party-council-candidates-2016/" class="election-sidebar__manifesto">
-    <h3 class="election-sidebar__sub-heading">Find your local Green <strong>candidates</strong></h3>
-  </a>
-
-  <a href="/elections/council-elections/council-election-manifesto-2016/" class="election-sidebar__manifesto">
-    <h3 class="election-sidebar__sub-heading">Read our <strong>Manifesto</strong></h3>
-  </a>
-
   <h3>Register to vote now!</h3>
 
   <p><a href="https://www.gov.uk/register-to-vote">Register to vote online</a>.</p>

@@ -47,9 +47,6 @@ get_header(); ?>
     </div><!-- #post -->
     
     <div id="sidebar" class="col-sidebar">
-      <a href="/elections/council-elections/greens-can-win-local-elections-2016/" class="election-sidebar__manifesto">
-        <h3 class="election-sidebar__sub-heading">5th May Council Elections <strong>Greens can win!</strong></h3>
-      </a>
       <?php get_sidebar(); ?>
    </div><!-- #sidebar -->
 
