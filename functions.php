@@ -1039,7 +1039,9 @@ add_filter('pre_get_posts', 'exclude_category');
 function get_related_posts() {
     global $post;
 
-    $related_posts = get_posts(array( 'numberposts' => 10, 'category_name' => $post->post_name ));
+    $post_name = str_replace('cllr-', '', $post->post_name);
+
+    $related_posts = get_posts(array( 'numberposts' => 10, 'category_name' => $post_name));
     if ($related_posts) {
 
 	    $output = '<h2>Related posts</h2>';
