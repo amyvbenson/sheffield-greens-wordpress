@@ -3,7 +3,7 @@
   <h3>Register to vote now!</h3>
 
   <p><a href="https://www.gov.uk/register-to-vote">Register to vote online</a>.</p>
-  <p>Register by 18 April to vote in the 5 May elections, or by 7 June to vote in the EU referendum on 23 June.</p>
+  <p>Register by 7 June to vote in the EU referendum on 23 June.</p>
   
 
   <h3>Are you likely to be out of Sheffield on polling day?</h3>

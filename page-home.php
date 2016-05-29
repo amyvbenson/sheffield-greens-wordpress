@@ -25,12 +25,12 @@
 
   <div class="container container--no-pad home-banner home-banner--new">
 
-    <a href="/elections/council-elections/results/2016-election-results/" class="home-banner__link">
+    <a href="/issues/eu-referendum/" class="home-banner__link">
       <div class="home-banner__image">
       </div>
 
       <div class="home-banner__content">
-        <h2 class="home-banner__heading"><strong>Thank you to everyone who Voted Green in Sheffield!</strong></h2>
+        <h2 class="home-banner__heading"><strong>We're Fairer, Safer and Greener in Europe</strong> Vote Remain on 23rd June</h2>
       </div>
 
     </a>

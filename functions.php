@@ -1055,6 +1055,23 @@ function get_related_posts() {
 	  }
 }
 
+function get_category_posts($cat) {
+	global $post;
+
+	$category_posts = get_posts(array( 'numberposts' => 10, 'category_name' => $cat));
+    if ($category_posts) {
+
+	    $output = '<h2>Related posts</h2>';
+	    $output .= '<ul class="related-posts">';
+	    foreach ( $category_posts as $category_post ) {
+	        $output .= '<li><a href="' . get_permalink( $category_post->ID ) . '">' . apply_filters( 'the_title', $category_post->post_title, $category_post->ID ) . '</a></li>';
+	    }
+	    $output .= '</ul>';
+
+	    return $output;
+	  }
+}
+
 /**
  * Get slug of the parent page
  */

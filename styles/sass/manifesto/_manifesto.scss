@@ -1,4 +1,4 @@
-#post.election-2016 {
+#post.election-2016 .entry-content {
 
   h2 {
     font-size: 32px;
@@ -79,7 +79,7 @@ h3.election-sidebar__sub-heading {
 
 @include media-query(xs) {
 
-  #post.election-2016 {
+  #post.election-2016 .entry-content {
 
     ul {
       display: flex;
