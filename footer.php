@@ -116,7 +116,7 @@
             jQuery('.header-search, .header-search .search-form, #green-header, .main-header').toggleClass('search-active');
             jQuery('.menu-header, [data-toggle-nav]').removeClass('active');
         });
-        jQuery('#video iframe, #video object, .entry-content iframe, .entry-content object, .article iframe, .article object').each(function(){
+        jQuery('#video iframe, #video object, .js-post-body iframe, .js-post-body object, .entry-content iframe, .entry-content object, .article iframe, .article object').each(function(){
             jQuery(this).wrap('<div class="video-wrapper" />')
         })
 

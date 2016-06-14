@@ -4,23 +4,7 @@
 
 <body <?php body_class($class); ?>>
 
-  <header class="main-header">
-
-    <div class="container">
-
-      <h1>
-        <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="main-header__logo"/>
-      </h1>     
-      <p class="main-header__tagline"><?php bloginfo('description'); ?></p>
-
-      <?php include(TEMPLATEPATH . '/includes/header/header-social.php'); ?>
-      <?php include(TEMPLATEPATH . '/includes/header/header-search.php'); ?>
-
-    </div>
-
-    <?php include(TEMPLATEPATH . '/includes/header/main-nav.php'); ?>
-
-  </header>
+ <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
 
 
   <div class="container container--no-pad home-banner home-banner--new">

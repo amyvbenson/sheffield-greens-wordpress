@@ -1,4 +1,4 @@
-<div class="home-section home-section--video">
+<div class="page-section home-section home-section--video">
   <h2 class="home-section__heading">Latest Video</h2>
 
   <?php query_posts('showposts=1&category_name=Video'); ?>

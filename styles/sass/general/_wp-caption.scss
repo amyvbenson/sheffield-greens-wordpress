@@ -1,0 +1,42 @@
+.wp-caption {
+  background: $light-grey;
+  max-width: 100%;
+
+  &.aligncenter, &.alignleft, &.alignright {
+    @include clearfix;
+    float: none;
+    margin: 0 auto $base-unit*2 auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.wp-caption-text {
+  margin: 0 $base-unit $base-unit $base-unit;
+
+  .post__body & {
+    margin-bottom: $base-unit;
+  }
+}
+
+@include media-query(xs) {
+
+  .wp-caption {
+     &.alignright, &.alignleft {
+      max-width: 50%;
+    }
+
+    &.alignright {
+      float: right;
+      margin: 0 0 $base-unit*2 $base-unit*2;
+    }
+
+    &.alignleft {
+      float: left;
+      margin: 0 $base-unit*2 $base-unit*2 0;
+    }
+  }
+
+}

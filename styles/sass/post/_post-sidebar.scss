@@ -1,0 +1,65 @@
+.sidebar__archives {
+  display: block;
+  line-height: 1;
+  padding: $base-unit*2;
+  margin-bottom: $base-unit*2;
+  background: $dark-green;
+  font-family: $heading-font;
+  color: white;
+  @include font-size($large-font-size);
+}
+
+
+.post-sidebar {
+  .widget_polls-widget {
+    background: $green;
+
+    .widget-title {
+      background: $dark-green;
+      font-family: $heading-font;
+      color: white;
+      @include font-size($large-font-size);
+      padding: $base-unit*2;
+      line-height: 1;
+    }
+
+    a {
+      color: black;
+      text-decoration: underline;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .wp-polls {
+    padding: $base-unit*2 $base-unit*2 0 $base-unit*2;
+
+    p {
+      text-align: left!important;
+    }
+
+    input.Buttons {
+      background: white;
+      border: none;
+      box-shadow: none;
+      padding: $base-unit;
+      @include font-size($base-font-size);
+    }
+
+  }
+
+  .wp-polls-ul {
+    margin-bottom: $base-unit*2;
+
+    li {
+      margin-bottom: $base-unit/2; 
+    }
+  }
+
+  .wp-polls-loading + ul {
+    padding: 0 $base-unit*2 $base-unit*2 $base-unit*2;
+  }
+
+}

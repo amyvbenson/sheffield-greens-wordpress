@@ -3,13 +3,18 @@
   */
 @import 'sass/variables/colors';
 @import 'sass/variables/fonts';
+@import 'sass/variables/font-sizes';
+@import 'sass/variables/measurements';
 @import 'sass/mixins/media-query-ie8';
 @import 'sass/mixins/clearfix';
+@import 'sass/mixins/font-size';
 @import 'sass/general/base';
+@import 'sass/general/layout-new';
 @import 'sass/general/layout';
 @import 'sass/general/tables';
 @import 'sass/general/typography';
 @import 'sass/general/banners';
+@import 'sass/general/wp-caption';
 @import 'sass/header/header';
 @import 'sass/header/nav';
 @import 'sass/header/banner';
@@ -27,6 +32,8 @@
 @import 'sass/categories/featured_categories';
 @import 'sass/archives/archives';
 @import 'sass/post/post-header';
+@import 'sass/post/post-main';
+@import 'sass/post/post-sidebar';
 @import 'sass/areas/wards';
 @import 'sass/manifesto/manifesto';
 @import 'sass/pages/page-wide';

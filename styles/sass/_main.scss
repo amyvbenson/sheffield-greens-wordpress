@@ -240,43 +240,10 @@ span.edit-link {
 	margin: 10px 0 10px 15px;
 }
 
-.wp-caption {
-  max-width: 100%;
-  &.alignright, &.alignleft {
-    max-width: 50%;
-  }
-}
+
 
 #outerImageContainer {
 	max-width: 100%;
-}
-
-/*== CAPTION LAYOUT==*/
-
-.wp-caption {
-	background: none repeat scroll 0 0 #FFFFDA;
-	padding: 0;
-	text-align: center;
-
-  .entry-content & {
-    max-width: 50%; 
-  }
-
-  &.aligncenter {
-    clear: both;
-    margin: 0 auto;
-  }
-}
-.wp-caption-text
-{
-	font-size: 12px;
-	margin: 0;
-	padding: 5px;
-	text-align: center;
-}
-.wp-caption img {
-  width: 100%;
-  max-width: 100%;
 }
 
 
