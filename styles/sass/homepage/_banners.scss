@@ -43,6 +43,12 @@
     display: block;
     line-height: 1;
   }
+
+  &.home-banner__heading--long-text {
+    font-family: $body-font;
+    text-transform: none;
+
+  }
 }
 
 @include media-query(xs) {
@@ -57,7 +63,7 @@
   }
 
   .home-banner__image {
-    background: url('images/greens-for-a-better-europe-large.jpg') center no-repeat;
+    background: url('images/join-banner.jpg') center no-repeat;
     background-size: cover;
     height: 300px;
 
@@ -75,6 +81,12 @@
     z-index: 998;
 
   }
+
+}
+
+.home-banner--full-image {
+  background: $green url('images/join-banner.jpg') center no-repeat;
+  background-size: cover;
 
 }
 
@@ -114,6 +126,17 @@
     .no-backgroundsize & {
       padding: 60px;
       width: 100%;
+    }
+
+    .home-banner--full-image & {
+     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
     }
   }
 

@@ -4,22 +4,10 @@
 
 <body <?php body_class($class); ?>>
 
- <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
+  <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
 
 
-  <div class="container container--no-pad home-banner home-banner--new">
-
-    <a href="/issues/eu-referendum/" class="home-banner__link">
-      <div class="home-banner__image">
-      </div>
-
-      <div class="home-banner__content">
-        <h2 class="home-banner__heading"><strong>We're Fairer, Safer and Greener in Europe</strong> Vote Remain on 23rd June</h2>
-      </div>
-
-    </a>
-
-  </div>
+  <?php include(TEMPLATEPATH . '/includes/homepage/banner.php'); ?>
 
 
   <div class="container container--no-pad">
