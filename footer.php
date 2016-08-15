@@ -58,7 +58,7 @@
     <p><?php if ( get_option('green_promoted_by_address') <> "" ) { echo stripslashes(get_option('green_promoted_by_address')); } ?></p>
     <p>on behalf of Sheffield Green Party</p>
     <p>Copyright &copy; <?php if ( get_option('green_copyright_year') <> "" ) { echo stripslashes(get_option('green_copyright_year')); } ?> Sheffield Green Party</p>
-    <p> All rights reservedx.</p>
+    <p> All rights reservedxx.</p>
 </div> 
 <!-- /Copyright -->
 
