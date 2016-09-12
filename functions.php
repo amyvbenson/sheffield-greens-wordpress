@@ -517,6 +517,12 @@ function sgp_setup() {
 
 	add_theme_support( 'html5', array( 'search-form') );
 
+	/**
+   * Add theme support for the Eventbrite API plugin.
+   * See: https://wordpress.org/plugins/eventbrite-api/
+   */
+   add_theme_support( 'eventbrite' );
+
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
 		'abourthorne' => array(

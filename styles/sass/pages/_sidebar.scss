@@ -1,0 +1,31 @@
+.sidebar-list__heading {
+  background: $dark-green;
+  color: white;
+  @include font-size($large-font-size);
+  padding: $base-unit;
+  margin: 0;
+}
+
+.sidebar-list__list {
+  margin-bottom: $base-unit*2;
+}
+
+.sidebar-list__list-item {
+  
+}
+
+.sidebar-list__list-link {
+  display: block;
+  color: $dark-green;
+  padding: $base-unit*2 0;
+  border-bottom: 1px solid $dark-green;
+}
+
+.sidebar-list__view-all {
+  padding: 0;
+
+  a {
+    font-weight: bold;
+    color: $dark-green; 
+  }
+}
