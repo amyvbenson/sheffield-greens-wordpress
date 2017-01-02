@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/includes/banner/bjqs.css" type="text/css" media="screen" />
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
    
     <!--[if lt IE 7]>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/ie6/ie6.css" />

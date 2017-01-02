@@ -1,13 +1,19 @@
-<div class="container container--no-pad home-banner home-banner--new home-banner--full-image">
+<div class="container container--no-pad home-banner home-banner--new">
 
   <a href="https://my.greenparty.org.uk/civicrm/membership/joining" class="home-banner__link">
 
-    <div class="home-banner__content">
-    <h2 class="home-banner__heading">Together we must now mobilise to defend our hard-won rights and environmental protections, and stand up for migrants.<br><strong>Join the Green Party now to be part of the fight</strong></h2>
+    <div class="home-banner__content home-banner__content--primary">
+      <h2 class="home-banner__heading">
+      <span>Make 2017</span> <span>a year of</span> <span>hope</span>
+      </h2>
     </div>
+    <div class="home-banner__content home-banner__content--secondary">
+      <p class="home-banner__heading">
+      Join the Green Party and fight for a future you want
+      </p>
+    </div>
+  </a>
 
   </a>
-    
-  </a>
-  
+
 </div>

@@ -611,6 +611,7 @@ function sgp_page_menu_args( $args ) {
 	return $args;
 }
 add_filter( 'wp_page_menu_args', 'sgp_page_menu_args' );
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 
 // remove wordpress meta
 

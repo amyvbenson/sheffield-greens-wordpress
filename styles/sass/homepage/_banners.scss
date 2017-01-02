@@ -12,6 +12,10 @@
     .home-banner__content {
       background: $green;
     }
+
+    .home-banner__content--secondary {
+      background: $dark-green;
+    }
   }
 
   .no-flexbox & {
@@ -20,13 +24,31 @@
 }
 
 .home-banner__content {
-  box-sizing: border-box;  
+  box-sizing: border-box;
   background: $dark-green;
   color: white;
   padding: 20px;
   transition: all ease 0.3s;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.home-banner .home-banner__content--primary {
+  text-align: center;
+
+  .home-banner__heading {
+    width: 100%;
+  }
+}
+
+.home-banner .home-banner__content--secondary {
+  background: $green;
+  text-align: center;
+
+  .home-banner__heading {
+    line-height: 1.2;
+  }
 }
 
 .home-banner__heading {
@@ -34,6 +56,7 @@
   text-transform: uppercase;
   font-size: 24px;
   margin: 0;
+  padding: 0;
   max-width: 100%;
 
   strong {
@@ -63,14 +86,15 @@
   }
 
   .home-banner__image {
-    background: url('images/join-banner.jpg') center no-repeat;
-    background-size: cover;
+    background: $green;
+    // background: url('images/join-banner.jpg') center no-repeat;
+    // background-size: cover;
     height: 300px;
 
     .no-backgroundsize & {
       display: none;
     }
-    
+
   }
 
   .home-banner__logo {
@@ -85,8 +109,9 @@
 }
 
 .home-banner--full-image {
-  background: $green url('images/join-banner.jpg') center no-repeat;
-  background-size: cover;
+  background: $green;
+  // background: $green url('images/join-banner.jpg') center no-repeat;
+  // background-size: cover;
 
 }
 
@@ -129,14 +154,14 @@
     }
 
     .home-banner--full-image & {
-     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
     }
   }
 
@@ -148,12 +173,54 @@
     }
   }
 
+  .home-banner .home-banner__content--primary {
+    width: 50%;
+
+    .home-banner__heading {
+      width: 100%;
+      font-size: 64px;
+
+      span:first-child {
+        font-size: 56px;
+      }
+
+      span:last-child {
+        font-size: 128px;
+        line-height: 116px;
+      }
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .home-banner .home-banner__content--secondary {
+    width: 50%;
+
+    .home-banner__heading {
+      font-size: 42px;
+    }
+  }
+
 }
 
 @include media-query(md) {
 
-  .home-banner__heading {
-    font-size: 30px;
+  .home-banner .home-banner__content--primary {
+    width: 30%;
+
+    .home-banner__heading {
+      font-size: 64px;
+    }
+  }
+
+  .home-banner .home-banner__content--secondary {
+    width: 70%;
+
+    .home-banner__heading {
+      font-size: 64px;
+    }
   }
 
 }
