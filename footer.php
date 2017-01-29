@@ -9,7 +9,7 @@
 
 <div id="newsletter" class="col-thirds">
 
-<h1>Join our mailing list</h1>
+<h1>Join our mailing list.</h1>
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
