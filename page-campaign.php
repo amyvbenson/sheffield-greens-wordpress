@@ -3,14 +3,6 @@
 <?php  include(TEMPLATEPATH . '/includes/header/head.php');  ?>
 
 <body <?php body_class($class); ?>>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=414389862924";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
   <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
 
@@ -37,7 +29,7 @@
                 <?php } ?>
 
                 <?php if (has_block( 'video' )) { ?>
-                  <div class="campaign__video">
+                  <div id="video" class="campaign__video">
                     <?php the_block('video'); ?>
                   </div>
                 <?php } ?>
@@ -57,14 +49,10 @@
         </div>
         </div>
         <div class="col-30">
-          <div class="post-section">
-            <h2 class="">Share</h2>
-            <a class="twitter-share-button"
-            href="https://twitter.com/intent/tweet?text=I just took action on airpollution in Sheffield with @sheffieldgreens, please join me  www.sheffieldgreenparty.org.uk/airpollution&hashtags=LetSheffieldBreathe" data-size="large">
-            Tweet</a>
-
-            <div class="fb-share-button" data-href="http://sheffieldgreenparty.org.uk/airpollution" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsheffieldgreenparty.org.uk%2Fairpollution&amp;src=sdkpreparse">Share</a></div>
-
+          <a href="http://www.change.org/p/sheffield-city-council-sheffield-needs-a-new-air-pollution-action-plan" class="campaign__sidebar-cta">
+            <span>Sign the petition</span>
+          </a>
+          <div class="campaign__related">
             <?php echo get_category_posts('air-pollution');?>
           </div>
 
