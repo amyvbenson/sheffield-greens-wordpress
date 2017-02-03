@@ -1,17 +1,12 @@
-<div class="container container--no-pad home-banner home-banner--new">
+<div class="container container--no-pad home-banner home-banner--new home-banner--full-image">
 
-  <a href="https://my.greenparty.org.uk/civicrm/membership/joining" class="home-banner__link">
+  <a href="http://sheffieldgreenparty.org.uk/issues/airpollution/" class="home-banner__link">
 
-    <div class="home-banner__content home-banner__content--primary">
-      <h2 class="home-banner__heading">
-      <span>Make 2017</span> <span>a year of</span> <span>hope</span>
-      </h2>
+    <div class="home-banner__content">
+      <h2>Let Sheffield Breathe</h2>
+      <p>Join our campaign to clean up Sheffield's air</p>
     </div>
-    <div class="home-banner__content home-banner__content--secondary">
-      <p class="home-banner__heading">
-      Join the Green Party and fight for a future you want
-      </p>
-    </div>
+
   </a>
 
   </a>

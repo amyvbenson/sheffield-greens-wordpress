@@ -7,16 +7,19 @@
 }
 
 .home-banner__link {
+  display: block;
+  background: url('images/air-quality-banner.jpg') left center no-repeat;
+  background-size: cover;
+  height: 220px;
+  // &:hover, &:focus, &:active {
+  //   .home-banner__content {
+  //     background: $green;
+  //   }
 
-  &:hover, &:focus, &:active {
-    .home-banner__content {
-      background: $green;
-    }
-
-    .home-banner__content--secondary {
-      background: $dark-green;
-    }
-  }
+  //   .home-banner__content--secondary {
+  //     background: $dark-green;
+  //   }
+  // }
 
   .no-flexbox & {
     @extend %clearfix;
@@ -24,14 +27,35 @@
 }
 
 .home-banner__content {
-  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
   background: $dark-green;
+  // box-sizing: border-box;
+  // background: $dark-green;
   color: white;
-  padding: 20px;
-  transition: all ease 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 8px;
+  // transition: all ease 0.3s;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    font-family: $heading-font;
+    line-height: 1.2;
+    padding: 0;
+  }
+}
+
+.home-banner--full-image {
+  background: $dark-green;
+  // background: $green url('images/join-banner.jpg') center no-repeat;
+  // background-size: cover;
 }
 
 .home-banner .home-banner__content--primary {
@@ -97,6 +121,11 @@
 
   }
 
+  .home-banner__link {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .home-banner__logo {
     width: 400px;
     margin: 0 auto;
@@ -106,12 +135,17 @@
 
   }
 
-}
+  .home-banner__content {
+    padding: 32px 16px;
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: right;
 
-.home-banner--full-image {
-  background: $green;
-  // background: $green url('images/join-banner.jpg') center no-repeat;
-  // background-size: cover;
+    h2 {
+      @include font-size($medium-font-size);
+    }
+  }
 
 }
 
@@ -122,7 +156,6 @@
   }
 
   .home-banner__link {
-    display: flex;
     height: 100%;
 
     .no-flexbox & {
@@ -139,31 +172,31 @@
     }
   }
 
-  .home-banner__content {
-    width: 45%;
-    padding: 40px;
-    height: 100%;
+  // .home-banner__content {
+  //   width: 45%;
+  //   padding: 40px;
+  //   height: 100%;
 
-    .no-flexbox & {
-      float: left;
-    }
+  //   .no-flexbox & {
+  //     float: left;
+  //   }
 
-    .no-backgroundsize & {
-      padding: 60px;
-      width: 100%;
-    }
+  //   .no-backgroundsize & {
+  //     padding: 60px;
+  //     width: 100%;
+  //   }
 
-    .home-banner--full-image & {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      padding: 0;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
-  }
+  //   .home-banner--full-image & {
+  //     position: absolute;
+  //     width: 1px;
+  //     height: 1px;
+  //     margin: -1px;
+  //     padding: 0;
+  //     overflow: hidden;
+  //     clip: rect(0, 0, 0, 0);
+  //     border: 0;
+  //   }
+  // }
 
   .home-banner__heading {
     font-size: 24px;
@@ -203,6 +236,24 @@
     }
   }
 
+  .home-banner__content {
+    position: relative;
+    // width: 335px;
+    top: auto;
+    right: auto;
+    background: none;
+    padding: 64px 32px;
+    text-align: right;
+
+    h2 {
+      @include font-size($large-font-size);
+    }
+
+    p {
+      @include font-size($medium-font-size);
+    }
+  }
+
 }
 
 @include media-query(md) {
@@ -220,6 +271,31 @@
 
     .home-banner__heading {
       font-size: 64px;
+    }
+  }
+
+  .home-banner__content {
+    width: auto;
+
+    h2 {
+      @include font-size(56);
+    }
+
+    p {
+      @include font-size($large-font-size);
+    }
+  }
+
+}
+
+@include media-query(lg) {
+
+  .home-banner__content {
+    padding: 64px 32px;
+    text-align: right;
+
+    h2 {
+      @include font-size(80);
     }
   }
 

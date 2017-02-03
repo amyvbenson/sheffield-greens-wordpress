@@ -48,7 +48,7 @@
                      
         </div>
         </div>
-        <div class="col-30">
+        <div class="col-30 campaign__sidebar">
           <a href="http://www.change.org/p/sheffield-city-council-sheffield-needs-a-new-air-pollution-action-plan" class="campaign__sidebar-cta">
             <span>Sign the petition</span>
           </a>
