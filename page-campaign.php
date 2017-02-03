@@ -36,6 +36,12 @@
                   </div>
                 <?php } ?>
 
+                <?php if (has_block( 'video' )) { ?>
+                  <div class="campaign__video">
+                    <?php the_block('video'); ?>
+                  </div>
+                <?php } ?>
+
                 
 
                 <?php if (has_block( 'key-points' )) { ?>
@@ -51,13 +57,16 @@
         </div>
         </div>
         <div class="col-30">
-        <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet?text=I just took action on airpollution in Sheffield with @sheffieldgreens, please join me  www.sheffieldgreenparty.org.uk/airpollution&hashtags=LetSheffieldBreathe" data-size="large">
-        Tweet</a>
+          <div class="post-section">
+            <h2 class="">Share</h2>
+            <a class="twitter-share-button"
+            href="https://twitter.com/intent/tweet?text=I just took action on airpollution in Sheffield with @sheffieldgreens, please join me  www.sheffieldgreenparty.org.uk/airpollution&hashtags=LetSheffieldBreathe" data-size="large">
+            Tweet</a>
 
-        <div class="fb-share-button" data-href="http://sheffieldgreenparty.org.uk/airpollution" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsheffieldgreenparty.org.uk%2Fairpollution&amp;src=sdkpreparse">Share</a></div>
+            <div class="fb-share-button" data-href="http://sheffieldgreenparty.org.uk/airpollution" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsheffieldgreenparty.org.uk%2Fairpollution&amp;src=sdkpreparse">Share</a></div>
 
-        <?php echo ('air-pollution');?>
+            <?php echo get_category_posts('air-pollution');?>
+          </div>
 
       </div>
       <?php endwhile; ?>
