@@ -1,0 +1,156 @@
+.campaign__heading {
+	background: $dark-green;
+	
+	h1 {
+		font-family: $heading-font;
+		@include font-size($large-font-size);
+		padding: 16px 16px;
+		color: white;
+		max-width: 430px;
+		line-height: 1;
+	}
+}
+
+.campaign__ctas {
+	margin: 24px 0;
+
+	h2 {
+		color: $dark-green;
+		font-family: $heading-font;
+		@include font-size($large-font-size);
+		margin-bottom: 0;
+	}
+
+	ul, ol {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		max-width: 280px;
+	}
+
+	li {
+
+		a, strong {
+			color: white;
+			font-family: $heading-font;
+			display: inline-block;
+			text-decoration: none;
+			background: $dark-green;
+			color: white;
+			position: relative;
+			padding: 8px;
+			@include font-size($base-font-size);
+			font-weight: normal;
+
+			&:after {
+				content: "";
+				background: url('images/cta-arrow.svg') no-repeat right center;
+				background-size: auto 100%;
+				position: absolute;
+				top: 0;
+				right: -32px;
+		    height: 101%;
+		    width: 32px;
+		    bottom: 0;
+			}
+		}
+
+		a {
+			&:hover, &:focus {
+				color: white;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.campaign__key-points {
+	background: $dark-green;
+	color: white;
+	padding: 16px;
+	margin: 24px 0;
+
+	h2 {
+		font-family: $heading-font;
+		@include font-size($large-font-size);
+		margin-bottom: 0;
+	}
+
+	ul, ol {
+		list-style: none;
+		margin: 24px 0;
+		padding: 0;
+	}
+
+	ol li {
+		counter-increment: step-counter;
+		padding-left: 32px;
+		position: relative;
+		font-family: $heading-font;
+		margin-bottom: 16px;
+		line-height: 1.4;
+
+		&:before {
+	    content: counter(step-counter);
+	    position: absolute;
+	    text-align: center;
+	    display: inline-block;
+	    background: white;
+	    color: $dark-green;
+    	width: 24px;
+    	margin-left: -32px;
+		}
+	}
+}
+
+@include media-query(sm) {
+
+	.campaign__heading {
+		display: flex;
+		align-items: center;
+		height: 300px;
+		background: $dark-green url('images/air-quality-bg.png') bottom right no-repeat;
+
+		h1 {
+			@include font-size(86);
+			padding: 0 0 0 32px;
+		}
+	}
+
+	.campaign__ctas {
+		ul, ol {
+			max-width: 600px;
+		}
+
+		li {
+
+			a, strong {
+				padding: 16px;
+				@include font-size($medium-font-size);	
+
+				&:after {
+					right: -56px;
+			    width: 56px;
+				}
+			}
+		}
+	}
+
+	.campaign__key-points {
+		ul, ol {
+			margin: 32px;	
+		}
+
+		ol li {
+			@include font-size($medium-font-size);
+			padding-left: 48px;
+
+			&:before {
+				@include font-size($medium-font-size);
+	    	width: 40px;
+	    	margin-left: -48px;
+			}
+		}
+	}
+}
