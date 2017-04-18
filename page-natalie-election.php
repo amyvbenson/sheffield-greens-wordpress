@@ -33,6 +33,11 @@
             <span>Donate now to help Greens win in Sheffield</span>
           </a>
 
+          <a href="https://www.gov.uk/register-to-vote" class="campaign__sidebar-cta-block">
+            <span>Register to vote</span>
+          </a>
+
+
       </div>
       <?php endwhile; ?>
       </article>
