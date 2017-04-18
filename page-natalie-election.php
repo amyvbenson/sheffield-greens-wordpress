@@ -30,7 +30,7 @@
         </div>
         <div class="col-30 campaign__sidebar">
           <a href="http://sheffieldgreenparty.org.uk/about-us/donate/" class="campaign__sidebar-cta-block">
-            <span>Donate now</span>
+            <span>Donate now to help Greens win in Sheffield</span>
           </a>
 
       </div>

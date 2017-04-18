@@ -138,6 +138,20 @@
 	}
 }
 
+.campaign__sidebar-cta-block {
+	background: $dark-green;
+
+	span {
+		line-height: 1;
+		text-align: center;
+		background: none;
+	}
+
+	&:hover, &:focus {
+		background: $green;
+	}
+}
+
 .campaign--nb {
 	.post__body {
 		margin-top: 24px;
