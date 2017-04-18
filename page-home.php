@@ -20,12 +20,6 @@
 
     <div class="col-50">
 
-      <a href="http://www.crowdfunder.co.uk/a-green-voice-for-yorkshire" class="home-cta-large">
-        <strong>A Green Voice for the North</strong>
-        Help us raise funds to elect Natalie Bennett as the Green Party MP for Sheffield Central, the first Green MP in the North of England
-      </a>
-
-    
 
       <?php include(TEMPLATEPATH . '/includes/homepage/latest-video.php'); ?>
 
