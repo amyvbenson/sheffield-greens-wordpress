@@ -2640,7 +2640,7 @@ h3.election-sidebar__sub-heading strong {
   background: #006341 url("images/air-quality-bg.png") bottom right no-repeat;
 }
 .campaign--nb .campaign__heading {
-  background: #006341 url("images/natalie-banner.jpg") bottom left no-repeat;
+  background: #006341 url("images/natalie-banner.jpg") 0 0 no-repeat;
   justify-content: flex-end;
   text-align: right;
 }
