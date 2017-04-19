@@ -2496,6 +2496,14 @@ h3.election-sidebar__sub-heading strong {
   line-height: 1;
 }
 
+.campaign__sub-page-heading h1 {
+  color: #006341;
+  font-family: "bebas-neue", helvetica, arial, sans-serif;
+  font-size: 36px;
+  font-size: 2.25rem;
+  padding: 16px 0;
+}
+
 .campaign__ctas {
   margin: 24px 0;
 }
