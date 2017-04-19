@@ -30,20 +30,8 @@
         </div>
         </div>
         <div class="col-30 campaign__sidebar">
-          <a href="http://sheffieldgreenparty.org.uk/about-us/donate/" class="campaign__sidebar-cta-block">
-            <span>Donate now to help Greens win in Sheffield</span>
-          </a>
-
-          <a href="http://sheffieldgreenparty.org.uk/get-involved/teamnatalie-signup" class="campaign__sidebar-cta-block">
-            <span>Get involved and help Natalie win</span>
-          </a>
-
-          <a href="https://www.gov.uk/register-to-vote" class="campaign__sidebar-cta-block">
-            <span>Register to vote</span>
-          </a>
-
-
-      </div>
+          <?php  include(TEMPLATEPATH . '/includes/election/election-2017-sidebar.php');  ?>
+        </div>
       <?php endwhile; ?>
       </article>
 
