@@ -1,4 +1,4 @@
-<?php /* Template Name: 2017 Election Campaign */ ?>
+<?php /* Template Name: 2017 Election Campaign main */ ?>
 
 <?php  include(TEMPLATEPATH . '/includes/header/head.php');  ?>
 
