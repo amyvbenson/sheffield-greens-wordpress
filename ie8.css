@@ -2619,6 +2619,10 @@ h3.election-sidebar__sub-heading strong {
 
 .campaign__sidebar-cta-block {
   background: #006341;
+  flex-direction: column;
+  position: relative;
+  min-height: 100px;
+  margin-top: 16px;
 }
 .campaign__sidebar-cta-block span {
   line-height: 1;
@@ -2627,6 +2631,24 @@ h3.election-sidebar__sub-heading strong {
 }
 .campaign__sidebar-cta-block:hover, .campaign__sidebar-cta-block:focus {
   background: #6AB023;
+}
+
+.campaign__sidebar-cta-main-link {
+  height: 100%;
+  display: block;
+}
+
+.campaign__sidebar-cta-small-link {
+  color: white;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.campaign__sidebar-cta-small-link:hover, .campaign__sidebar-cta-small-link:focus {
+  color: white;
+  text-decoration: underline;
 }
 
 .campaign--nb .post__body {
@@ -2709,10 +2731,15 @@ h3.election-sidebar__sub-heading strong {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 32px;
 }
 .campaign__sidebar-cta-block span {
   font-size: 48px;
   font-size: 3rem;
+}
+
+.campaign__sidebar-cta-main-link {
+  padding-top: 40px;
 }
 
 #login h1 a {

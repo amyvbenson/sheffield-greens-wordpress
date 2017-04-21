@@ -149,6 +149,10 @@
 
 .campaign__sidebar-cta-block {
 	background: $dark-green;
+	flex-direction: column;
+	position: relative;
+	min-height: 100px;
+	margin-top: 16px;
 
 	span {
 		line-height: 1;
@@ -158,6 +162,25 @@
 
 	&:hover, &:focus {
 		background: $green;
+	}
+}
+
+.campaign__sidebar-cta-main-link {
+	height: 100%;
+	display: block;
+}
+
+.campaign__sidebar-cta-small-link {
+	color: white;
+	position: absolute;
+	bottom: 16px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+
+	&:hover, &:focus {
+		color: white;
+		text-decoration: underline;
 	}
 }
 
@@ -254,9 +277,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 32px;
 
 		span {
 			@include font-size(48);
 		}
+	}
+
+	.campaign__sidebar-cta-main-link {
+		padding-top: 40px;
 	}
 }

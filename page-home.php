@@ -20,6 +20,11 @@
 
     <div class="col-50">
 
+      <a href="http://www.crowdfunder.co.uk/natalie-bennett-for-sheffield-central" class="home-cta-large">
+        <strong>Support our Crowdfunder</strong>
+        Natalie Bennett, former Green Party leader, is challenging for Sheffield Central in the 2017 General Election. Please support her campaign.
+      </a>
+
 
       <?php include(TEMPLATEPATH . '/includes/homepage/latest-video.php'); ?>
 
