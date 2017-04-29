@@ -152,7 +152,7 @@
 
 .campaign__sidebar-cta, .campaign__sidebar-cta-block {
 	display: block;
-	margin-top: 32px;
+	margin-bottom: 32px;
 
 	span {
 		display: block;
@@ -169,7 +169,7 @@
 	flex-direction: column;
 	position: relative;
 	min-height: 100px;
-	margin-top: 16px;
+	margin-bottom: 16px;
 
 	span {
 		line-height: 1;
@@ -306,7 +306,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 32px;
+		margin-bottom: 32px;
 
 		span {
 			@include font-size(48);
