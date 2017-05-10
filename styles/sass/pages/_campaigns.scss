@@ -168,7 +168,7 @@
 	background: $dark-green;
 	flex-direction: column;
 	position: relative;
-	min-height: 100px;
+	min-height: 200px;
 	margin-bottom: 16px;
 
 	span {
@@ -179,6 +179,51 @@
 
 	&:hover, &:focus {
 		background: $green;
+	}
+}
+
+.campaign__sidebar-cta-block--n4s {
+	position: relative;
+	background: url('images/natalie4sheffield-sidebar.jpg') right top no-repeat;
+	max-height:	200px;
+	overflow: hidden;
+
+	&:hover, &:focus {
+		background: url('images/natalie4sheffield-sidebar.jpg') right top no-repeat;
+
+		.campaign__sidebar-cta-tagline {
+			background: $dark-green;
+		}
+	}
+
+	.campaign__sidebar-cta-tagline-small {
+		background: white;
+		color: $green;
+		font-family: $heading-font;
+		@include font-size(16);
+		padding: 4px 6px;
+		transform: rotate(-8deg);
+		position: absolute;
+		left: 20px;
+		bottom: 64px;
+		z-index: 1;
+	}
+
+	.campaign__sidebar-cta-tagline {
+		font-family: $heading-font;
+		color: white;
+		background: $green;
+		position: absolute;
+		left: -12px;
+		bottom: 24px;
+		@include font-size(32);
+		padding: 8px 8px 8px 20px;
+		transform: rotate(-8deg);
+
+		em {
+			color: #CEE8AF;
+			font-style: normal;
+		}
 	}
 }
 
@@ -213,7 +258,41 @@
 	}
 }
 
+@include media-query(xs) {
+
+	.campaign__sidebar {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.campaign__sidebar-cta-block {
+		width: 49%;
+		flex-shrink: 0;
+
+		&:nth-child(odd) {
+			margin-right: 1%;
+		}
+
+		&:nth-child(even) {
+			margin-left: 1%;
+		}
+	}
+
+}
+
 @include media-query(sm) {
+
+	.campaign__sidebar {
+		display: block;
+	}
+
+	.campaign__sidebar-cta-block {
+		width: 100%;
+		&:nth-child(even), &:nth-child(odd) {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
 
 	.campaign__heading {
 		display: flex;
@@ -303,7 +382,6 @@
 	.campaign__sidebar-cta-block {
 		width: 100%;
 		height: 226px;
-		background: $dark-green;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -316,5 +394,14 @@
 
 	.campaign__sidebar-cta-main-link {
 		padding-top: 40px;
+	}
+}
+
+@include media-query (lg) {
+	.campaign__sidebar-cta-block--n4s {
+		.campaign__sidebar-cta-tagline-small {
+			@include font-size(24);
+			bottom: 66px;
+		}
 	}
 }

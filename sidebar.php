@@ -1,7 +1,8 @@
 <div id="primary" class="widget-area">
 
-    <a href="/teamnatalie" class="campaign__sidebar-cta-block">
-    <span>Help elect Natalie on <br>June 8th!</span>
+    <a class="campaign__sidebar-cta-block campaign__sidebar-cta-block--n4s" href="http://natalie4sheffield.org">
+        <span class="campaign__sidebar-cta-tagline-small">Vote for change</span>
+        <span class="campaign__sidebar-cta-tagline">#natalie<em>4</em>sheffield</span>
     </a>
 
     <?php include(TEMPLATEPATH . '/includes/version.php'); ?>
