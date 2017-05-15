@@ -50,5 +50,5 @@
 </div>
 
 <div class="campaign__related campaign__related--election">
-  <?php echo get_category_posts('elections', 'Election news');?>
+  <?php echo get_category_posts('Elections', 'Election news');?>
 </div>
