@@ -9,6 +9,36 @@
 		max-width: 430px;
 		line-height: 1;
 	}
+
+	.campaign--nb & {
+		height: 170px;
+		background: url('images/election-banner-natalie.jpg') left center no-repeat;
+		background-size: cover;
+		position: relative;
+		margin-bottom: 50px;
+
+		.col-30 {
+			position: absolute;
+			width: 100%;
+			height: 40px;
+			bottom: -40px;
+			background: $green;
+			color: white;
+			font-family: $heading-font;
+			font-size: 18px;
+			line-height: 1;
+			text-align: center;
+			padding: 0 10px;
+			align-items: center;
+    	display: flex;
+    	justify-content: center;
+
+			&:hover, &:focus {
+				background: $dark-green;
+			}
+
+		}
+	}
 }
 
 .campaign__heading--no-image {
@@ -163,7 +193,6 @@
 		font-family: $heading-font;
 	}
 }
-
 .campaign__sidebar-cta-block {
 	background: $dark-green;
 	flex-direction: column;
@@ -179,6 +208,43 @@
 
 	&:hover, &:focus {
 		background: $green;
+	}
+
+}
+
+.campaign__sidebar-cta-block--contact {
+	padding: 10px;
+
+	&:hover, &:focus {
+		background: $dark-green;
+	}
+
+	a, h2 {
+		color: white;
+	}
+
+	a {
+		white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+
+    &:hover, &:focus {
+			svg {
+				fill: $green;
+			}
+		}
+	}
+
+	li {
+		margin-bottom: 10px;
+	}
+
+	svg {
+		width: 16px;
+		height: 16px;
+		fill: white;
+		vertical-align: text-top;
 	}
 }
 
@@ -258,6 +324,16 @@
 	}
 }
 
+.campaign__related--election {
+	padding-top: 0;
+
+	h2 {
+		margin: 0;
+	}
+}
+
+
+
 @include media-query(xs) {
 
 	.campaign__sidebar {
@@ -265,7 +341,7 @@
 		flex-wrap: wrap;
 	}
 
-	.campaign__sidebar-cta-block {
+	.campaign__sidebar-cta-block, .campaign__related--election  {
 		width: 49%;
 		flex-shrink: 0;
 
@@ -282,11 +358,11 @@
 
 @include media-query(sm) {
 
-	.campaign__sidebar {
+	.campaign__sidebar, {
 		display: block;
 	}
 
-	.campaign__sidebar-cta-block {
+	.campaign__sidebar-cta-block,  .campaign__related--election {
 		width: 100%;
 		&:nth-child(even), &:nth-child(odd) {
 			margin-right: 0;
@@ -301,14 +377,22 @@
 		background: $dark-green url('images/air-quality-bg.png') bottom right no-repeat;
 
 		.campaign--nb & {
-			background: $dark-green url('images/natalie-banner.jpg') 0 0 no-repeat;
 			justify-content: flex-end;
-			text-align: right;
+			margin-bottom: 20px;
+			height: 270px;
 
-			h1 {
-				padding: 0 32px 0 0;
-				max-width: 50%;
-				@include font-size(76);
+			.col-30 {
+				position: relative;
+				bottom: auto;
+				height: 100%;
+				width: 30%;
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				padding: 20px;
+				font-size: 30px;
+
+
 			}
 		}
 
@@ -392,12 +476,27 @@
 		}
 	}
 
+	.campaign__sidebar-cta-block--contact {
+		display: block;
+	}
+
 	.campaign__sidebar-cta-main-link {
 		padding-top: 40px;
 	}
 }
 
 @include media-query (lg) {
+
+
+	.campaign__heading {
+		.campaign--nb & {
+			height: 300px;
+			.col-30 {
+				font-size: 40px;
+			}
+		}
+	}
+
 	.campaign__sidebar-cta-block--n4s {
 		.campaign__sidebar-cta-tagline-small {
 			@include font-size(24);

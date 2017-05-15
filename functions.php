@@ -61,36 +61,36 @@ $options = array (
 			    		"id" => $shortname."_google_analytics",
 			    		"std" => "",
 			    		"type" => "textarea"),
-					
+
 				array(	"name" => "Archives Page",
 						"desc" => "Please select the archives page.",
 						"id" => $shortname."_archives",
 						"std" => "Select a page:",
 						"type" => "select",
 						"options" => $green_pages),
-				
+
 				array( 	"name" => "Featured Category",
 					   	"desc" => "Select the category that you would like to have displayed in the featured section on your homepage.",
 						"id" => $shortname."_featured_category",
 						"std" => "Select a category:",
 						"type" => "select",
-						"options" => $pn_categories),					
-								
+						"options" => $pn_categories),
+
 				array(	"name" => "Promoter Details",
 						"type" => "heading"),
-				
+
 				array(	"name" => "Promoted by",
 						"desc" => "Please put the name of the person who promotes the website e.g. Eamonn Ward.",
 			    		"id" => $shortname."_promoted_by",
 			    		"std" => "",
 			    		"type" => "textarea"),
-				
+
 				array(	"name" => "Address",
 						"desc" => "Please put the address of the person who promotes the website. N.B. The address goes on one line e.g. 73 Eskdale Rd, Sheffield, S6 1SL.",
 			    		"id" => $shortname."_promoted_by_address",
 			    		"std" => "",
 			    		"type" => "textarea"),
-				
+
 				array(	"name" => "Copyright year",
 						"desc" => "Please put the year of copyright.",
 			    		"id" => $shortname."_copyright_year",
@@ -105,15 +105,15 @@ $options = array (
 			    		"id" => $shortname."_other_entries",
 			    		"std" => "Select a Number:",
 			    		"type" => "select",
-			    		"options" => $other_entries),												
-						
+			    		"options" => $other_entries),
+
 				array( 	"name" => "Video Category",
 					   	"desc" => "Select the category that would be used for videos.",
 						"id" => $shortname."_video_category",
 						"std" => "Select a category:",
 						"type" => "select",
 						"options" => $pn_categories),
-				
+
 				array( 	"name" => "Featured Category",
 					   	"desc" => "Select the category that you would like to have displayed in the featured section on your homepage.",
 						"id" => $shortname."_featured_category",
@@ -127,22 +127,22 @@ $options = array (
 			    		"std" => "Select a Number:",
 			    		"type" => "select",
 			    		"options" => $other_entries),
-								
+
 				array(	"name" => "Next Election Banner",
 						"type" => "heading"),
-				
+
 				array(	"name" => "Display next election banner",
 						"desc" => "Check this box if you would like to display the next election banner.",
 						"id" => $shortname."_show_election_banner",
 						"std" => "false",
 						"type" => "checkbox"),
-				
+
 				array(	"name" => "Next election:",
 						"desc" => "Please put the name of the next election, e.g. woodhouse by-election.",
 			    		"id" => $shortname."_forthcoming_election",
 			    		"std" => "Woodhouse by-election",
-			    		"type" => "textarea"),	
-				
+			    		"type" => "textarea"),
+
 				array(	"name" => "Next election information:",
 						"desc" => "Please put the information of the next election.",
 			    		"id" => $shortname."_forthcoming_election_info",
@@ -152,7 +152,7 @@ $options = array (
 
 				array(	"name" => "Council Elections",
 						"type" => "heading"),
-				
+
 				array(	"name" => "Council election information:",
 						"desc" => "Please put the description of a Council election here.",
 			    		"id" => $shortname."_info_council_election",
@@ -160,22 +160,22 @@ $options = array (
               <p> Each of Sheffield's 28 wards is represented by three positions on the council, meaning there are usually 28 seats contested in each local election. 2004 saw new ward boundaries and therefore all seats were contested. </p>
               <p>In this election you are voting to elect Councillors of Sheffield who will   represent your views for the ward (area) in which you live.</p>",
 			    		"type" => "textarea"),
-								
+
 				array(	"name" => "Last election Date:",
 						"desc" => "Please put the date of the last council election e.g. 6th May 2010.",
 			    		"id" => $shortname."_last_council_election",
 			    		"std" => "",
-			    		"type" => "textarea"),				
-				
+			    		"type" => "textarea"),
+
 				array(	"name" => "Next election Date:",
 						"desc" => "Please put the date of the next council election e.g. 7th May 2015.",
 			    		"id" => $shortname."_next_council_election",
 			    		"std" => "",
 			    		"type" => "textarea"),
-				
+
 				array(	"name" => "General Elections",
 						"type" => "heading"),
-				
+
 				array(	"name" => "General election information:",
 						"desc" => "Please put the description of a General election here.",
 			    		"id" => $shortname."_info_general_election",
@@ -183,77 +183,77 @@ $options = array (
               <p>In this election you are voting to elect who will represent   your views within parliament.&nbsp; They will become a Member of Parliament (MP) and   will be given a seat within the House of Commons. </p>
               <p>The party with the most seats   in the House of Commons will form the government and rule the country.</p>",
 			    		"type" => "textarea"),
-								
+
 				array(	"name" => "Last election Date:",
 						"desc" => "Please put the date of the last general election e.g. 6th May 2010.",
 			    		"id" => $shortname."_last_general_election",
 			    		"std" => "",
-			    		"type" => "textarea"),				
-				
+			    		"type" => "textarea"),
+
 				array(	"name" => "Next election Date:",
 						"desc" => "Please put the date of the next general election e.g. 7th May 2015.",
 			    		"id" => $shortname."_next_general_election",
 			    		"std" => "",
 			    		"type" => "textarea"),
-				
+
 				array(	"name" => "European Elections",
 						"type" => "heading"),
-				
+
 				array(	"name" => "European election information:",
 						"desc" => "Please put the description of a European election here.",
 			    		"id" => $shortname."_info_european_election",
 			    		"std" => " <p>Elections to the European Parliament are held every five years. The European Parliament was directly elected for the first time in 1979. Since 1999 voters in Britain have elected MEPs under a proportional representation system. The European Parliamentary Elections Act of that year introduced a regional list system with seats allocated to parties in proportion to their share of the vote. </p>
               <p>The UK is divided into twelve electoral regions with between three and ten MEPs representing each region. The nine English regions elected 59 MEPs, Scotland elected six MEPs and Wales four MEPs. In Northern Ireland three MEPs were elected under its own system of proportional representation. </p>",
 			    		"type" => "textarea"),
-								
+
 				array(	"name" => "Last election Date:",
 						"desc" => "Please put the date of the last european election e.g. 4th May 2009.",
 			    		"id" => $shortname."_last_european_election",
 			    		"std" => "",
-			    		"type" => "textarea"),				
-				
+			    		"type" => "textarea"),
+
 				array(	"name" => "Next election Date:",
 						"desc" => "Please put the date of the next european election e.g. 7th May 2015.",
 			    		"id" => $shortname."_next_european_election",
 			    		"std" => "",
 			    		"type" => "textarea"),
-				
+
 				array(	"name" => "Parish Elections",
 						"type" => "heading"),
-				
+
 				array(	"name" => "Parish election Date:",
 						"desc" => "Please put description of a Parish election here.",
 			    		"id" => $shortname."_info_parish_election",
 			    		"std" => "<p>Parish elections are held once every four years and usually at the same time as   a local election.&nbsp; There are three parish wards in Sheffield: the Parish of   Ecclesfield, the Parish of Bradfield and Stocksbridge Town Council.&nbsp; </p>
               <p>You can   only vote in a parish election if you live in the parish.&nbsp; If you live in the   parish you can vote in parish elections and also in local elections. In this   election you are voting to elect parish leaders who will represent your views   for the parish in which you live.&nbsp;</p>",
-			    		"type" => "textarea"),	
-								
+			    		"type" => "textarea"),
+
 				array(	"name" => "Last election Date:",
 						"desc" => "Please put the date of the last parish election e.g. 4th May 2009.",
 			    		"id" => $shortname."_last_parish_election",
 			    		"std" => "",
-			    		"type" => "textarea"),				
-				
+			    		"type" => "textarea"),
+
 				array(	"name" => "Next election Date:",
 						"desc" => "Please put the date of the next parish election e.g. 7th May 2015.",
 			    		"id" => $shortname."_next_parish_election",
 			    		"std" => "",
 			    		"type" => "textarea")
-				
+
 		  );
-													    																																		
+
 // ADMIN PANEL
 
 function theme_add_admin() {
 
 	 global $themename, $options;
-	
-	if ( $_GET['page'] == basename(__FILE__) ) {	
+
+	if ( $_GET['page'] == basename(__FILE__) ) {
         if ( 'save' == $_REQUEST['action'] ) {
-	
+
                 foreach ($options as $value) {
 					if($value['type'] != 'multicheck'){
-                    	update_option( $value['id'], $_REQUEST[ $value['id'] ] ); 
+                    	update_option( $value['id'], $_REQUEST[ $value['id'] ] );
 					}else{
 						foreach($value['options'] as $mc_key => $mc_value){
 							$up_opt = $value['id'].'_'.$mc_key;
@@ -264,22 +264,22 @@ function theme_add_admin() {
 
                 foreach ($options as $value) {
 					if($value['type'] != 'multicheck'){
-                    	if( isset( $_REQUEST[ $value['id'] ] ) ) { update_option( $value['id'], $_REQUEST[ $value['id'] ]  ); } else { delete_option( $value['id'] ); } 
+                    	if( isset( $_REQUEST[ $value['id'] ] ) ) { update_option( $value['id'], $_REQUEST[ $value['id'] ]  ); } else { delete_option( $value['id'] ); }
 					}else{
 						foreach($value['options'] as $mc_key => $mc_value){
-							$up_opt = $value['id'].'_'.$mc_key;						
-							if( isset( $_REQUEST[ $up_opt ] ) ) { update_option( $up_opt, $_REQUEST[ $up_opt ]  ); } else { delete_option( $up_opt ); } 
+							$up_opt = $value['id'].'_'.$mc_key;
+							if( isset( $_REQUEST[ $up_opt ] ) ) { update_option( $up_opt, $_REQUEST[ $up_opt ]  ); } else { delete_option( $up_opt ); }
 						}
 					}
 				}
-						
-				header("Location: admin.php?page=functions.php&saved=true");								
-			
+
+				header("Location: admin.php?page=functions.php&saved=true");
+
 			die;
 
 		} else if ( 'reset' == $_REQUEST['action'] ) {
 			delete_option('sandbox_logo');
-			
+
 			header("Location: admin.php?page=functions.php&reset=true");
 			die;
 		}
@@ -293,7 +293,7 @@ add_theme_page(" Site Options", "Site Options", 'edit_themes', basename(__FILE__
 function theme_page (){
 
 		global $options, $themename, $manualurl;
-		
+
 		?>
 
 <div class="wrap">
@@ -303,168 +303,168 @@ function theme_page (){
 						<h2>Site Options</h2>
 
 						<?php if ( $_REQUEST['saved'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning"><?php echo $themename; ?>'s Options has been updated!</div><?php } ?>
-						<?php if ( $_REQUEST['reset'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning"><?php echo $themename; ?>'s Options has been reset!</div><?php } ?>						
-						
+						<?php if ( $_REQUEST['reset'] ) { ?><div style="clear:both;height:20px;"></div><div class="warning"><?php echo $themename; ?>'s Options has been reset!</div><?php } ?>
+
 						<div style="clear:both;height:20px;"></div>
-						
+
 						<div class="info">
-						
-							
+
+
 							<div style="width: 30%; float: right; display: inline;text-align: right;"><input name="save" type="submit" value="Save changes" /></div>
 							<div style="clear:both;"></div>
-						
-						</div>	    			
-						
+
+						</div>
+
 						<!--START: GENERAL SETTINGS-->
-     						
+
      						<table class="maintable">
-     							
+
 							<?php foreach ($options as $value) { ?>
-	
+
 									<?php if ( $value['type'] <> "heading" ) { ?>
-	
+
 										<tr class="mainrow">
 										<td class="titledesc"><?php echo $value['name']; ?></td>
 										<td class="forminp">
-		
-									<?php } ?>		 
-	
+
+									<?php } ?>
+
 									<?php
-										
+
 										switch ( $value['type'] ) {
 										case 'text':
-		
+
 									?>
-									
+
 		        							<input name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" />
-		
+
 									<?php
-										
+
 										break;
 										case 'select':
-		
+
 									?>
-		
+
 	            						<select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>">
 	                					<?php foreach ($value['options'] as $option) { ?>
 	                						<option<?php if ( get_option( $value['id'] ) == $option) { echo ' selected="selected"'; } elseif ($option == $value['std']) { echo ' selected="selected"'; } ?>><?php echo $option; ?></option>
 	                					<?php } ?>
 	            						</select>
-		
+
 									<?php
-		
+
 										break;
 										case 'textarea':
 										$ta_options = $value['options'];
-		
+
 									?>
-									
+
 										<textarea name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" cols="<?php echo $ta_options['cols']; ?>" rows="8"><?php  if( get_option($value['id']) != "") { echo stripslashes(get_option($value['id'])); } else { echo $value['std']; } ?></textarea>
-		
+
 									<?php
-										
+
 										break;
 										case "radio":
-		
- 										foreach ($value['options'] as $key=>$option) { 
-				
+
+ 										foreach ($value['options'] as $key=>$option) {
+
 													$radio_setting = get_option($value['id']);
-													
+
 													if($radio_setting != '') {
-		    											
+
 		    											if ($key == get_option($value['id']) ) { $checked = "checked=\"checked\""; } else { $checked = ""; }
-													
+
 													} else {
-													
+
 														if($key == $value['std']) { $checked = "checked=\"checked\""; } else { $checked = ""; }
 									} ?>
-									
+
 	            					<input type="radio" name="<?php echo $value['id']; ?>" value="<?php echo $key; ?>" <?php echo $checked; ?> /><?php echo $option; ?><br />
-		
+
 									<?php }
-		 
+
 										break;
 										case "checkbox":
-										
+
 										if(get_option($value['id'])) { $checked = "checked=\"checked\""; } else { $checked = ""; }
-									
+
 									?>
-		            				
+
 		            				<input type="checkbox" class="checkbox" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" value="true" <?php echo $checked; ?> />
-		
+
 									<?php
-		
+
 										break;
 										case "multicheck":
-		
+
  										foreach ($value['options'] as $key=>$option) {
- 										
+
 	 											$pn_key = $value['id'] . '_' . $key;
 												$checkbox_setting = get_option($pn_key);
-				
+
  												if($checkbox_setting != '') {
-		    		
+
 		    											if (get_option($pn_key) ) { $checked = "checked=\"checked\""; } else { $checked = ""; }
-				
+
 												} else { if($key == $value['std']) { $checked = "checked=\"checked\""; } else { $checked = ""; }
-				
+
 									} ?>
-									
+
 	            					<input type="checkbox" class="checkbox" name="<?php echo $pn_key; ?>" id="<?php echo $pn_key; ?>" value="true" <?php echo $checked; ?> /><label for="<?php echo $pn_key; ?>"><?php echo $option; ?></label><br />
-									
+
 									<?php }
-		 
+
 										break;
 										case "heading":
 
 									?>
-									
-										</table> 
-		    							
+
+										</table>
+
 		    									<h3 class="title"><?php echo $value['name']; ?></h3>
-										
+
 										<table class="maintable">
-		
+
 									<?php
-										
+
 										break;
 										default:
 										break;
-									
+
 									} ?>
-	
+
 									<?php if ( $value['type'] <> "heading" ) { ?>
-	
+
 										<?php if ( $value['type'] <> "checkbox" ) { ?><br/><?php } ?><span><?php echo $value['desc']; ?></span>
 										</td></tr>
-	
-									<?php } ?>		
-	
-							<?php } ?>	
-							
-							</table>	
+
+									<?php } ?>
+
+							<?php } ?>
+
+							</table>
 
 							<p class="submit">
-								<input name="save" type="submit" value="Save changes" />    
+								<input name="save" type="submit" value="Save changes" />
 								<input type="hidden" name="action" value="save" />
-							</p>							
-							
-							<div style="clear:both;"></div>		
-						
-						<!--END: GENERAL SETTINGS-->						
-             
+							</p>
+
+							<div style="clear:both;"></div>
+
+						<!--END: GENERAL SETTINGS-->
+
             </form>
 
 </div><!--wrap-->
 
 <div style="clear:both;height:20px;"></div>
- 
+
  <?php
 
 };
 
 add_action('admin_menu', 'theme_add_admin');
-add_action('admin_head', 'theme_admin_head');	
+add_action('admin_head', 'theme_admin_head');
 
 remove_action('init', 'wp_admin_bar_init');
 add_filter( 'show_admin_bar', '__return_false' );
@@ -674,7 +674,7 @@ function sgp_admin_dashboard_help() { ?>
 	<?php _e('For Help and Support with the site, please email our web team ','sheffieldgreens') ?>
 	<a href="mailto:website@sheffieldgreenparty.org.uk"><?php _e('Click Here','sheffieldgreens') ?></a>
 	</p>
-   
+
 <?php };
 
 //
@@ -687,7 +687,7 @@ add_action('wp_dashboard_setup', 'sgp_admin_custom_dashboard_widgets');
 // Automatically get the first image in a post, or display a default image
 
 function catch_that_image() {
-   
+
    	global $post, $posts, $blog_id;
     $first_img = '';
     ob_start();
@@ -698,7 +698,7 @@ function catch_that_image() {
     // no image found in the post, display default image or one from a custom field (called 'thumbnail') instead
     if(empty($first_img))
     {
-       
+
         $is_thumbnail_set = get_post_meta($post->ID,'thumbnail',true);
 
         if(empty($is_thumbnail_set))
@@ -714,7 +714,7 @@ function catch_that_image() {
                 //We're on WPMU
                 $theImageSrc = get_post_meta($post->ID,'thumbnail',true);
                 $imageParts = explode('/files/', $theImageSrc);
-                   
+
                 if (isset($imageParts[1]))
                 {
                     $first_img = '/blogs.dir/' . $blog_id . '/files/' . $imageParts[1];
@@ -746,17 +746,17 @@ function catch_that_image() {
 
 // Green Party Avatar
 
-add_filter( 'avatar_defaults', 'customgravatar' );     
+add_filter( 'avatar_defaults', 'customgravatar' );
 
-	function customgravatar ($avatar_defaults) {  
-	
-		$myavatar = get_bloginfo('template_directory') . '/images/default_avatar_visitor.gif';  
-		
-		$avatar_defaults[$myavatar] = "Default Site Avatar";  
-	
-	return $avatar_defaults;  
+	function customgravatar ($avatar_defaults) {
 
-} 
+		$myavatar = get_bloginfo('template_directory') . '/images/default_avatar_visitor.gif';
+
+		$avatar_defaults[$myavatar] = "Default Site Avatar";
+
+	return $avatar_defaults;
+
+}
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -770,12 +770,12 @@ function tabs_popular( $posts = 5, $size = 35 ) {
 <li>
 	<?php $cti = catch_that_image(); if(isset($cti)){ ?>
     <span class="popular-image"><img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&h=40&w=40&zc=1"/></span>
-    <?php } ?>	
+    <?php } ?>
     <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 	<span class="meta"><?php the_time(__('jS F, Y', 'default')) ?></span>
 	<div class="fix"></div>
 </li>
-<?php endwhile; 
+<?php endwhile;
 }
 
 
@@ -785,18 +785,18 @@ function tabs_popular( $posts = 5, $size = 35 ) {
 /*-----------------------------------------------------------------------------------*/
 
 function tabs_latest( $posts = 5, $size = 35 ) {
-	$the_query = new WP_Query('showposts='. $posts .'&orderby=post_date&order=desc');	
-	while ($the_query->have_posts()) : $the_query->the_post(); 
+	$the_query = new WP_Query('showposts='. $posts .'&orderby=post_date&order=desc');
+	while ($the_query->have_posts()) : $the_query->the_post();
 ?>
 <li>
 	<?php $cti = catch_that_image(); if(isset($cti)){ ?>
     <span class="popular-image"><img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&h=40&w=40&zc=1"/></span>
-    <?php } ?>	
+    <?php } ?>
     <a title="<?php the_title(); ?>" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
 	<span class="meta"><?php the_time(__('jS F, Y', 'default')) ?></span>
 	<div class="fix"></div>
 </li>
-<?php endwhile; 
+<?php endwhile;
 }
 
 
@@ -806,12 +806,12 @@ function tabs_latest( $posts = 5, $size = 35 ) {
 
 if (function_exists('unregister_widget')) {
 	function deregister_widgets(){
-		unregister_widget('WP_Widget_Search');         
+		unregister_widget('WP_Widget_Search');
 	}
-	add_action('widgets_init', 'deregister_widgets');  
+	add_action('widgets_init', 'deregister_widgets');
 }
 
-//Welcome Message 
+//Welcome Message
 
 add_action('admin_menu', 'add_welcome_interface');
 
@@ -830,19 +830,19 @@ function editoptions() {
   <h2>Theme Options</h2>
 
   <form method="post" action="options.php">
-  
+
   <?php settings_fields('welcome'); ?>
 
   <p><strong>Heading:</strong></p>
 
   <p><input type="text" name="greeting" size="115" value="<?php echo get_option('greeting'); ?>" /></p>
-  
+
 
   <p><strong>Message:</strong></p>
 
   <p><textarea name="welcomemessage" cols="100" rows="20"><?php echo get_option('welcomemessage'); ?></textarea></p>
 
- 
+
 
   <p><input type="submit" name="Submit" value="Save" /></p>
 
@@ -853,11 +853,11 @@ function editoptions() {
   </form>
 
   </div>
- 
+
   <?php
 
   }
-  
+
 /**
  * Sets the post excerpt length.
  *
@@ -920,7 +920,7 @@ add_filter( 'get_the_excerpt', 'sgp_custom_excerpt_more' );
 
  * @return string The gallery style filter, with the styles themselves removed.
  */
- 
+
 function sgp_remove_gallery_css( $css ) {
 	return preg_replace( "#<style type='text/css'>(.*?)</style>#s", '', $css );
 }
@@ -935,12 +935,12 @@ if ( ! function_exists( 'sgp_comment' ) ) :
  *
 
  */
- 
+
 function sgp_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment; ?>
-    	 
-                     		<?php if ( '' == $comment->comment_type ) : ?>      	
-			
+
+                     		<?php if ( '' == $comment->comment_type ) : ?>
+
         <div id="comment-<?php comment_ID() ?>" class="fl ar">
             <div class="pic"><?php echo get_avatar( $comment, 80 ); ?></div>
             <div class="comm-name"><a href="<?php comment_author_url(); ?>" target="_blank"><?php comment_author(); ?></a></div>
@@ -948,33 +948,33 @@ function sgp_comment( $comment, $args, $depth ) {
         </div>
 
    		<div class="fr">
-        
+
 		<?php if ( $comment->comment_approved == '0' ) : ?>
 			<em><?php _e( 'Your comment is awaiting moderation.','sheffieldgreens' ); ?></em>
 			<br />
 		<?php endif; ?>
 
 		<div class="box2 <?php if (1 == $comment->user_id) $oddcomment = authcomment; echo $oddcomment; ?>">
-		
+
 		<?php comment_text(); ?>
-        
+
         <div class="reply">
 
 		<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-        
+
         </div>
 
         </div>
-  
+
         </div>
-   
-        <div class="clfix"></div>    	
-		
-		     <?php else : ?>     
-        
+
+        <div class="clfix"></div>
+
+		     <?php else : ?>
+
 	<li class="post pingback">
 		<p><?php _e( 'Pingback:','sheffieldgreens' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __('(Edit)','sheffieldgreens'), ' ' ); ?></p>
-   
+
 		<?php endif;
 }
 endif;
@@ -988,7 +988,7 @@ endif;
 
  * @uses register_sidebar
  */
- 
+
 function sgp_widgets_init() {
 	// Area 1, located at the top of the sidebar.
 	register_sidebar( array(
@@ -1062,13 +1062,13 @@ function get_related_posts() {
 	  }
 }
 
-function get_category_posts($cat) {
+function get_category_posts($cat, $heading = 'Related posts') {
 	global $post;
 
-	$category_posts = get_posts(array( 'numberposts' => 10, 'category_name' => $cat));
+	$category_posts = get_posts(array( 'numberposts' => 5, 'category_name' => $cat));
     if ($category_posts) {
 
-	    $output = '<h2>Related posts</h2>';
+	    $output = '<h2>' . $heading . '</h2>';
 	    $output .= '<ul class="related-posts">';
 	    foreach ( $category_posts as $category_post ) {
 	        $output .= '<li><a href="' . get_permalink( $category_post->ID ) . '">' . apply_filters( 'the_title', $category_post->post_title, $category_post->ID ) . '</a></li>';
