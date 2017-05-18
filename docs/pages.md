@@ -1,5 +1,7 @@
 # Pages
 
+Pages are used for content that's fairly static.
+
 ## Adding a new page
 
 1. Go to http://sheffieldgreenparty.org.uk/wp-admin/
