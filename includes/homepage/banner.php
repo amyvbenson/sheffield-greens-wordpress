@@ -1,6 +1,6 @@
 <div class="container container--no-pad home-banner home-banner--new home-banner--full-image">
 <h2>
-  <a href="http://sheffieldgreenparty.org.uk/teamnatalie/" class="home-banner__link">
+  <a href="https://www.natalie4sheffield.org/" class="home-banner__link">
     <span class="sr-only">Vote Green on June 8th - Natalie Bennett, Sheffield Central</span>
   </a>
 </h2>
