@@ -5,6 +5,10 @@
         <span class="campaign__sidebar-cta-tagline">#natalie<em>4</em>sheffield</span>
     </a>
 
+    <a class="campaign__sidebar-cta-block campaign__sidebar-cta-block--guarantee" href="https://www.greenparty.org.uk/green-guarantee">
+        <span class="campaign__sidebar-cta-tagline">Our Green Guarantee</span>
+    </a>
+
     <?php include(TEMPLATEPATH . '/includes/version.php'); ?>
 
     <?php if ( is_page( array('About Us!','Get Involved','Affinity Schemes','faqs','Why Join?','Donate')) ) { ?>

@@ -293,6 +293,22 @@
 	}
 }
 
+.campaign__sidebar-cta-block--guarantee {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $green url('images/gp-symbol-opacity.png') center no-repeat;
+
+	.campaign__sidebar-cta-tagline {
+		font-family: $heading-font;
+		color: white;
+	}
+
+	&:hover, &:focus {
+		background: $dark-green url('images/gp-symbol-opacity.png') center no-repeat;
+	}
+}
+
 .campaign__sidebar-cta-main-link {
 	height: 100%;
 	display: block;
