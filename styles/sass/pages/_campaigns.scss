@@ -10,7 +10,7 @@
 		line-height: 1;
 	}
 
-	.campaign--nb & {
+	.campaign--nb &, .campaign--nes & {
 		height: 170px;
 		background: url('images/election-banner-natalie.jpg') left center no-repeat;
 		background-size: cover;
@@ -32,11 +32,27 @@
 			align-items: center;
     	display: flex;
     	justify-content: center;
+    	max-width: none;
 
 			&:hover, &:focus {
 				background: $dark-green;
 			}
 
+		}
+	}
+
+	.campaign--nes & {
+		background: none;
+		.col-70 {
+			height: 100%;
+			background: url('images/nes-election-page-banner.jpg') left center no-repeat;
+			background-size: cover;
+		}
+
+		.col-30 {
+			&:hover, &:focus {
+				background: $green;
+			}
 		}
 	}
 }
@@ -328,7 +344,7 @@
 	}
 }
 
-.campaign--nb {
+.campaign--nb, .campaign--nes {
 	.post__body {
 		margin-top: 24px;
 	}
@@ -351,6 +367,12 @@
 
 
 @include media-query(xs) {
+
+	.campaign__heading {
+		.campaign--nes & {
+			height: 240px;
+		}
+	}
 
 	.campaign__sidebar {
 		display: flex;
@@ -392,7 +414,7 @@
 		height: 300px;
 		background: $dark-green url('images/air-quality-bg.png') bottom right no-repeat;
 
-		.campaign--nb & {
+		.campaign--nb &, .campaign--nes & {
 			justify-content: flex-end;
 			margin-bottom: 20px;
 			height: 270px;
@@ -407,8 +429,6 @@
 				justify-content: center;
 				padding: 20px;
 				font-size: 30px;
-
-
 			}
 		}
 
@@ -505,7 +525,7 @@
 
 
 	.campaign__heading {
-		.campaign--nb & {
+		.campaign--nb &, .campaign--nes & {
 			height: 300px;
 			.col-30 {
 				font-size: 40px;
