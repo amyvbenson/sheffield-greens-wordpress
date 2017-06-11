@@ -19,7 +19,7 @@
         </div>
 
         <div class="actions-banner">
-          <a href="/get-involved/ru4nes/" class="actions-banner__action">
+          <a href="/get-involved/rob-unwin-nes/" class="actions-banner__action">
             <span class="actions-banner__heading">Get Involved</span>
             <span class="actions-banner__button">Sign up to help</span>
           </a>
