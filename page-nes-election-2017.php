@@ -10,12 +10,12 @@
       <article class="page-section page-section--large post">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <div class="campaign__heading">
+          <h1 class="col-30">
+            Vote Rob Unwin for Nether Edge &amp; Sharrow on 22nd June
+          </h1>
           <div class="col-70">
-          &amp;
-            </div>
-            <h1 class="col-30">
-              Vote Rob Unwin for Nether Edge &amp; Sharrow on 22nd June
-            </h1>
+          </div>
+
         </div>
 
         <div class="actions-banner">
