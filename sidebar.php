@@ -1,10 +1,5 @@
 <div id="primary" class="widget-area">
 
-    <a class="campaign__sidebar-cta-block campaign__sidebar-cta-block--n4s" href="http://natalie4sheffield.org">
-        <span class="campaign__sidebar-cta-tagline-small">Vote for change</span>
-        <span class="campaign__sidebar-cta-tagline">#natalie<em>4</em>sheffield</span>
-    </a>
-
     <a class="campaign__sidebar-cta-block campaign__sidebar-cta-block--guarantee" href="https://www.greenparty.org.uk/green-guarantee">
         <span class="campaign__sidebar-cta-tagline">Our Green Guarantee</span>
     </a>
