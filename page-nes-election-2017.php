@@ -19,11 +19,11 @@
         </div>
 
         <div class="actions-banner">
-          <a href="#involved" class="actions-banner__action">
+          <a href="/get-involved/ru4nes/" class="actions-banner__action">
             <span class="actions-banner__heading">Get Involved</span>
             <span class="actions-banner__button">Sign up to help</span>
           </a>
-          <a href="#donate" class="actions-banner__action">
+          <a href="/about-us/donate/" class="actions-banner__action">
             <span class="actions-banner__heading">Donate</span>
             <span class="actions-banner__button">Chip in today</span>
           </a>
