@@ -1,7 +1,11 @@
-<div class="container container--no-pad home-banner home-banner--new home-banner--full-image">
-<h2>
-  <div class="home-banner__link">
-    <span class="sr-only">Thank you to everyone who voted Green in Sheffield!</span>
-  </div>
+<div class="container container--no-pad home-banner home-banner--nes">
+ <h2>
+<a href="/elections/council-elections/rob-unwin-nes/">
+  <span class="col-30">
+    <strong>Vote Rob Unwin</strong> for Nether Edge &amp; Sharrow on 22nd June
+  </span>
+  <span class="col-70">
+  </span>
+</a>
 </h2>
 </div>

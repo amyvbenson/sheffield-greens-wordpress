@@ -21,6 +21,52 @@
   height: 100%;
 }
 
+.home-banner--nes {
+  background-size: cover;
+  position: relative;
+  margin-bottom: 46px;
+
+  .col-30, .col-70 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col-30 {
+      position: absolute;
+      width: 100%;
+      height: 46px;
+      bottom: -46px;
+      background: $dark-green;
+      color: white;
+      font-family: $heading-font;
+      font-size: 18px;
+      line-height: 1;
+      text-align: center;
+      padding: 0 10px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      max-width: none;
+
+      strong {
+        font-weight: normal;
+      }
+
+      &:hover, &:focus {
+        background: $green;
+      }
+
+    }
+
+  .col-70 {
+    height: 100%;
+    background: url('images/nes-election-page-banner.jpg') left center no-repeat;
+    background-size: cover;
+  }
+}
+
 
 @include media-query(xs) {
 
@@ -28,6 +74,12 @@
     margin-top: 70px;
     position: relative;
     height: 230px;
+  }
+
+  .home-banner--nes {
+    height: 240px;
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 
   .search-active + .home-banner {
@@ -54,6 +106,28 @@
     right: 0;
   }
 
+  .home-banner--nes {
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    height: 270px;
+
+    .col-30 {
+      position: relative;
+      bottom: auto;
+      height: 100%;
+      width: 30%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      font-size: 30px;
+
+      strong {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 
 }
 
@@ -67,5 +141,27 @@
     width: 324px;
   }
 
+  .home-banner--nes {
+    .col-30 {
+      font-size: 40px;
+
+      strong {
+        font-size: 50px;
+      }
+    }
+  }
+
 }
 
+@include media-query(lg) {
+
+  .home-banner--nes {
+    .col-30 {
+
+      strong {
+        font-size: 58px;
+      }
+    }
+  }
+
+}
