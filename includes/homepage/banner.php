@@ -1,11 +1,11 @@
 <div class="container container--no-pad home-banner home-banner--nes">
  <h2>
-<a href="/elections/council-elections/rob-unwin-nes/">
+<div>
   <span class="col-30">
-    <strong>Vote Rob Unwin</strong> for Nether Edge &amp; Sharrow on 22nd June
+    <strong>Thank you</strong> to all Green voters in Nether Edge &amp; Sharrow
   </span>
   <span class="col-70">
   </span>
-</a>
+</div>
 </h2>
 </div>
