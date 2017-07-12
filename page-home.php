@@ -7,9 +7,6 @@
   <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
 
 
-  <?php include(TEMPLATEPATH . '/includes/homepage/banner.php'); ?>
-
-
   <div class="container container--no-pad">
 
     <div class="col-50">
