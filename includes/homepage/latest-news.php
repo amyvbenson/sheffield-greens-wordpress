@@ -1,16 +1,23 @@
 <div class="page-section home-section">
   <h2 class="home-section__heading">Latest News</h2>
 
-  <?php 
-  $featuredcat = get_option('green_featured_category'); // ID of the Featured Category
-  $ex_feat = $wpdb->get_var("SELECT term_id FROM $wpdb->terms WHERE name='$featuredcat'");
-  $the_query = new WP_Query('cat=' . $ex_feat . '&showposts=5&orderby=post_date&order=desc');
-  while ($the_query->have_posts()) : $the_query->the_post(); $do_not_duplicate = $post->ID;
-  ?>
-
+  <?php
+  global $post;
+  $args = array( 'posts_per_page' => 1, 'category_name' => 'featured-sticky' );
+  $stickypost = get_posts( $args );
+  foreach ( $stickypost as $post ) : setup_postdata( $post ); ?>
     <?php  include(TEMPLATEPATH . '/includes/posts/post-preview.php');  ?>
+  <?php endforeach;
+  wp_reset_postdata();?>
 
-  <?php endwhile; ?>
+  <?php
+  global $post;
+  $args = array( 'posts_per_page' => 5, 'category_name' => 'featured' );
+  $featured_post = get_posts( $args );
+  foreach ( $featured_post as $post ) : setup_postdata( $post ); ?>
+    <?php  include(TEMPLATEPATH . '/includes/posts/post-preview.php');  ?>
+  <?php endforeach;
+  wp_reset_postdata();?>
 
   <a href="/news" class="home-section__more-link">
     More news
