@@ -3,7 +3,7 @@
   <h3>Register to vote now!</h3>
 
   <p><a href="https://www.gov.uk/register-to-vote">Register to vote online</a>.</p>
-  <p>Register by 22 May to vote in the General Election on 8 June.</p>
+  <p>Register by 17 April to vote in elections on May 3rd 2018.</p>
 
 
   <h3>Are you likely to be out of Sheffield on polling day?</h3>
@@ -12,7 +12,7 @@
 
   <h3>Why not give us a hand?</h3>
 
-  <p>We are always keen to hear from people willing to lend a hand with   delivering leaflets, canvassing for votes, or spending some time with   activities. <a href="./teamnatalie">Find out ways you can get involved here</a>.</p>
+  <p>We are always keen to hear from people willing to lend a hand with   delivering leaflets, canvassing for votes, or spending some time with   activities. <a href="./contacts">Want to help the campaign? Contact us here.</a>.</p>
 
 
   <h3>Download a window poster</h3>
