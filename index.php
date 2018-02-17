@@ -1,47 +1,38 @@
-<?php get_header(); ?>
+<?php  include(TEMPLATEPATH . '/includes/header/head.php');  ?>
+<body <?php body_class($class); ?>>
 
-<div id="main-container" class="container container--no-pad">
+  <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
+  <div class="container container--no-pad">
+    <div class="col-70">
+      <div class="page-section page-section--large post">
+        <h1 class="post__heading">Archive posts</h1>
 
-	<div id="container">
+        <?php query_posts($query_string . '&cat=-6684'); ?>
 
-    <?php if ( $paged < 2) { ?> 
+        <?php if (have_posts()) : ?>
 
-    <?php include(TEMPLATEPATH . '/includes/featured_categories.php'); // calling Featured Slideshow ?>
+          <?php while (have_posts()) : the_post(); ?>
 
-    <?php } // if pages=2 ?>
-    
-    <div id="post" class="col-main">
+            <?php  include(TEMPLATEPATH . '/includes/posts/post-preview.php');  ?>
 
-      <h2>All News</h2>
+          <?php endwhile; ?>
 
-      <?php query_posts($query_string . '&cat=-6684'); ?>
+          <?php if (function_exists( 'wp_pagenavi' )) : wp_pagenavi(); ?>
+          <?php else : ?>
+            <div class="alignleft"><?php next_posts_link(__ ( '&laquo; Older Entries', 'traction' )); ?></div>
+            <div class="alignright"><?php previous_posts_link(__ ( 'Newer Entries &raquo;', 'traction' )); ?></div>
+          <?php endif; ?>
+        <?php endif; ?>
 
-      <?php if (have_posts()) : ?>
+      </div>
+    </div>
+    <div class="col-30">
+      <div class="page-section post-sidebar">
+        <?php get_sidebar(); ?>
+      </div>
+    </div>
+  </div>
 
-        <?php while (have_posts()) : the_post(); ?>	
-
-          <?php  include(TEMPLATEPATH . '/includes/posts/post-preview.php');  ?>
-
-        <?php endwhile; ?>
-
-      <?php if (function_exists( 'wp_pagenavi' )) : wp_pagenavi(); ?>
-      <?php else : ?>
-        <div class="alignleft"><?php next_posts_link(__ ( '&laquo; Older Entries', 'traction' )); ?></div>
-        <div class="alignright"><?php previous_posts_link(__ ( 'Newer Entries &raquo;', 'traction' )); ?></div>
-      <?php endif; ?>
-    <?php endif; ?>							
-
-  </div> <!-- /content -->
-
-  <div id="sidebar" class="col-sidebar">
-   <?php get_sidebar(); ?>
- </div> <!-- /sidebar -->
-
-</div> <!-- /container -->
-
-</div> <!-- /main-container -->
-
-</div>
-<?php get_footer(); ?>
+  <?php get_footer(); ?>
 </body>
 </html>

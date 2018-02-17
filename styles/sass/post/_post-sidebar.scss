@@ -2,7 +2,6 @@
   display: block;
   line-height: 1;
   padding: $base-unit*2;
-  margin-bottom: $base-unit*2;
   background: $dark-green;
   font-family: $heading-font;
   color: white;
@@ -54,7 +53,7 @@
     margin-bottom: $base-unit*2;
 
     li {
-      margin-bottom: $base-unit/2; 
+      margin-bottom: $base-unit/2;
     }
   }
 

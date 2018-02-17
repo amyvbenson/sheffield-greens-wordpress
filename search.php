@@ -1,72 +1,39 @@
-<?php get_header(); ?>
+<?php  include(TEMPLATEPATH . '/includes/header/head.php');  ?>
+<body <?php body_class($class); ?>>
 
-<div id="main-container">
+  <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
+  <div class="container container--no-pad">
+    <div class="col-70">
+      <div class="page-section page-section--large post">
 
-<div id="container">
-    
-    <div id="post" class="col-main">
+        <h1 class="post__heading">Search results</h1>
 
-<h1 class="page_h1">Search results</h1>
+        <?php query_posts($query_string . '&cat='); ?>
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
+            <?php  include(TEMPLATEPATH . '/includes/posts/post-preview.php');  ?>
+          <?php endwhile; ?>
 
-<?php query_posts($query_string . '&cat='); ?>
+          <?php if (function_exists( 'wp_pagenavi' )) : wp_pagenavi(); ?>
+          <?php else : ?>
+            <div class="alignleft"><?php next_posts_link(__ ( '&laquo; Older Entries', 'traction' )); ?></div>
+            <div class="alignright"><?php previous_posts_link(__ ( 'Newer Entries &raquo;', 'traction' )); ?></div>
+          <?php endif; ?>
 
-<?php if (have_posts()) : ?>
+        <?php else : ?>
 
-<?php while (have_posts()) : the_post(); ?>	
-	
-<!-- BEGIN ENTRY LAYOUT -->
-<div id="post-<?php the_ID(); ?>">
-    <div id="search">	         		
-   				
-	<?php $cti = catch_that_image(); if(isset($cti)){ ?>
-        <a title="Permanent Link to <?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark">
-            <img src="<?php bloginfo('template_url'); ?>/thumb.php?src=<?php echo $cti; ?>&h=100&w=100&zc=1" alt="Link to <?php the_title(); ?>" class="alignleft"/>
-        </a>
-    <?php } else {} ?>
-    
-     <h2>
-    <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a> <?php edit_post_link( __( 'Edit Page','sheffieldgreens' ), '<span class="meta-sep">|</span> <span class="edit-link">', '</span>' ); ?>
-    </h2> 
-             
-    <small class="meta">
-    <span class="meta-alignleft">
-    <?php the_time(__('jS F, Y', 'default')) ?>
-    </span>
-    </small>  
-          
-	<?php the_excerpt('strip_tags','<p>'); ?>
+          <p>Your search returned no results. Try a different search?</p>
 
+        <?php endif; ?>
+      </div>
     </div>
-    
-</div>
-<!-- END ENRTY LAYOUT -->
 
-	<?php endwhile; ?>
-	
-			<?php if (function_exists( 'wp_pagenavi' )) : wp_pagenavi(); ?>
-				<?php else : ?>
-                    <div class="alignleft"><?php next_posts_link(__ ( '&laquo; Older Entries', 'traction' )); ?></div>
-                    <div class="alignright"><?php previous_posts_link(__ ( 'Newer Entries &raquo;', 'traction' )); ?></div>
-            <?php endif; ?>
-                
-    <?php else : ?>
-
-		<h2>Your search returned no results. Try a different search?</h2>
-
-	<?php endif; ?>
-						
-
-    </div> <!-- /content -->
-    
-    <div id="sidebar" class="col-sidebar">
-    	<?php get_sidebar(); ?>
-    </div> <!-- /sidebar -->
-    
+    <div class="col-30">
+      <div class="page-section post-sidebar">
+        <?php get_sidebar(); ?>
+      </div>
     </div>
-    
-</div> <!-- /main-container -->
-
-</div>
-<?php get_footer(); ?>
+  </div>
+  <?php get_footer(); ?>
 </body>
 </html>

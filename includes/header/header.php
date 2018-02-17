@@ -1,3 +1,9 @@
+<div class="archive-banner">
+  <div class="container">
+    <p>This is an archive site. For recent Sheffield Green Party news and information go to <a href="https://sheffieldgreenparty.org.uk">sheffieldgreenparty.org.uk</a></p>
+  </div>
+</div>
+
  <header class="main-header">
 
   <div class="container">
@@ -11,13 +17,9 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="main-header__logo"/>
       </a>
     <?php } ?>
-    <p class="main-header__tagline"><?php bloginfo('description'); ?></p>
 
-    <?php include(TEMPLATEPATH . '/includes/header/header-social.php'); ?>
     <?php include(TEMPLATEPATH . '/includes/header/header-search.php'); ?>
 
   </div>
-
-  <?php include(TEMPLATEPATH . '/includes/header/main-nav.php'); ?>
 
 </header>

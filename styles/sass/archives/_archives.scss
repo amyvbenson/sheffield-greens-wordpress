@@ -1,52 +1,26 @@
-.arclist_fl, .arclist_fr, #archivebox  {
-	border-bottom: 3px solid #C0C0C0;
-	margin: 20px 0;
-	padding: 0 20px;
-}
-#archivebox {
-	line-height:30px;
-}
+.archive-search {
+	margin-top: 20px;
 
-.arclist {
-	li {
-		border-bottom: 1px solid #E6E4DB;
-		color: #C0C0C0;
-		font-size: 14px;
-		font-weight: normal;
+	p {
+		padding-bottom: 4px;
 	}
 
-	a {
-		color: #2F2419;
-		display: block;
+	input[type='search'] {
+		font-size: 16px;
 		font-weight: normal;
-		line-height: 30px;
-		padding: 0 0 0 5px;
+		padding: 10px 50px 10px 10px;
+		width: 100%
+	}
 
-		&:hover, &:focus, &:active {
-			color: #66b800;
+	.search-form {
+		position: relative;
+
+		.search-submit {
 			display: block;
-			font-weight: normal;
-			text-decoration: none;
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 	}
-}
-
-#archive {
-	font-size: 0.8em;
-}
-#archive_post .meta-nav {
-	margin: 10px 0;
-}
-
-#archives_banner {
-	background-image: url("images/archives.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	max-width: 260px;
-	height: 77px;
-
-	a {
-		display: block;	
-	}
-	
 }

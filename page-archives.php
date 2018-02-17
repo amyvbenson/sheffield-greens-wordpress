@@ -1,50 +1,43 @@
-<?php get_header(); ?>
+<?php  include(TEMPLATEPATH . '/includes/header/head.php');  ?>
+<body <?php body_class($class); ?>>
+	<?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
 
-<div id="main-container">
+	<div class="container container--no-pad">
+		<div class="page-section">
+			<h1 class="post__heading">Archives</h1>
 
-	<div id="container">
-		
-		<div class="arclist">
-			
-			<div class="arclist_fl col-thirds">
-				
+			<div class="archive-search">
+				<p>Search the archives:</p>
+				<?php get_search_form(); ?>
+			</div>
+		</div>
+	</div>
+
+	<div class="container container--no-pad">
+
+		<div class="col-50">
+			<div class="page-section">
+
 				<h2>ARCHIVES BY CATEGORY</h2>
-				
+
 				<ul>
-					<?php wp_list_categories('title_li=&hierarchical=0&show_count=0') ?>	
-				</ul>				
-				
-			</div><!--/arclist-->
-			
-			<div class="arclist_fr col-thirds">
-				
+					<?php wp_list_categories('title_li=&hierarchical=0&show_count=0') ?>
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-50">
+			<div class="page-section">
 				<h2>ARCHIVES BY DATE</h2>
 				<ul>
-					<?php wp_get_archives('type=monthly&show_post_count=0') ?>	
-				</ul>				
-				
-			</div><!--/arclist-->
-			
-			<?php if (function_exists('wp_tag_cloud')) { ?>
-			
-			<div id="archivebox" class="col-thirds">
-				
-				<h2>POPULAR TAGS</h2>
+					<?php wp_get_archives('type=monthly&show_post_count=0') ?>
+				</ul>
+			</div>
+		</div>
 
-				<ul class="list1">
-					<li><?php wp_tag_cloud('smallest=10&largest=18'); ?></li>
-				</ul>						        
-				
-			</div><!--/archivebox-->
-			
-			<?php } ?>		
+	</div>
 
-		</div>   
-		
-	</div> <!-- /container -->
-	
-</div> <!-- /main-container -->
-</div>
+
 <?php get_footer(); ?>
 </body>
 </html>

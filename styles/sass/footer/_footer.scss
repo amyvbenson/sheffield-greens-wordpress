@@ -1,10 +1,15 @@
 #footer {
-	background: url('images/bg_footer.png') no-repeat scroll right 0 #001d00;
+	background: $dark-green;
 	padding: 10px 0 0 0;
 	margin: 20px 0 0 0;
 	position: relative;
 	overflow: hidden;
 	border-top: 3px solid #66b800;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 #footer .centre {
 	margin: 0 auto;
