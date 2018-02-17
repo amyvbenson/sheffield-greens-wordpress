@@ -1,34 +1,27 @@
-<?php get_header(); ?>
+<?php  include(TEMPLATEPATH . '/includes/header/head.php');  ?>
+<body <?php body_class($class); ?>>
 
-<div id="main-container">
+  <?php  include(TEMPLATEPATH . '/includes/header/header.php');  ?>
+  <div class="container container--no-pad">
+    <div class="col-70">
+      <div class="page-section page-section--large post">
+        <h1 class="post__heading">Content not found</h1>
+        <p>This is somewhat embarrassing, isn't it?</p>
+        <p>It looks like nothing was found at this location. Maybe try a search?
 
-	<div id="container">
-    
-    
-    <div id="post">
+        <div class="archive-search">
+          <?php get_search_form(); ?>
+        </div>
 
-				<h1 class="page_h1"><?php _e( 'Content not found!', 'twentythirteen' ); ?></h1>
-
-    <div class="newsentry">	         		
-   				
-					<h2><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'twentythirteen' ); ?></h2>
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentythirteen' ); ?></p>
-
-					<?php get_search_form(); ?>
-
+        </div>
+      </div>
+      <div class="col-30">
+        <div class="page-section post-sidebar">
+          <?php get_sidebar(); ?>
+        </div>
+      </div>
     </div>
-    
-</div>
-<!-- END ENRTY LAYOUT -->							
 
-    </div> <!-- /content -->
-    
-    <div id="sidebar">
-    	<?php get_sidebar(); ?>
-    </div> <!-- /sidebar -->
-    
-    </div> <!-- /container -->
-    
-</div> <!-- /main-container -->
-
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
+  </body>
+  </html>

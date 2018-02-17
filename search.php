@@ -8,6 +8,10 @@
 
         <h1 class="post__heading">Search results</h1>
 
+        <div class="archive-search archive-search--search-page">
+          <?php get_search_form(); ?>
+        </div>
+
         <?php query_posts($query_string . '&cat='); ?>
         <?php if (have_posts()) : ?>
           <?php while (have_posts()) : the_post(); ?>
